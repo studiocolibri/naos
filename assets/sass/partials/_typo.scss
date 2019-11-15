@@ -2,19 +2,13 @@ h1, h2, h3, h4 {
     margin-bottom:0.25em;
     line-height:1.25;
     font-weight: normal;
+    text-transform: uppercase;
+    @include ff-l;
 }
 
 h2 {
-    font-size:1.6em;
+    font-size:1.6rem;
     margin-bottom:0.5em;
-
-    @media screen and (min-width:560px) {
-        font-size:1.8em;
-    }
-
-    .single & {
-        font-size:1.6rem;
-    }
 }
 
 p, ul {
@@ -62,6 +56,10 @@ strong {
     @include ff-l;
 }
 
-.ff-i {
-    @include ff-i;
+.ff-b {
+    @include ff-b;
+}
+
+.fs-b {
+    font-size: 120%;
 }

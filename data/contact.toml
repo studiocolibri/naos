@@ -1,0 +1,7 @@
+title = "Naos Atelier"
+address = '''
+    Quai de Coronmeuse 32
+    4000 Liège'''
+tel_for_robots = "+3242277405"
+tel_for_humans = "+32(0)4 227 74 05"
+email = "info@naos-atelier.be"

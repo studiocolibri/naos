@@ -2,8 +2,6 @@
 <!-- TRAVIS IS OK -->
 <html lang="{{ $.Site.LanguageCode }}">
   <head>
-    <link rel="preload" href="/assets/fonts/Ubuntu-Regular.woff2" as="font" crossorigin type="font/woff2">
-    <link rel="preload" href="/assets/fonts/IBMPlexSerif-MediumItalic.woff2" as="font" crossorigin type="font/woff2">
     <meta charset="utf-8">
     <meta name="language" content="{{ .Site.LanguageCode }}" />
     <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -20,8 +18,8 @@
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink | relURL }}">
     {{ partial "site-favicon.html" . }}
   </head>
-	<body id="root" class="{{ with .IsHome }}home{{ else }}single{{ end }} {{ .Params.slug }}">
-    <div class="site-wrapper">
+	<body id="root" class="{{ with .IsHome }}accueil{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}">
+    <div class="site-wrapper mw">
       {{ partial "site-header.html" .}}
       <main class="site-main {{ if ne .IsHome true }}main-single{{ else }}main-home{{ end }}" id="site-main">{{ block "main" . }}{{ end }}</main>
       {{ partial "site-footer.html" . }}

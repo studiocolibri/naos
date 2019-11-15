@@ -1,0 +1,87 @@
+{{ define "main" }}
+
+    <section class="home-section" id="home-intro">
+        <figure class="fullw-img-wrapper">
+            <picture class="home-intro__img fullw-img">
+                <source type="image/webp" srcset="{{.Site.BaseURL}}assets/img/home-intro-small.jpg 420w,
+                                                  {{.Site.BaseURL}}assets/img/home-intro-medium.webp 768w,
+                                                  {{.Site.BaseURL}}assets/img/home-intro.webp 4096w"
+                                                  sizes="100vw">
+                <source type="image/jpeg" srcset="{{.Site.BaseURL}}assets/img/home-intro-small.jpg 420w,
+                                                  {{.Site.BaseURL}}assets/img/home-intro-medium.jpg 768w,
+                                                  {{.Site.BaseURL}}assets/img/home-intro.jpg 4096w"
+                                                  sizes="100vw">
+                <img class="fullw-img" src="{{.Site.BaseURL}}assets/img/home-intro.jpg" alt=""  width="1640" height="900">
+            </picture>
+            <figcaption>
+                <h2>Animer son corps, habiter son souffle, <span>ressentir</span>.</h2>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="home-section mw" id="home-welcome">
+        <h3>
+            <span>Bienvenue dans votre voyage intérieur</span>
+            <span class="ff-i">Shanti ∙ Satyam ∙ Prana</span>
+            <span>Paix ∙ Vérité ∙ Souffle</span>
+        </h3>
+        <div class="block__list block__list--3-cols">
+            <a class="block__item" href="/chloe-dujardin">
+                <figure>
+                    <picture class="block__img">
+                        <source type="image/webp" srcset="{{.Site.BaseURL}}assets/img/home-welcome-01.webp">
+                        <source type="image/jpeg" srcset="{{.Site.BaseURL}}assets/img/home-welcome-01.jpg">
+                        <img src="{{.Site.BaseURL}}assets/img/home-welcome-01.jpg" alt=""  width="520" height="356">
+                    </picture>
+                    <figcaption>Chloé Dujardin</figcaption>
+                </figure>
+            </a>
+            <a class="block__item" href="/yoga">
+                <figure>
+                    <picture class="block__img">
+                        <source type="image/webp" srcset="{{.Site.BaseURL}}assets/img/home-welcome-02.webp">
+                        <source type="image/jpeg" srcset="{{.Site.BaseURL}}assets/img/home-welcome-02.jpg">
+                        <img src="{{.Site.BaseURL}}assets/img/home-welcome-02.jpg" alt=""  width="520" height="356">
+                    </picture>
+                    <figcaption>Le yoga</figcaption>
+                </figure>
+            </a>
+            <a class="block__item" href="/meditation">
+                <figure>
+                    <picture class="block__img">
+                        <source type="image/webp" srcset="{{.Site.BaseURL}}assets/img/home-welcome-03.webp">
+                        <source type="image/jpeg" srcset="{{.Site.BaseURL}}assets/img/home-welcome-03.jpg">
+                        <img src="{{.Site.BaseURL}}assets/img/home-welcome-03.jpg" alt=""  width="520" height="356">
+                    </picture>
+                    <figcaption>La méditation</figcaption>
+                </figure>
+            </a>
+        </div>
+        <p class="home-welcome__invite">Je vous invite à prendre un moment de &nbsp;respiration,
+        dans une pratique vivante des&nbsp;postures,
+        enrichie par le chant védique et la&nbsp;méditation.</p>
+        <a class="home-welcome__agenda-btn button" href="/agenda">Découvrez l'agenda</a>
+        <img class="home-welcome__svg" src="{{.Site.BaseURL}}assets/img/home-welcome-04.svg" widt="515" height="445" alt="">
+    </section>
+
+    <section class="home-section" id="home-contact">
+        <figure class="fullw-img-wrapper">
+            <picture class="home-contact__img fullw-img">
+                <source type="image/webp" srcset="{{.Site.BaseURL}}assets/img/home-contact-small.jpg 420w,
+                                                  {{.Site.BaseURL}}assets/img/home-contact-medium.webp 768w,
+                                                  {{.Site.BaseURL}}assets/img/home-contact.webp 4096w"
+                                                  sizes="100vw">
+                <source type="image/jpeg" srcset="{{.Site.BaseURL}}assets/img/home-contact-small.jpg 420w,
+                                                  {{.Site.BaseURL}}assets/img/home-contact-medium.jpg 768w,
+                                                  {{.Site.BaseURL}}assets/img/home-contact.jpg 4096w"
+                                                  sizes="100vw">
+                <img class="fullw-img" src="{{.Site.BaseURL}}assets/img/home-contact.jpg" alt=""  width="1640" height="900">
+            </picture>
+            <figcaption>
+                <h2>Une question&nbsp;? <span class="ff-i">N'hésitez pas.</span><br>
+                <a class="button" href="/contact">Contactez-moi</a></h2>
+            </figcaption>
+        </figure>
+    </section>
+
+{{ end }}

@@ -1,0 +1,67 @@
+h1, h2, h3, h4 {
+    margin-bottom:0.25em;
+    line-height:1.25;
+    font-weight: normal;
+}
+
+h2 {
+    font-size:1.6em;
+    margin-bottom:0.5em;
+
+    @media screen and (min-width:560px) {
+        font-size:1.8em;
+    }
+
+    .single & {
+        font-size:1.6rem;
+    }
+}
+
+p, ul {
+    margin-bottom:1em;
+    line-height:1.6;
+    font-size:1rem;
+}
+
+ul {
+    padding-left:0;
+
+    li {
+        line-height:1.4;
+        margin:0.75em 0 0.75em 0;
+        position:relative;
+        display:flex;
+        align-items: baseline;
+
+        &:before {
+            content:'- ';
+            display:block;
+            margin-right:0.5em;
+        }
+
+    }
+}
+
+li sub,li sup {
+    margin-right:0.25em;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+strong {
+    font-weight:bold;
+}
+
+.ff-r {
+    @include ff-r;
+}
+
+.ff-l {
+    @include ff-l;
+}
+
+.ff-i {
+    @include ff-i;
+}

@@ -1,0 +1,140 @@
+
+::selection {
+	color:$light;
+	background-color: $dark;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @include ff-r; 
+    font-size:18px;
+    font-weight:400;
+    line-height:1.5;
+    background-color: $white;
+    color:$dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height:100%;
+    box-sizing: border-box;
+    opacity:0;
+    animation: show-smooth 200ms 300ms ease-in-out forwards;
+
+    @media screen and (min-width: 460px) {
+        font-size:20px;
+    }
+
+    @media screen and (min-width: 980px) {
+        font-size:22px;
+    }
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.site-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+
+    @media screen and (min-width:1900px) {
+        box-shadow: 0 0 10px -4px $dark;
+    }
+}
+
+#site-main {
+    position:relative;
+    
+    body.open & {
+        z-index:-2;
+    }
+}
+
+.mw {
+    width:100%;
+    max-width:$mw;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.cw {
+    width:100%;
+    max-width:$cw;
+    margin-right:auto;
+    margin-left:auto;
+    padding:0 $su;
+
+    @media screen and (min-width:980px) {
+        padding:0 $su*2;
+    }
+}
+
+.flex-2-cols {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    max-width: $mw;
+    padding:0 $su;
+    max-width: $cw;
+    margin-right:auto;
+    margin-left:auto;
+
+    @media screen and (min-width:980px) {
+        flex-direction:row;
+        padding:0 $su*2;
+    }
+}
+
+.flex-2-cols__col {
+    width:100%;
+
+    @media screen and (min-width:980px) {
+        width:calc(50% - #{$su*2});
+        
+        &:first-of-type {
+            margin-right:$su*2;
+        }
+    }
+
+    img {
+        width:100%;
+        height:auto;
+    }
+}
+
+.flex-3-cols {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    max-width: $mw;
+    padding:0 $su;
+    max-width: $cw;
+    margin-right:auto;
+    margin-left:auto;
+
+    @media screen and (min-width:980px) {
+        flex-direction:row;
+        padding:0 $su*2;
+    }
+}
+
+.flex-3-cols__col {
+    width:100%;
+
+    @media screen and (min-width:980px) {
+        width:calc(33.333% - #{$su*2});
+        
+        &:not(first-of-type) {
+            margin-left:$su*2;
+        }
+    }
+
+    img {
+        width:100%;
+        height:auto;
+    }
+}

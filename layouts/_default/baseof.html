@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- TRAVIS IS OK -->
+<html lang="{{ $.Site.LanguageCode }}">
+  <head>
+    <link rel="preload" href="/assets/fonts/Ubuntu-Regular.woff2" as="font" crossorigin type="font/woff2">
+    <link rel="preload" href="/assets/fonts/IBMPlexSerif-MediumItalic.woff2" as="font" crossorigin type="font/woff2">
+    <meta charset="utf-8">
+    <meta name="language" content="{{ .Site.LanguageCode }}" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+    <meta name="author" content='{{ .Site.Params.Author }}' />
+    <meta name="description" content='{{ .Site.Params.Description }}' />
+    <meta property="og:type" content="website" />
+  	<meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:title" content="{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}" />
+    <meta property="og:description" content='{{ .Site.Params.Description }}' />
+    <meta property="og:image" content="{{ .Site.BaseURL }}assets/img/expo-darwin-l-original-social.jpg" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" type="text/css" href="{{ $style.Permalink | relURL }}">
+    {{ partial "site-favicon.html" . }}
+  </head>
+	<body id="root" class="{{ with .IsHome }}home{{ else }}single{{ end }} {{ .Params.slug }}">
+    <div class="site-wrapper">
+      {{ partial "site-header.html" .}}
+      <main class="site-main {{ if ne .IsHome true }}main-single{{ else }}main-home{{ end }}" id="site-main">{{ block "main" . }}{{ end }}</main>
+      {{ partial "site-footer.html" . }}
+    </div>
+    {{ partial "site-scripts.html" . }}
+  </body>
+</html>

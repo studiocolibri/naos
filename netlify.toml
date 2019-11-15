@@ -1,0 +1,33 @@
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/assets/img/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+[[headers]]
+  for = "/assets/img/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+[[headers]]
+  for = "/assets/img/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+[[headers]]
+  for = "/assets/js/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+[[headers]]
+  for = "/sass/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+[[headers]]
+  for = "/assets/fonts/*.woff2"
+  [headers.values]
+    Content-Type = "application/font-woff2"
+    Cache-Control = "public, max-age=31536000"
+
+[build]
+publish = "public"
+command = "gulp images; hugo -F; gulp minify"

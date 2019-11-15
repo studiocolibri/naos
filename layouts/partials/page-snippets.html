@@ -1,0 +1,22 @@
+<script type="application/ld+json">
+ {
+  "@context": "http://schema.org",
+  "@type": "ExhibitionEvent",
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Liège",
+      "postalCode": "4000",
+      "streetAddress": "Place Xavier Neujean 22"
+    },
+    "name": "Cité Miroir"
+  },
+  "name": "Exposition Darwin, l'original",
+  "description" : "{{.Site.Params.description | safeJS }}",
+  "startDate": "2019-10-12T10:00",
+  "endDate": "2020-02-02T18:00",
+  "url": "{{ .Site.BaseURL | safeJS }}",
+  "image": "{{ .Site.BaseURL | safeJS }}assets/img/expo-darwin-l-original-social.jpg"
+}
+</script>

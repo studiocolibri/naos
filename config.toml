@@ -1,4 +1,4 @@
-baseURL = "https://naos.netlify.com/"
+baseURL = "https://naos-atelier.netlify.com/"
 languageCode = "fr-be"
 title = "Naos Atelier"
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]

@@ -4,9 +4,13 @@
 
 .site-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom:$su*4;
+
+    @media screen and (min-width: 768px) {
+        align-items:center;
+    }
 }
 
 .site-logo {

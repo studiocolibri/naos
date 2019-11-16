@@ -8,12 +8,10 @@ var root = document.body,
 siteNavBtn.addEventListener('click', function() {
 	if (root.classList.contains('open')) {
 		root.classList.remove('open');
-		siteNavBtnIcon.innerHTML = '☰';
 		setTabIndex(-1,siteNavLinks);
 		this.setAttribute('aria-expanded', false);
 	} else {
 		root.classList.add('open');
-		siteNavBtnIcon.innerHTML = 'X';
 		setTabIndex(0,siteNavLinks);
 		this.setAttribute('aria-expanded', true);
 	}
@@ -37,6 +35,8 @@ function toggleTabIndex(array, width) {
 window.addEventListener("resize", function(){
 	clearTimeout(resizeTimer);
 	resizeTimer = setTimeout(function() {
-   		toggleTabIndex(siteNavLinks, 980);
+   		toggleTabIndex(siteNavLinks, 768);
 	}, 300);
 });
+
+toggleTabIndex(siteNavLinks, 768);

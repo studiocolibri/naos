@@ -5,9 +5,14 @@
 .site-footer {
     font-size:0.8rem;
     text-align: center;
-    margin-top:$su*4;
-    margin-bottom:$su;
+    margin:0;
+    padding:$su*4 $su*2 $su $su*2;
     position: relative;
+    display:block;
+
+    body.open & {
+        display:none;
+    }
 
     address {
         font-style: normal;
@@ -16,22 +21,24 @@
 }
 
 #top-btn {
-    position: absolute;
+    position: fixed;
     right: $su;
-    bottom: 0;
-    font-size: 1.4rem;
+    bottom: $su;
+    opacity:0.7;
+    font-size: 2rem;
     background: white;
     border-radius: 50%;
-    padding: 0 0 0.2em 0;
+    padding: 2px 0 0;
     width: 1.2em;
     height: 1.2em;
     border: 1px solid;
-    transition:color 150ms ease-out, background-color 150ms ease-out;
+    transition:color 150ms ease-out, background-color 150ms ease-out, opacity 150ms ease-out;
 
     &:hover, &:focus {
         background-color:$red;
         color:white;
         border-color:$red;
+        opacity:1;
     }
 
     &:active {

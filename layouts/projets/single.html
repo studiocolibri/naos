@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+	<h1><small><a href="/creations">Nos créations</a></small><br>{{ .Title }}</h1>
+	<div class="gallery">
+		{{ range .Params.gallery }}
+			<img src="{{ .img }}" alt="{{ .alt }}">
+		{{ end }}
+	</div>
+{{ end }}

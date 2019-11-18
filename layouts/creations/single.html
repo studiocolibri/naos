@@ -1,8 +1,12 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
-<div class="tw">
-    {{ .Content }}
-</div>
+	<h1>{{ .Title }}</h1>
+	<div class="tw">
+	    {{ .Content }}
+	</div>
+
+	{{ range where .Site.RegularPages "Section" "projets" }}
+		<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+	{{ end }}
 
 {{ end }}

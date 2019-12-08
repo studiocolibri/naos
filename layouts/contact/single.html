@@ -3,12 +3,12 @@
 <div class="flex-2-cols">
 	<div class="flex-2-cols__col">
 		<h1>{{ .Title }}</h1>
-		<p class="fs-b">{{ .Site.Data.contact.title }}</p>
+		<p class="fs-b">{{ .Site.Data.contact.title | safeHTML }}</p>
 		<address>
-		    {{ .Site.Data.contact.address | markdownify }}
+		    {{ .Site.Data.contact.address | safeHTML }}
 		</address>
-		<p><a href="tel:{{ .Site.Data.contact.tel_for_robots }}">{{ .Site.Data.contact.tel_for_humans }}</a></p>
-		<p><a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email}}</a></p>
+		<p><a href="tel:{{ .Site.Data.contact.tel_for_robots }}">{{ .Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
+		<p><a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a></p>
 		<p>{{ .Page.Params.opening }}</p>
 	</div>
 	<div class="flex-2-cols__col">

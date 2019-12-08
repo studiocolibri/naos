@@ -16,6 +16,7 @@
 		address {
 			font-style: normal;
 			margin:1em 0;
+			max-width: 12em;
 	
 			pre, code {
 				@include ff-r;

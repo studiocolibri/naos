@@ -1,9 +1,12 @@
 {{ define "main" }}
 
 	<h1><small><a href="/creations">Nos créations</a></small><br>{{ .Title }}</h1>
+	<p>({{ .Params.category }})</p>
 	<div class="gallery">
+		<a href="#" class="gallery_prev"> < </a>
 		{{ range .Params.gallery }}
-			<img src="{{ .img }}" alt="{{ .alt }}">
+			<img class="gallery_item" src="/assets/uploadsOut{{ .img }}" alt="{{ .alt }}">
 		{{ end }}
+		<a href="#" class="next"> > </a>
 	</div>
 {{ end }}

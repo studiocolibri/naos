@@ -1,7 +1,7 @@
 {{ define "main" }}
 
     <div class="cw">
-        <h1>{{ .Site.Data.contact.title }}</h1>
+        <h1>{{ .Site.Data.contact.title | safeHTML }}</h1>
         <h2>Du mobilier contemporain à votre mesure</h2>
         <p class="tw">Nos projets sont conçus et réalisés « sur mesure » et surtout « à la mesure » de l’environnement de chaque personne afin d’y intégrer au mieux l’objet ou l’aménagement.</p>
     </div>

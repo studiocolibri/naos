@@ -11,10 +11,12 @@
         </h1>
     {{ end }}
 
-	<div class="tw">
-	    {{ .Content }}
-	</div>
-
+    {{ with .Content }}
+        <div class="tw">
+            {{ . }}
+        </div>
+    {{ end }}
+    
     <div class="section-pages">
         {{ range .Pages }}
             {{- $gallery := .Params.gallery -}}

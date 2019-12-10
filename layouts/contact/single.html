@@ -9,7 +9,7 @@
 		</address>
 		<p><a href="tel:{{ .Site.Data.contact.tel_for_robots }}">{{ .Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
 		<p><a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a></p>
-		<p>{{ .Page.Params.opening }}</p>
+		{{ .Content }}
 	</div>
 	<div class="flex-2-cols__col">
 		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.681912047731!2d5.600711951540981!3d50.65159838063079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f094182db11f%3A0x30ede601dffb406c!2sNaos%20Atelier!5e0!3m2!1sfr!2sbe!4v1573822476141!5m2!1sfr!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>

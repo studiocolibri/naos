@@ -32,10 +32,9 @@ function images() {
             })
         ]))
         .pipe(gulpImageresize({
-            width : 326,
-            height : 179,
-            crop : true,
-            upscale : false
+            width : 1240,
+            height : 824,
+            crop : true
           }))
         .pipe(dest(imgDest))
 }

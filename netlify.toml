@@ -31,3 +31,7 @@
 [build]
 publish = "public"
 command = "gulp images; hugo; gulp minify"
+
+[context.production.environment]
+HUGO_VERSION = "0.60.1"
+HUGO_ENV = "production"

@@ -30,4 +30,4 @@
 
 [build]
 publish = "public"
-command = "gulp images; hugo -F; gulp minify"
+command = "gulp images; hugo; gulp minify"

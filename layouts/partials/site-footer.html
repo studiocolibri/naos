@@ -1,4 +1,5 @@
 <footer class="site-footer cw" id="site-footer">
 	{{ .Site.Data.contact.title | safeHTML }} • <address>{{ .Site.Data.contact.address | safeHTML }}</address> • <a href="tel:{{ .Site.Data.contact.tel_for_robots }}">{{ .Site.Data.contact.tel_for_humans | safeHTML }}</a> • <a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email}}</a>
-	<button id="top-btn" onclick="goToTop()" title="Revenir en haut de page" aria-labelledby="Haut de page">⌃</button>
 </footer>
+
+<button id="top-btn" onclick="goToTop()" title="Revenir en haut de page" aria-labelledby="Haut de page">⌃</button>

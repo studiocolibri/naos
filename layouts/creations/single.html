@@ -1,12 +1,20 @@
 {{ define "main" }}
+	<h1>
+		<small><a href="/creations">Nos créations</a> > <a href="/creations/{{ .Params.categories }}">{{ .Params.categories }}</a></small><br>
+		{{ .Title }}
+	</h1>
 
-	<h1>{{ .Title }}</h1>
-	<div class="tw">
-	    {{ .Content }}
+	{{- $list := .Params.gallery -}}
+	{{- $len := len $list -}}
+
+	<div class="gallery">
+		<button class="gallery_btn prev" title="Image précédente"> < </button>
+		<img id="gallery_img" src="/assets/uploadsOut{{ range first 1 $list }}{{ . }}{{ end }}">
+		<button class="gallery_btn next" title="Image suivante"> > </button>
 	</div>
 
-	{{ range where .Site.RegularPages "Section" "projets" }}
-		<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-	{{ end }}
-
+	<script>
+		const imgs = [{{ range $i, $el := $list }}{{ $el }}{{ if lt (add $i 1) $len }}, {{ end }}{{ end }}];
+	</script>
 {{ end }}
+

@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+    {{ $sectionPage := .Site.GetPage "section" "creations" }}
+
+    {{ if .IsAncestor $sectionPage }}
+        <h1>{{ .Title }}</h1>
+    {{ else }}
+        <h1>
+            <small><a href="{{ $sectionPage.Permalink }}">{{ $sectionPage.Title }}</a></small><br>
+            {{ .Title }}
+        </h1>
+    {{ end }}
+
+	<div class="tw">
+	    {{ .Content }}
+	</div>
+
+    <div class="section-pages">
+        {{ range .Pages }}
+            {{- $gallery := .Params.gallery -}}
+            <article>
+                <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                <p>{{ .Content }}</p>
+            </article>
+        {{ end }}
+    </div>
+
+{{ end }}

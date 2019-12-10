@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink | relURL }}">
     {{ partial "site-favicon.html" . }}
   </head>
-	<body id="root" class="{{ with .IsHome }}accueil{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ with .Site.GetPage "section" "projets" }} projets{{ end }}">
+	<body id="root" class="{{ with .IsHome }}accueil{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ if eq .Page.Section "creations" }} creations{{ end }}">
     <div class="site-wrapper mw">
       {{ partial "site-header.html" .}}
       <main class="site-main {{ if ne .IsHome true }}main-single{{ else }}main-home{{ end }}" id="site-main">{{ block "main" . }}{{ end }}</main>

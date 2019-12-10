@@ -1,0 +1,36 @@
+.creations {
+
+	h1 {
+
+		small {
+			font-size:50%;
+		}
+	}
+}
+
+.gallery {
+	position: relative;
+	width:100%;
+}
+
+#gallery_img {
+	width:100%;
+	height:auto;
+}
+
+.gallery_btn {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	background:white;
+	width:2em;
+	height:2em;
+
+	&.prev {
+		left:0;
+	}
+
+	&.next {
+		right:0;
+	}
+}

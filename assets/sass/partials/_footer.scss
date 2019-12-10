@@ -39,10 +39,9 @@
     width: 40px;
     height: 40px;
     border: 1px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 0.3em;
+    display: block;
+    text-align: center;
+    padding: 0.2em;
     transition:color 150ms ease-out, background-color 150ms ease-out, opacity 150ms ease-out;
 
     &:hover, &:focus {

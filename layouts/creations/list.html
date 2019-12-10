@@ -19,11 +19,10 @@
     
     <div class="section-pages">
         {{ range .Pages }}
-            {{- $gallery := .Params.gallery -}}
-            <article>
-                <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-                <p>{{ .Content }}</p>
-            </article>
+            <div>
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                {{ with .Content }}{{ . }}{{ end }}
+            </div>
         {{ end }}
     </div>
 

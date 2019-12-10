@@ -1,6 +1,7 @@
 .creations {
 
 	h1 {
+		margin-bottom:$su*1.5;
 
 		small {
 			font-size:50%;
@@ -11,6 +12,7 @@
 .gallery {
 	position: relative;
 	width:100%;
+	margin-top:$su*2
 }
 
 #gallery_img {

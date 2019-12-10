@@ -7,4 +7,4 @@ gallery:
   - "/BAM-2.JPG"
 ---
 
-Cuisine réalisée en noyer et stratifié Black Sirocco, plan de travail en inox
+Cuisine réalisée en noyer et stratifié Black Sirocco, plan de travail en inox.

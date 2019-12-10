@@ -2,6 +2,7 @@
 type: atelier
 slug: atelier
 title: L'atelier
+img: "/naos-atelier.jpg"
 ---
 
 Le travail se fait en articulation permanente entre l’atelier de réalisation et le bureau de conception.

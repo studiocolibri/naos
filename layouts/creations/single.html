@@ -1,8 +1,10 @@
 {{ define "main" }}
 	<h1>
 		<small><a href="/creations">Nos créations</a> > <a href="/creations/{{ .Params.categories }}">{{ .Params.categories }}</a></small><br>
-		{{ .Title }}
+		{{ .Title }} <small>({{ .Params.year }})</small>
 	</h1>
+	
+	{{ .Content }}
 
 	{{- $list := .Params.gallery -}}
 	{{- $len := len $list -}}

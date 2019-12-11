@@ -14,7 +14,7 @@ body {
     font-size:18px;
     font-weight:400;
     line-height:1.5;
-    min-height:100%;
+    min-height:100vh;
     background-color: white;
     color:$gray-text;
     -webkit-font-smoothing: antialiased;
@@ -42,6 +42,7 @@ body * {
     margin: 0 auto;
     padding:$su/2;
     position: relative;
+    min-height: 100vh;
 
     @media screen and (min-width:768px) {
         padding:$su;
@@ -55,6 +56,7 @@ body * {
 #site-main {
     position:relative;
     min-height:100%;
+    margin:0 auto $su*5 auto;
     
     body.open & {
         z-index:-2;
@@ -62,7 +64,6 @@ body * {
 
     body.single & {
         max-width: $cw;
-        margin:0 auto;
     }
 }
 
@@ -84,7 +85,7 @@ body * {
 
 //text width
 .tw {
-    max-width: 38em;
+    max-width: 30em;
     width:100%;
 }
 

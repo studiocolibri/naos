@@ -17,13 +17,27 @@
         </div>
     {{ end }}
     
-    <div class="section-pages">
-        {{ range .Pages }}
-            <div>
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                {{ with .Content }}{{ . }}{{ end }}
-            </div>
-        {{ end }}
-    </div>
+    {{ if .IsAncestor $sectionPage }}
+        <section class="list-categories" aria-label="Catégories">
+            {{ range .Pages }}
+                <div class="list-categories__item">
+                    <a href="{{ .Permalink }}">
+                        <img src="/assets/uploadsOut/{{ .Params.img }}" alt="">
+                        <h2>{{ .Title }}</h2>
+                    </a>
+                </div>
+            {{ end }}
+        </section>
+    {{ else }}
+        <section class="list-projects" aria-label="Projets">
+            {{ range .Pages.ByDate.Reverse }}
+            {{- $list := .Params.gallery -}}
+	        {{- $len := len $list -}}
+                <a class="list-projects__item" href="{{ .Permalink }}">
+                    <img src="/assets/uploadsOut/{{ range first 1 $list }}{{ . }}{{ end }}" alt="">
+                </a>
+            {{ end }}
+        </section>
+    {{ end }}
 
 {{ end }}

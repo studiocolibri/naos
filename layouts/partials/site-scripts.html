@@ -2,9 +2,11 @@
 {{ $topBtn := resources.Get "js/topBtn.js" }}
 {{ $defaultJS := slice $nav $topBtn | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
-{{ $gallery := resources.Get "js/gallery.js" }}
-{{ $galleryPublic := $gallery | resources.Minify | resources.Fingerprint }}
 <script src="{{ $globalJS.Permalink }}"></script>
+
 {{ if and (eq .Page.Section "creations") (eq .Page.Kind "page") }}
-<script src="{{ $galleryPublic.Permalink }}"></script>
+    <script src="/assets/js/siema.min.js"></script>
+    {{ $gallery := resources.Get "js/gallery.js" }}
+    {{ $galleryPublic := $gallery | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $galleryPublic.Permalink }}"></script>
 {{ end }}

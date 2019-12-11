@@ -6,12 +6,16 @@
     font-size:0.8rem;
     text-align: center;
     margin:0 auto;
-    padding:$su*4 $su/2 $su;
+    padding:$su/2;
     position: relative;
     display:block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
     @media screen and (min-width:768px) {
-        padding:$su*4 $su $su;
+        padding:$su;
     }
 
     body.open & {

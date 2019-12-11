@@ -9,13 +9,152 @@
 	}
 }
 
+.list-categories {
+	margin:$su*3 auto;
+	display:flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.list-categories__item {
+	width:100%;
+	position: relative;
+	margin-bottom:$su*2;
+	line-height: 1;
+	display:block;
+	flex:0 0 100%;
+
+	@media screen and (min-width:768px) {
+		flex:0 0 calc(50% - #{$su*2});
+		margin-right:$su;
+		align-items: stretch;
+
+		&:nth-of-type(2n) {
+			margin-left:$su/2;
+		}
+	}
+
+	&:nth-of-type(2n) {
+		
+		h2 {
+			text-align:left;
+			right:0;
+		}
+	}
+
+	a {
+		display: block;
+	
+		&:hover, &:focus {
+	
+			h2 {
+				width:60%;
+			}
+	
+			img {
+				filter:contrast(110%);
+			}
+		}
+	}
+
+	img {
+		margin-top:1.25em;
+		width: 100%;
+		height:auto;
+		transition:filter 150ms ease-out;
+	}
+
+	h2 {
+		position: absolute;
+		top:0;
+		background-color:$red;
+		width:80%;
+		margin:0;
+		text-align: right;
+		@include ff-r;
+		color:white;
+		padding:0.25em 0.4em;
+		transition:width 150ms ease-out;
+	}
+}
+
+.list-projects {
+	display:flex;
+	flex-wrap: wrap;
+	align-items:flex-start;
+	justify-content: center;
+}
+
+.list-projects__item {
+	flex: 0 0 100%;
+	margin:0 0 $su 0;
+	line-height: 0;
+	display: block;
+	position: relative;
+	overflow:hidden;
+
+	@media screen and (min-width:768px) {
+		flex:0 0 50%;
+		margin:0;
+	}
+
+	&:before {
+		content: "[+]";
+		display:block;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+		color:white;
+		opacity:0;
+		transition: opacity 150ms ease-out;
+		z-index:2;
+	}
+
+	&:after {
+		content:'';
+		display:block;
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		background:$red;
+		background:rgba(220, 8, 20, 0.3);
+		opacity:0;
+		transition: opacity 150ms ease-out;
+		z-index:1;
+	}
+
+	img {
+		display: block;
+		transition: filter 150ms ease-out, transform 150ms ease-out;
+	}
+
+	&:hover, &:focus {
+		
+		&:before {
+			opacity:1;
+		}
+
+		&:after {
+			opacity:1;
+		}
+
+		img {
+			filter:blur(1px);
+			transform: scale(1.1);
+		}
+	}
+}
+
 .gallery {
 	position: relative;
 	width:100%;
-	margin-top:$su*2
+	margin-top:$su*2;
 }
 
-#gallery_img {
+.gallery_img {
 	width:100%;
 	height:auto;
 }
@@ -34,5 +173,9 @@
 
 	&.next {
 		right:0;
+	}
+
+	&:hover, &:focus {
+		cursor:pointer;
 	}
 }

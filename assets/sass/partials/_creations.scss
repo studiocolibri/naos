@@ -30,7 +30,8 @@
 		align-items: stretch;
 
 		&:nth-of-type(2n) {
-			margin-left:$su/2;
+			margin-left:$su;
+			margin-right:0;
 		}
 	}
 

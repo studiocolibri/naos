@@ -7,39 +7,45 @@
 
 .home-blocks {
     margin-top:$su*4;
-    margin-bottom:65vw;
+    margin-bottom:0;
 }
 
 .home-block {
     display: block;
     position: relative;
     width: 100%;
-    margin-bottom:40vw;
+    margin-bottom:$su*4;
     background:none;
 
     picture {
-        position: absolute;
-        top: 3em;
+        position: relative;
+        top: 0;
         right:0;
     }
 
     img {
         width:80vw;
+        margin-left:3em;
+        padding-top:3em;
         mix-blend-mode:darken;
     }
 
     &:nth-of-type(2n) {
         
         picture {
-            left:0;
-            right:auto;
+            margin-left:0;
+            margin-right:3em;
+        }
+
+        img {
+            margin-left:0;
         }
 
         .home-block__title-container {
-            margin-left:auto;
+            right:0;
 
             h2 {
-                transform: rotate(270deg)translate(0.4em,-1.75em);
+                transform: rotate(270deg)translate(8vw,-1.75em);
                 transform-origin: right top;
             }
         }
@@ -47,17 +53,20 @@
 }
 
 .home-block__title-container {
-    width:8em;
-    height:8em;
+    width:40vw;
+    height:40vw;
     background:$red;
-    position:relative;
+    position: absolute;
+    top:0;
+    max-width: 260px;;
+    max-height: 260px;;
     
     h2 {
         @include ff-r;
         color:white;
         font-weight: normal;
-        font-size: 1.4rem;
-        transform: rotate(270deg) translate(-6em, 0.3em);
+        font-size: calc(2vw + 0.8em);
+        transform: rotate(270deg) translate(-33vw,0.3em);
         transform-origin: left top;
     }
 }

@@ -2,6 +2,16 @@
 layout: home
 title: "Naos atelier"
 subtitle: "Du mobilier contemporain à votre mesure"
+blocks:
+    - title: "Créations"
+      img: "/naos-atelier-salons.jpg"
+      link: "creations"
+    - title: "Atelier"
+      img: "/naos-atelier.jpg"
+      link: "atelier"
+    - title: "Contact"
+      img: "/naos-atelier-salons.jpg"
+      link: "contact"
 ---
 
 Nos projets sont conçus et réalisés « sur mesure » et surtout « à la mesure » de l’environnement de chaque personne afin d’y intégrer au mieux l’objet ou l’aménagement.

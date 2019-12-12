@@ -1,4 +1,4 @@
 ---
 title: Salons
-img: "naos-atelier-salons.jpg"
+img: "/naos-atelier-salons.jpg"
 ---

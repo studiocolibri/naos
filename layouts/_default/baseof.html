@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <meta name="language" content="{{ .Site.LanguageCode }}" />
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+    <title>{{ .Site.Title }}{{ with .Params.categories }} | {{ . }}{{ end }}{{ with .Params.Title }} | {{ . }}{{ end }}</title>
     <meta name="author" content='{{ .Site.Params.Author }}' />
-    <meta name="description" content='{{ .Site.Params.Description }}' />
+    <meta name="description" content='{{ with .Content }}{{ . | truncate 158 }}{{ else }}{{ .Site.Params.Description }}{{ end }}' />
     <meta property="og:type" content="website" />
   	<meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:title" content="{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}" />
-    <meta property="og:description" content='{{ .Site.Params.Description }}' />
-    <meta property="og:image" content="{{ .Site.BaseURL }}assets/img/expo-darwin-l-original-social.jpg" />
+    <meta property="og:title" content="{{ .Site.Title }}{{ with .Params.categories }} | {{ . }}{{ end }}{{ with .Params.Title }} | {{ . }}{{ end }}" />
+    <meta property="og:description" content='{{ with .Content }}{{ . | truncate 158 }}{{ else }}{{ .Site.Params.Description }}{{ end }}' />
+    <!-- <meta property="og:image" content="{{ .Site.BaseURL }}assets/upload" /> -->
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.PostCSS (dict "config" "postcss.config.js") | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink | relURL }}">
     {{ partial "site-favicon.html" . }}
   </head>
-	<body id="root" class="{{ with .IsHome }}accueil{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ if eq .Page.Section "creations" }} creations{{ end }}">
+	<body id="root" class="{{ with .IsHome }}home{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ if eq .Page.Section "creations" }} creations{{ end }}">
     <div class="site-wrapper mw">
       {{ partial "site-header.html" .}}
       <main class="site-main {{ if ne .IsHome true }}main-single{{ else }}main-home{{ end }}" id="site-main">{{ block "main" . }}{{ end }}</main>

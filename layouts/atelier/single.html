@@ -2,12 +2,16 @@
 
     <h1>{{ .Title }}</h1>
 
-    <div class="tw flex-2-cols">
-        <div class="atelier-text flex-2-cols__col">
+    <div class="flex-2-cols">
+        <div class="atelier-text flex-2-cols__col tw">
             {{ .Content }}
         </div>
         <div class="atelier-img flex-2-cols__col">
-            <img class="atelier-img__img" src="/assets/img{{ .Params.img }}" alt="Photo de notre atelier">
+            <picture>
+                <source srcset="/assets/uploadsOut/400{{ .Params.img }}" media="(max-width: 400px)">
+                    <source srcset="/assets/uploadsOut/768{{ .Params.img }}" media="(max-width: 980px)">
+                <img class="atelier-img__img" src="/assets/uploadsOut/620{{ .Params.img }}" alt="Photo de l'atelier">
+            </picture>
         </div>
     </div>
 

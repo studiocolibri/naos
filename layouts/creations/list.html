@@ -19,10 +19,13 @@
     
     {{ if .IsAncestor $sectionPage }}
         <section class="list-categories" aria-label="Catégories">
-            {{ range .Pages }}
+            {{ range .Sections.ByTitle }}
                 <div class="list-categories__item">
                     <a href="{{ .Permalink }}">
-                        <img src="/assets/uploadsOut/{{ .Params.img }}" alt="">
+                        <picture>
+                            <source srcset="/assets/uploadsOut/400{{ .Params.img }}" media="(max-width: 400px)">
+                            <img src="/assets/uploadsOut/620{{ .Params.img }}" alt="">
+                        </picture>
                         <h2>{{ .Title }}</h2>
                     </a>
                 </div>
@@ -30,12 +33,20 @@
         </section>
     {{ else }}
         <section class="list-projects" aria-label="Projets">
-            {{ range .Pages.ByDate.Reverse }}
-            {{- $list := .Params.gallery -}}
-	        {{- $len := len $list -}}
-                <a class="list-projects__item" href="{{ .Permalink }}">
-                    <img src="/assets/uploadsOut/{{ range first 1 $list }}{{ . }}{{ end }}" alt="">
-                </a>
+            {{ $projects := .Pages.ByDate.Reverse }}
+            {{ if gt (len $projects) 0 }}
+                {{ range $projects }}
+                    {{- $list := .Params.gallery -}}
+                    {{- $len := len $list -}}
+                    <a class="list-projects__item" href="{{ .Permalink }}">
+                        <picture>
+                            <source srcset="/assets/uploadsOut/400{{ range first 1 $list }}{{ . }}{{ end }}" media="(max-width: 400px)">
+                            <img src="/assets/uploadsOut/620{{ range first 1 $list }}{{ . }}{{ end }}" alt="{{ .Title }}">
+                        </picture>
+                    </a>
+                {{ end }}
+            {{ else }}
+                <p>Il n'y a aucun projet correspondant à cette catégorie pour l'instant.</p>
             {{ end }}
         </section>
     {{ end }}

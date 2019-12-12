@@ -30,8 +30,7 @@
 		align-items: stretch;
 
 		&:nth-of-type(2n) {
-			margin-left:$su;
-			margin-right:0;
+			margin:$su*1.5 0 0 $su;
 		}
 	}
 
@@ -47,9 +46,14 @@
 		display: block;
 	
 		&:hover, &:focus {
-	
+			background: none;
+
 			h2 {
 				width:60%;
+
+				@media screen and (min-width:1024px) {
+					width:50%;
+				}
 			}
 	
 			img {
@@ -73,9 +77,23 @@
 		margin:0;
 		text-align: right;
 		@include ff-r;
+		font-size:1.4rem;
 		color:white;
 		padding:0.25em 0.4em;
 		transition:width 150ms ease-out;
+
+		@media screen and (min-width:380px) {
+			font-size:1.6rem;
+		}
+
+		@media screen and (min-width:768px) {
+			font-size:1.4rem;
+		}
+
+		@media screen and (min-width:1024px) {
+			font-size:1.6rem;
+			width:60%;
+		}
 	}
 }
 
@@ -83,7 +101,7 @@
 	display:flex;
 	flex-wrap: wrap;
 	align-items:flex-start;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .list-projects__item {
@@ -100,13 +118,20 @@
 	}
 
 	&:before {
-		content: "[+]";
+		content: "+";
 		display:block;
 		position:absolute;
 		top:50%;
 		left:50%;
 		transform:translate(-50%, -50%);
 		color:white;
+		background:$red;
+		width:40px;
+		height:40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 32px;
 		opacity:0;
 		transition: opacity 150ms ease-out;
 		z-index:2;
@@ -129,6 +154,7 @@
 
 	img {
 		display: block;
+		width:100%;
 		transition: filter 150ms ease-out, transform 150ms ease-out;
 	}
 
@@ -165,8 +191,20 @@
 	top:50%;
 	transform:translateY(-50%);
 	background:white;
-	width:2em;
-	height:2em;
+	width:30px;
+	height:30px;
+	background:$red;
+	color:white;
+	border: none;
+	font-size:28px;
+	transition:background-color 150ms ease-out, color 150ms ease-out;
+
+	@media screen and (min-width:400px) {
+		width:40px;
+		height:40px;
+		font-size:32px;
+
+	}
 
 	&.prev {
 		left:0;
@@ -178,5 +216,7 @@
 
 	&:hover, &:focus {
 		cursor:pointer;
+		background:white;
+		color:$red;
 	}
 }

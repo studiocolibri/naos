@@ -1,4 +1,4 @@
 ---
 title: Cuisines
-img: "naos-atelier-cuisines.jpg"
+img: "/naos-atelier-cuisines.jpg"
 ---

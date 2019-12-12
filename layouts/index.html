@@ -1,9 +1,23 @@
 {{ define "main" }}
 
-    <div class="cw">
+    <section class="cw">
         <h1>{{ .Title }}</h1>
         <h2>{{ .Params.subtitle}}</h2>
         <p class="tw">{{ .Content | plainify }}</p>
-    </div>
+    </section>
+
+    <section class="home-blocks cw">
+        {{ range .Params.blocks }}
+            <a class="home-block" href="/{{ .link }}">
+                <div class="home-block__title-container">
+                    <h2>{{ .title }}</h2>
+                </div>
+                <picture>
+                    <source srcset="/assets/uploadsOut/400{{ .img }}" media="(max-width: 400px)">
+                    <img src="/assets/uploadsOut/620{{ .img }}" alt="">
+                </picture>
+            </a>
+        {{ end }}
+    </section>
 
 {{ end }}

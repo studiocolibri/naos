@@ -56,7 +56,7 @@ body * {
 #site-main {
     position:relative;
     min-height:100%;
-    margin:0 auto $su*5 auto;
+    margin:0 auto $su*7 auto;
     
     body.open & {
         z-index:-2;
@@ -85,7 +85,7 @@ body * {
 
 //text width
 .tw {
-    max-width: 30em;
+    max-width: 28em;
     width:100%;
 }
 

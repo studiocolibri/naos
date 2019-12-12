@@ -2,7 +2,7 @@ const {series, src, dest} = require('gulp');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
-const gulpImageresize = require("gulp-image-resize");
+const imageResize = require("gulp-image-resize");
 const gulpNewer = require("gulp-newer");
 
 function minify() {
@@ -12,32 +12,23 @@ function minify() {
 }
 
 const imgSrc = "static/assets/uploads/**";
-const imgDest = "static/assets/uploadsOut";
 
-function images() {
-    return src(imgSrc)
-        .pipe(gulpNewer(imgDest))
+function images(cb) {
+    [400, 620, 768, 1240].forEach(function (size) {
+      src(imgSrc)
+        .pipe(gulpNewer(`static/assets/uploadsOut/${size}`))
         .pipe(imagemin([    
-            imagemin.gifsicle({interlaced: true}),
             imagemin.jpegtran({progressive: true}),
             imageminMozjpeg({
                 quality: 80
-            }),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-                ]
             })
         ]))
-        .pipe(gulpImageresize({
-            width : 1240,
-            height : 824,
-            crop : true
-          }))
-        .pipe(dest(imgDest))
-}
+        .pipe(imageResize({ width: size }))
+        .pipe(imagemin())
+        .pipe(dest(`static/assets/uploadsOut/${size}`))
+    });
+    cb();
+  }
 
 exports.default = series(minify, images);
 exports.images = images;

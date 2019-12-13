@@ -95,6 +95,14 @@
     font-size: 1.2rem;
     transition: opacity 200ms ease-out, color 200ms ease-out;
 
+    @media screen and (min-width:768px) {
+        font-size:1.1rem;
+    }
+
+    @media screen and (min-width:800px) {
+        font-size:1.2rem;
+    }
+
     body.open & {
         width:100%;
         text-align: center;
@@ -178,7 +186,7 @@
     display:none;
     position: absolute;
     margin: 0;
-    padding: 0;
+    padding: 5px 0 0 0;
     left: 5px;
     top:50px;
     background-color:white;

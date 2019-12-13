@@ -12,20 +12,21 @@ function minify() {
 }
 
 const imgSrc = "static/assets/uploads/**";
+const dimensions = [ [400, 266], [620, 412], [768, 511], [1240, 824] ];
 
 function images(cb) {
-    [400, 620, 768, 1240].forEach(function (size) {
+  dimensions.forEach(function (size) {
       src(imgSrc)
-        .pipe(gulpNewer(`static/assets/uploadsOut/${size}`))
+        .pipe(gulpNewer(`static/assets/uploadsOut/${size[0]}`))
         .pipe(imagemin([    
             imagemin.jpegtran({progressive: true}),
             imageminMozjpeg({
                 quality: 80
             })
         ]))
-        .pipe(imageResize({ width: size }))
+        .pipe(imageResize({ width: size[0], height: size[1], upscale: true, crop: true }))
         .pipe(imagemin())
-        .pipe(dest(`static/assets/uploadsOut/${size}`))
+        .pipe(dest(`static/assets/uploadsOut/${size[0]}`))
     });
     cb();
   }

@@ -15,7 +15,7 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000"
 [[headers]]
-  for = "/assets/*.js"
+  for = "/js/*.js"
   [headers.values]
     Cache-Control = "public, max-age=31536000"
 [[headers]]

@@ -176,14 +176,17 @@
         &:hover, &:focus {
     
             .site-nav__submenu {
-                display:block;
+                opacity:1;
+                overflow: visible;
             }
         }
     }
 }
 
 .site-nav__submenu {
-    display:none;
+    opacity:0;
+    height:0;
+    overflow: hidden;
     position: absolute;
     margin: 0;
     padding: 5px 0 0 0;
@@ -191,6 +194,7 @@
     top:50px;
     background-color:white;
     background-color:rgba(255,255,255,0.9);
+    transition:opacity 150ms ease-out;
 
     li {
         display:block;

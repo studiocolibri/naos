@@ -1,9 +1,10 @@
 {{ define "main" }}
 
-    <section class="cw">
+    <section class="home-intro cw">
         <h1>{{ .Title }}</h1>
         <h2>{{ .Params.subtitle}}</h2>
         <p class="tw">{{ .Content | plainify }}</p>
+        <p class="more-info">Plus d'infos</p>
     </section>
 
     <section class="home-blocks cw">
@@ -14,7 +15,7 @@
                 </div>
                 <picture>
                     <source srcset="/assets/uploadsOut/400{{ .img }}" media="(max-width: 400px)">
-                    <img src="/assets/uploadsOut/620{{ .img }}" alt="">
+                    <img src="/assets/uploadsOut/620{{ .img }}" alt="" width="620" height="412">
                 </picture>
             </a>
         {{ end }}

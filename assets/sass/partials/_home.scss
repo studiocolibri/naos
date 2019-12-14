@@ -5,6 +5,47 @@
     }
 }
 
+.home-intro {
+    position: relative;
+}
+
+.more-info {
+    display:block;
+    font-size:1.2rem;
+    text-transform:uppercase;
+    @include ff-l;
+
+    &:after {
+        content:'↓';
+        padding-left:0.5em;
+    }
+    
+    @media screen and (min-width:768px) {
+        position: absolute;
+        right:-2.1em;
+        bottom:-50px;
+        margin:0;
+        transform: rotate(270deg);
+        
+        &:before {
+            content:'⟵';
+            top:0;
+            left:0;
+            padding-right:0.5em;
+            color:$red;
+        }
+
+        &:after {
+            display:none;
+        }
+    }
+
+    @media screen and (min-width:980px) {
+        right:-1.8em;
+    }
+
+}
+
 .home-blocks {
     margin-top:$su*4;
     margin-bottom:$su*4;
@@ -14,6 +55,10 @@
         display:flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top:$su*6;
     }
 }
 

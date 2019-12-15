@@ -34,3 +34,5 @@ fields:
 - type: image_gallery
   name: gallery
   label: Gallerie photo
+pages:
+- content/creations/cuisines/cuisine-01.md

@@ -1,0 +1,16 @@
+---
+label: Création
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: categories
+  label: categories
+- type: datetime
+  name: date
+  label: date
+- type: image_gallery
+  name: gallery
+  label: gallery

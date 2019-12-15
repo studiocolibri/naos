@@ -4,13 +4,33 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
-- type: text
-  name: categories
-  label: categories
+  label: Titre du projet
+- name: categories
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - atypiques
+    - bureaux
+    - chambres
+    - cuisines
+    - magasins
+    - publics
+    - salles-de-bain
+    - salons
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Catégorie
 - type: datetime
   name: date
-  label: date
+  label: Date du projet
+  config:
+    date_format: YYYY/MM/DD
+    export_format: YYYY/MM/DD
 - type: image_gallery
   name: gallery
-  label: gallery
+  label: Gallerie photo

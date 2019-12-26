@@ -1,0 +1,10 @@
+---
+label: Page de catgorie
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: file
+  name: img
+  label: img

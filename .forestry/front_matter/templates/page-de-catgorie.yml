@@ -8,3 +8,5 @@ fields:
 - type: file
   name: img
   label: Image
+pages:
+- content/creations/atypiques/_index.md

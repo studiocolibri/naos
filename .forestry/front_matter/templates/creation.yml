@@ -35,4 +35,5 @@ fields:
   name: gallery
   label: Galerie photo
 pages:
+- content/creations/atypiques/cration-atypique-n°1.md
 - content/creations/cuisines/cuisine-01.md

@@ -5,22 +5,23 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Titre
 - type: text
   name: subtitle
-  label: subtitle
+  label: Sous-titre
 - type: field_group_list
   name: blocks
-  label: blocks
+  label: Blocs
   fields:
   - type: text
     name: title
-    label: title
+    label: Titre
   - type: file
     name: img
-    label: img
+    label: Image
   - type: text
     name: link
-    label: link
+    label: Lien

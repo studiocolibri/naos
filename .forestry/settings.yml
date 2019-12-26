@@ -7,7 +7,6 @@ sections:
 - type: document
   path: data/contact.toml
   label: Infos de contact
-  match: "**/*"
 - type: directory
   path: content
   label: Pages

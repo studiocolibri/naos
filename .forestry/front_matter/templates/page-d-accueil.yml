@@ -1,0 +1,26 @@
+---
+label: Page d'accueil
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: field_group_list
+  name: blocks
+  label: blocks
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: file
+    name: img
+    label: img
+  - type: text
+    name: link
+    label: link

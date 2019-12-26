@@ -1,13 +1,15 @@
 ---
-label: Infos de contact
+label: Contact
 hide_body: false
 fields:
 - type: text
   name: type
   label: type
+  hidden: true
 - type: text
   name: slug
   label: slug
+  hidden: true
 - type: text
   name: title
   label: title

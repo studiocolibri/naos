@@ -11,7 +11,7 @@ sections:
   match: "*"
 - type: directory
   path: content/creations
-  label: Creations
+  label: Créations
   create: all
   match: "**/*"
 upload_dir: static/assets/uploads

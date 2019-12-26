@@ -1,0 +1,13 @@
+---
+label: Infos de contact
+hide_body: false
+fields:
+- type: text
+  name: type
+  label: type
+- type: text
+  name: slug
+  label: slug
+- type: text
+  name: title
+  label: title

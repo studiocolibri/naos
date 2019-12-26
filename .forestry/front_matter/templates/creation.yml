@@ -33,6 +33,6 @@ fields:
     export_format: YYYY/MM/DD
 - type: image_gallery
   name: gallery
-  label: Gallerie photo
+  label: Galerie photo
 pages:
 - content/creations/cuisines/cuisine-01.md

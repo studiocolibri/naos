@@ -10,3 +10,4 @@ fields:
   label: Image
 pages:
 - content/creations/atypiques/_index.md
+- content/creations/bureaux/_index.md

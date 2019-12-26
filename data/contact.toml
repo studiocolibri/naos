@@ -1,8 +1,6 @@
-homepage_title = "Naos Atelier - Liège - meubles sur mesure"
-title = "Naos&nbsp;Atelier&nbsp;<small>sc</small>"
-address = '''
-    Quai&nbsp;de&nbsp;Coronmeuse&nbsp;32
-    4000&nbsp;Liège'''
-tel_for_robots = "003242277405"
-tel_for_humans = "0032&nbsp;(0)4&nbsp;227&nbsp;74&nbsp;05"
+address = "    Quai&nbsp;de&nbsp;Coronmeuse&nbsp;32\n    4000&nbsp;Liège"
 email = "info@naos-atelier.be"
+homepage_title = "Naos Atelier - Liège - meubles sur mesure"
+tel_for_humans = "0032&nbsp;(0)4&nbsp;227&nbsp;74&nbsp;05"
+tel_for_robots = "003242277405"
+title = "Naos&nbsp;Atelier&nbsp;<small>sc</small>"

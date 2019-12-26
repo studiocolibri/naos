@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: data/contact.toml
+  label: Infos de contact
+  match: "**/*"
 - type: directory
   path: content
   label: Pages

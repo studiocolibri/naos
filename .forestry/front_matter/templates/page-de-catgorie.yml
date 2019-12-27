@@ -8,6 +8,16 @@ fields:
 - type: file
   name: img
   label: Image
+- name: weight
+  type: number
+  label: Ordre d'apparition
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 pages:
 - content/creations/atypiques/_index.md
 - content/creations/bureaux/_index.md

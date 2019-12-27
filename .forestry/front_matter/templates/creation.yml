@@ -5,26 +5,6 @@ fields:
 - type: text
   name: title
   label: Titre du projet
-- name: categories
-  type: select
-  default: ''
-  config:
-    required: false
-    options:
-    - atypiques
-    - bureaux
-    - chambres
-    - cuisines
-    - magasins
-    - publics
-    - salles-de-bain
-    - salons
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Catégorie
 - type: datetime
   name: date
   label: Date du projet
@@ -35,5 +15,10 @@ fields:
 - type: image_gallery
   name: gallery
   label: Galerie photo
+- name: categories
+  type: text
+  config:
+    required: false
+  label: Catégorie
 pages:
 - content/creations/cuisines/cuisine-01.md

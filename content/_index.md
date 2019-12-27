@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "Naos atelier"
-subtitle: "Du mobilier contemporain à votre mesure"
+subtitle: "du mobilier contemporain à&nbsp;votre&nbsp;mesure"
 blocks:
     - title: "Créations"
       img: "/naos-atelier-salons.jpg"

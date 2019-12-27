@@ -1,8 +1,9 @@
 {{ define "main" }}
 
     <section class="home-intro cw">
-        <h1>{{ .Title }}</h1>
-        <h2>{{ .Params.subtitle}}</h2>
+        <h1>{{ .Title }}<br>
+            <span>{{ .Params.subtitle | safeHTML }}</span>
+        </h1>
         <p class="tw">{{ .Content | plainify }}</p>
         <p class="more-info">Plus d'infos</p>
     </section>

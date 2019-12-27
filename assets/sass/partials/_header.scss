@@ -3,10 +3,23 @@
 */
 
 .site-header {
+    margin-bottom:$su*4;
+    box-shadow: -2px 5px 6px -3px lightgray;
+    margin-top:$su/2;
+    padding-bottom:$su/2;
+    padding-left:$su/2;
+
+    @media screen and (min-width: 768px) {
+        margin-top:$su;
+        padding-bottom:$su;
+        padding-left:$su/2;
+    }
+}
+
+.site-header__container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom:$su*4;
 
     @media screen and (min-width: 768px) {
         align-items:center;
@@ -25,10 +38,12 @@
     }
     
     img {
-        max-width:120px;
+        max-width:140px;
+        margin-top:$su/2;
+        height:auto;
         
         @media screen and (min-width:768px) {
-            max-width:180px;
+            max-width: 240px;
         }
     }
 }

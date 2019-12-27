@@ -19,7 +19,7 @@
     
     {{ if .IsAncestor $sectionPage }}
         <section class="list-categories" aria-label="Catégories">
-            {{ range .Sections.ByTitle }}
+            {{ range .Sections.ByWeight }}
                 <div class="list-categories__item">
                     <a href="{{ .Permalink }}">
                         <picture>

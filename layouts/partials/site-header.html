@@ -1,27 +1,29 @@
-<header class="site-header cw">
-	<a class="site-logo" href="/">
-		<img src="{{.Site.BaseURL}}assets/img/naos-logo.svg" alt="Logo de Naos Atelier" title="Naos Atelier" width="180" height="58">
-	</a>
-	<button id="site-nav-btn" name="menu" aria-expanded="false" title="Bouton d'ouverture/fermeture du menu principal">
-		<svg version="1.1" id="site-nav-btn__img" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 33.72 22" width="33.72" height="22" xml:space="preserve"><style>.site-nav-btn__img__color{fill:none;stroke:#707070;stroke-width:2;stroke-linecap:round}</style><g id="menu" transform="translate(-308.5 -21.5)"><path id="Ligne_1" class="site-nav-btn__img__color" d="M309.5 22.5h31.72"/><path id="Ligne_2" class="site-nav-btn__img__color" d="M309.5 32.5h31.72"/><path id="Ligne_3" class="site-nav-btn__img__color" d="M309.5 42.5h31.72"/></g></svg>
-	</button>
-	<nav class="site-nav" id="site-nav">
-		<a class="site-nav__link" href="/"><span>Accueil</span></a>
-		<div class="site-nav__container">
-			<a class="site-nav__link" href="/creations">
-				<span>Créations</span>
-			</a>
-			<ul class="site-nav__submenu">
-				{{ $sections := where $.Site.Pages "Section" "creations" }}
-				{{ $creationsTitle := (.Site.GetPage "/creations").Title }}
-				{{ range $sections.ByTitle }}
-					{{ if (eq .Parent.Title $creationsTitle) }}
-						<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+<header class="site-header">
+	<div class="site-header__container cw">
+		<a class="site-logo" href="/">
+			<img src="{{.Site.BaseURL}}assets/img/naos-logo.svg" alt="Logo de Naos Atelier" title="Naos Atelier" width="180" height="58">
+		</a>
+		<button id="site-nav-btn" name="menu" aria-expanded="false" title="Bouton d'ouverture/fermeture du menu principal">
+			<svg version="1.1" id="site-nav-btn__img" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 33.72 22" width="33.72" height="22" xml:space="preserve"><style>.site-nav-btn__img__color{fill:none;stroke:#707070;stroke-width:2;stroke-linecap:round}</style><g id="menu" transform="translate(-308.5 -21.5)"><path id="Ligne_1" class="site-nav-btn__img__color" d="M309.5 22.5h31.72"/><path id="Ligne_2" class="site-nav-btn__img__color" d="M309.5 32.5h31.72"/><path id="Ligne_3" class="site-nav-btn__img__color" d="M309.5 42.5h31.72"/></g></svg>
+		</button>
+		<nav class="site-nav" id="site-nav">
+			<a class="site-nav__link" href="/"><span>Accueil</span></a>
+			<div class="site-nav__container">
+				<a class="site-nav__link" href="/creations">
+					<span>Créations</span>
+				</a>
+				<ul class="site-nav__submenu">
+					{{ $sections := where $.Site.Pages "Section" "creations" }}
+					{{ $creationsTitle := (.Site.GetPage "/creations").Title }}
+					{{ range $sections.ByWeight }}
+						{{ if (eq .Parent.Title $creationsTitle) }}
+							<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+						{{ end }}
 					{{ end }}
-				{{ end }}
-			</ul>
-		</div>
-		<a class="site-nav__link" href="/atelier"><span>L'atelier</span></a>
-		<a class="site-nav__link" href="/contact"><span>Contact</span></a>
-	</nav>
+				</ul>
+			</div>
+			<a class="site-nav__link" href="/atelier"><span>L'atelier</span></a>
+			<a class="site-nav__link" href="/contact"><span>Contact</span></a>
+		</nav>
+	</div>
 </header>

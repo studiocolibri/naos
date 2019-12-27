@@ -3,7 +3,7 @@
 <div class="flex-2-cols">
 	<div class="flex-2-cols__col">
 		<h1>{{ .Title }}</h1>
-		<p class="fs-b">{{ .Site.Data.contact.title | safeHTML }}</p>
+		<p class="contact-title">{{ .Site.Data.contact.title | safeHTML }}</p>
 		<address>
 		    {{ .Site.Data.contact.address | safeHTML }}
 		</address>

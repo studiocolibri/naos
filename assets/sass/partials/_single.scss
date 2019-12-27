@@ -2,6 +2,9 @@
 
 	h1 {
 		margin:$su*2 0;
+		font-size: 1.6rem;
+		color:$gray-logo;
+		font-weight: bold;
 	}
 }
 
@@ -17,10 +20,16 @@
 	
 	#site-main {
 		
+		.contact-title{
+			text-transform: uppercase;
+			font-size: 1.2rem;
+		}
+
 		address {
 			font-style: normal;
 			margin:1em 0;
 			max-width: 12em;
+			font-size: 1.2rem;
 	
 			pre, code {
 				@include ff-r;

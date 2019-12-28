@@ -12,7 +12,7 @@ function minify() {
     .pipe(dest('public'));
 }
 
-const imgSrc = "static/assets/uploads/**";
+const imgSrc = "/opt/build/cache/static/assets/uploads/**";
 const dimensions = [ 400, 620, 768, 1240 ];
 
 function copyImages() {

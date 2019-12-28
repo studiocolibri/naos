@@ -15,10 +15,17 @@ function minify() {
 const imgSrc = "static/assets/uploads/**";
 const dimensions = [ 400, 620, 768, 1240 ];
 
+function copyImages(cb) {
+    src('/opt/build/cache/public/assets/uploads/**/*')
+    .pipe(gulpNewer('public/assets/uploads'))
+    .pipe(dest('public/assets/uploads'))
+    cb();
+}
+
 function images(cb) {
   dimensions.forEach(function (size) {
     src(imgSrc)
-      .pipe(gulpNewer(`static/assets/dest/${size}`))
+      .pipe(gulpNewer(`public/assets/dest/${size}`))
       .pipe(imagemin([    
           imagemin.jpegtran({progressive: true}),
           imageminMozjpeg({
@@ -27,11 +34,12 @@ function images(cb) {
       ]))
       .pipe(imageResize({ width: size, upscale: true, crop: false }))
       .pipe(imagemin())
-      .pipe(dest(`static/assets/dest/${size}`))
+      .pipe(dest(`public/assets/dest/${size}`))
   });
   cb();
 }
 
 exports.default = series(minify, images);
-exports.images = images;
 exports.minify = minify;
+exports.copyImages = copyImages;
+exports.images = images;

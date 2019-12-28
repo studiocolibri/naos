@@ -176,7 +176,11 @@
         margin-left:auto;
 
         picture {
-            margin-left:5%;
+            margin-left:0;
+
+            @media screen and (min-width:640px) {
+                margin-left:5%;
+            }
         }
 
         .home-block__title-container {

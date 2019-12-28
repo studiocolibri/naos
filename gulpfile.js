@@ -12,19 +12,19 @@ function minify() {
     .pipe(dest('public'));
 }
 
-const imgSrc = "/opt/build/cache/static/assets/uploads/**";
+const imgSrc = "static/assets/uploads/**";
 const dimensions = [ 400, 620, 768, 1240 ];
 
 function copyImages() {
-    src('/opt/build/cache/static/assets/uploads/**/*')
-    .pipe(gulpNewer(imgSrc))
-    .pipe(dest(imgSrc))
+    src('/opt/build/cache/public/assets/uploads/**/*')
+    .pipe(gulpNewer('public/assets/uploads'))
+    .pipe(dest('public/assets/uploads'))
 }
 
 function images(cb) {
   dimensions.forEach(function (size) {
     src(imgSrc)
-      .pipe(gulpNewer(`static/assets/dest/${size}`))
+      .pipe(gulpNewer(`public/assets/dest/${size}`))
       .pipe(imagemin([    
           imagemin.jpegtran({progressive: true}),
           imageminMozjpeg({
@@ -33,7 +33,7 @@ function images(cb) {
       ]))
       .pipe(imageResize({ width: size, upscale: true, crop: false }))
       .pipe(imagemin())
-      .pipe(dest(`static/assets/dest/${size}`))
+      .pipe(dest(`public/assets/dest/${size}`))
   });
   cb();
 }

@@ -5,12 +5,13 @@
 .site-header {
     margin-bottom:$su*4;
     box-shadow: -2px 5px 6px -3px lightgray;
-    margin-top:$su/2;
+    margin-top:0;
+    padding-top:$su/2;
     padding-bottom:$su/2;
     padding-left:$su/2;
 
     @media screen and (min-width: 768px) {
-        margin-top:$su;
+        padding-top:$su;
         padding-bottom:$su;
         padding-left:$su/2;
     }

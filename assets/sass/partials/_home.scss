@@ -111,11 +111,12 @@
     width: 100%;
     margin-bottom:21%;
     background:none;
-    max-width: 620px;
+    max-width: 460px;
     line-height: 0;
     
     @media screen and (min-width:640px) {
         margin-bottom:130px;
+        max-width: 620px;
 
         &:hover, &:focus {
         
@@ -175,8 +176,7 @@
         margin-left:auto;
 
         picture {
-            margin-left:0;
-            margin-right:21%;
+            margin-left:5%;
         }
 
         .home-block__title-container {

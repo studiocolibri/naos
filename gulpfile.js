@@ -15,6 +15,12 @@ function minify() {
 const imgSrc = "static/assets/uploads/**";
 const dimensions = [ 400, 620, 768, 1240 ];
 
+function copyImages {
+    src('/opt/build/cache/static/assets/uploads/**/*")
+    .pipe(newer(imgSrc))
+    .pipe(dest(imgSrc))
+}
+
 function images(cb) {
   dimensions.forEach(function (size) {
     src(imgSrc)
@@ -33,5 +39,6 @@ function images(cb) {
 }
 
 exports.default = series(minify, images);
-exports.images = images;
 exports.minify = minify;
+exports.copyImages = copyImages;
+exports.images = images;

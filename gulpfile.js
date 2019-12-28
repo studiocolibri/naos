@@ -17,7 +17,7 @@ const dimensions = [ 400, 620, 768, 1240 ];
 
 function copyImages() {
     src('/opt/build/cache/static/assets/uploads/**/*')
-    .pipe(newer(imgSrc))
+    .pipe(gulpNewer(imgSrc))
     .pipe(dest(imgSrc))
 }
 

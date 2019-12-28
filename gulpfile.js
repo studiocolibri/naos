@@ -15,10 +15,11 @@ function minify() {
 const imgSrc = "static/assets/uploads/**";
 const dimensions = [ 400, 620, 768, 1240 ];
 
-function copyImages() {
+function copyImages(cb) {
     src('/opt/build/cache/public/assets/uploads/**/*')
     .pipe(gulpNewer('public/assets/uploads'))
     .pipe(dest('public/assets/uploads'))
+    cb();
 }
 
 function images(cb) {

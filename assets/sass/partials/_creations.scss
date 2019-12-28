@@ -210,10 +210,22 @@
 	margin-top:$su*2;
 }
 
-.gallery_img {
-	width:100%;
-	height:auto;
+.gallery_slider > div {
+	display:flex;
+	align-items:center;
 }
+
+.gallery_item {
+	display:flex;
+	justify-content: center;
+}
+
+.gallery_img {
+	width:auto;
+	height:auto;
+	max-height:80vh;
+}
+
 
 .gallery_btn {
 	position:absolute;
@@ -233,17 +245,6 @@
 		width:40px;
 		height:40px;
 		font-size:32px;
-	}
-
-	@media screen and (min-width:1280px) {
-
-		&.prev {
-			transform:translate(-20px, -50%);
-		}
-	
-		&.next {
-			transform:translate(20px, -50%);
-		}
 	}
 
 	&.prev {

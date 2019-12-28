@@ -5,10 +5,10 @@
             <span>{{ .Params.subtitle | safeHTML }}</span>
         </h1>
         <p class="tw">{{ .Content | plainify }}</p>
-        <p class="more-info">Plus d'infos</p>
+        <p class="more-info"><a href="#home-blocks">Plus d'infos</a></p>
     </section>
 
-    <section class="home-blocks cw">
+    <section class="home-blocks cw" id="home-blocks">
         {{ range .Params.blocks }}
             <a class="home-block" href="/{{ .link }}">
                 <div class="home-block__title-container">

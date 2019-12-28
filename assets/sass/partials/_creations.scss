@@ -226,13 +226,24 @@
 	color:white;
 	border: none;
 	font-size:28px;
+	border:1px solid $red;
 	transition:background-color 150ms ease-out, color 150ms ease-out;
 
 	@media screen and (min-width:400px) {
 		width:40px;
 		height:40px;
 		font-size:32px;
+	}
 
+	@media screen and (min-width:1280px) {
+
+		&.prev {
+			transform:translate(-20px, -50%);
+		}
+	
+		&.next {
+			transform:translate(20px, -50%);
+		}
 	}
 
 	&.prev {

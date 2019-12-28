@@ -22,46 +22,76 @@
 
 .more-info {
     display:block;
-    font-size:1.2rem;
-    text-transform:uppercase;
-    @include ff-l;
 
-    &:after {
-        content:'↓';
-        padding-left:0.5em;
-        color:$red;
-    }
-    
-    @media screen and (min-width:768px) {
-        position: absolute;
-        right:-2.1em;
-        bottom:-50px;
-        margin:0;
-        transform: rotate(270deg);
-        
-        &:before {
-            content:'⟵';
-            top:0;
-            left:0;
-            padding-right:0.5em;
-            color:$red;
-        }
+    a {
+        font-size:1.2rem;
+        text-transform:uppercase;
+        @include ff-l;
+        background:none;
+        color:$gray-logo;
 
         &:after {
-            display:none;
+            content:'↓';
+            display:block;
+            position: absolute;
+            top: -0.1em;
+            right: -0.75em;
+            padding-left:0.5em;
+            color:$red;
+            transition:transform 150ms ease-out;
         }
-    }
 
-    @media screen and (min-width:980px) {
-        right:-1.8em;
+        &:hover, &:focus {
+
+            &:after {
+                transform:translateY(3px);
+            }
+
+            @media screen and (min-width:768px) {
+                
+                &:before {
+                    transform:translate(-3px);
+                }
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            position: absolute;
+            right:-2.1em;
+            bottom:-50px;
+            margin:0;
+            transform: rotate(270deg);
+            
+            &:before {
+                content:'⟵';
+                top:0;
+                left:0;
+                padding-right:0.5em;
+                color:$red;
+                display:block;
+                position: absolute;
+                left: -1.5em;
+                top: -0.15em;
+                transition:transform 150ms ease-out;
+            }
+    
+            &:after {
+                display:none;
+            }
+        }
+    
+        @media screen and (min-width:980px) {
+            right:-1.8em;
+        }
     }
 
 }
 
 .home-blocks {
-    margin-top:$su*4;
+    margin-top:$su*2;
     margin-bottom:$su*4;
     max-width:990px;
+    padding-top:$su*2;
 
     @media screen and (min-width:640px) {
         display:flex;
@@ -70,7 +100,8 @@
     }
 
     @media screen and (min-width:768px) {
-        margin-top:$su*6;
+        margin-top:$su*3;
+        padding-top:$su*3;
     }
 }
 

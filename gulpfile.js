@@ -15,7 +15,7 @@ function minify() {
 const imgSrc = "static/assets/uploads/**";
 const dimensions = [ 400, 620, 768, 1240 ];
 
-function copyImages {
+function copyImages() {
     src('/opt/build/cache/static/assets/uploads/**/*")
     .pipe(newer(imgSrc))
     .pipe(dest(imgSrc))

@@ -1,5 +1,5 @@
 ---
-title: Cuisine 01
+title: Liège 12.19
 categories: cuisines
 date: 2019-01-01
 gallery:

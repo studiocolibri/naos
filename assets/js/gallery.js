@@ -13,52 +13,24 @@ const gallery = new Siema({
     onChange: () => {},
 });    
 
-document.querySelector('.prev').addEventListener('click', () => gallery.prev());
-document.querySelector('.next').addEventListener('click', () => gallery.next());
+var btnPrev = document.createElement('button');
+btnPrev.className = 'gallery_btn prev';
+btnPrev.id = 'galleryPrev';
+btnPrev.innerHTML = '<';
 
-/* var w = window.innerWidth,
-    perPage = 0,
-    resizeTimer,
-    gallery;
+var btnNext = document.createElement('button');
+btnNext.className = 'gallery_btn next';
+btnNext.id = 'galleryNext';
+btnNext.innerHTML = '>';
 
-function configureGallery(pageCount) {
-    
-    gallery = new Siema({
-        selector: '.gallery_slider',
-        duration: 200,
-        easing: 'ease-out',
-        perPage: 1,
-        startIndex: 0,
-        draggable: true,
-        multipleDrag: true,
-        threshold: 20,
-        loop: true,
-        rtl: false,
-        perPage: pageCount,
-        onInit: () => {},
-        onChange: () => {},
-    });    
+document.getElementById("gallery").append(btnPrev);
+document.getElementById("gallery").append(btnNext);
 
-    document.querySelector('.prev').addEventListener('click', () => gallery.prev());
-    document.querySelector('.next').addEventListener('click', () => gallery.next());
-}
-
-function activateGallery() {
-    w = window.innerWidth;
-    if (w <= 980) {
-        configureGallery(1);
-    } else {
-        configureGallery(2);
+document.addEventListener('click',function(e){
+    if(e.target && e.target.id== 'galleryPrev'){
+        gallery.prev();
     }
-}
-
-activateGallery();
-
-window.addEventListener("resize", function(){
-	clearTimeout(resizeTimer);
-	resizeTimer = setTimeout(function() {
-        console.log('test 1');
-        activateGallery();
-        console.log('test 2');
-	}, 300);
-}); */
+    if(e.target && e.target.id== 'galleryNext'){
+        gallery.next();
+    }
+});

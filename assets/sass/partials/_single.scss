@@ -8,8 +8,150 @@
 	}
 }
 
-.atelier-img__img {
-	margin-top:1em;
+.atelier {
+	
+	h1, h2 {
+		text-align: center;
+	}
+}
+
+.atelier-img {
+	position:relative;
+	margin:$su*4 0 $su*8 0;
+	display:flex;
+	flex-direction: column;
+
+	picture {
+		order:2;
+		margin:$su 0;
+
+		@media screen and (min-width:600px) {
+			margin:0;
+		}
+	}
+
+	p {
+		display: block;
+		margin:0;
+		max-width:100%;
+		
+		@media screen and (min-width:600px) {
+			background-color:$red;
+			background-color:rgba(220,8,20,0.8);
+			background-blend-mode: multiply;
+			color:white;
+			padding:0.8em 1em;
+			position:absolute;
+			font-size: 1.2rem;
+			max-width:27em;
+		}
+	}
+
+	p:first-of-type {
+		order:1;
+		top:$su*2;
+		left:$su*2;
+	}
+
+	p:nth-of-type(2) {
+		order:3;
+		bottom:$su*2;
+		right:$su*2;
+	}
+}
+
+.team {
+	margin-top:$su*4;
+
+	h2 {
+		margin-bottom: $su*2;
+	}
+}
+
+.team__text {
+	margin:0 auto;
+	max-width: ( $cw/2 - $su ) ;
+}
+
+.team__members {
+	display:flex;
+	flex-wrap:wrap;
+	margin:$su*2.5 0;
+
+	@supports (display:grid) {
+		display:grid;
+		grid-template-columns: repeat( auto-fit, minmax(152px, 1fr) );
+		justify-content: center;
+		grid-row-gap: $su;
+	}
+
+	li {
+		width:100%;
+		max-width: 12.5%;
+		opacity:0;
+		transform:translateY(40px);
+		transition:all 150ms ease-out;
+
+		
+		.team.is-visible & {
+			opacity:1;
+			transform:translateY(0px);
+		}
+		
+		@for $i from 1 through 16 {
+			&:nth-child(#{$i}) {
+				transition-duration:200 + $i * 50ms ;
+			}
+		}
+
+		&:hover {
+			color:$red;
+
+			figcaption {
+				transform:translateY(3px);
+			}
+		}
+
+		@supports (display:grid) {
+			position:relative;
+			width:auto;
+			max-width: none;
+			margin:0;
+
+			
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 2.2em;
+			width: 100%;
+			height: 1px;
+			background:$red;
+		}
+
+		&:before {
+			display:none;
+		}
+	}
+
+	figure {
+		margin:0;
+	}
+
+	img {
+		padding:0 $su/2;
+	}
+
+	figcaption {
+		margin-top:0.5em;
+		padding:0 $su/2;
+		text-transform:uppercase;
+		text-align: center;
+		@include ff-b;
+		transition:transform 150ms ease-out;
+	}
 }
 
 .contact {

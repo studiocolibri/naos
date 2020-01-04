@@ -1,12 +1,13 @@
 {{ $nav := resources.Get "js/nav.js" }}
 {{ $topBtn := resources.Get "js/topBtn.js" }}
-{{ $defaultJS := slice $nav $topBtn | resources.Concat "js/global.js" }}
+{{ $observer := resources.Get "js/observer.js" }}
+{{ $gallery := resources.Get "js/gallery.js" }}
+{{ $galleryPublic := $gallery | resources.Minify | resources.Fingerprint }}
+{{ $defaultJS := slice $nav $topBtn $observer | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
 <script src="{{ $globalJS.Permalink }}"></script>
-
 {{ if and (eq .Page.Section "creations") (eq .Page.Kind "page") }}
     <script src="/assets/js/siema.min.js"></script>
-    {{ $gallery := resources.Get "js/gallery.js" }}
-    {{ $galleryPublic := $gallery | resources.Minify | resources.Fingerprint }}
     <script src="{{ $galleryPublic.Permalink }}"></script>
 {{ end }}
+<noscript><style>.observed, .team.observed li {opacity:1;transform:none;}</style></noscript>

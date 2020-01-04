@@ -25,7 +25,7 @@ function images(cb) {
               quality: 80
           })
       ]))
-      .pipe(imageResize({ width: size, upscale: true, crop: false }))
+      .pipe(imageResize({ width: size, upscale: false, crop: false }))
       .pipe(imagemin())
       .pipe(dest(`static/assets/dest/${size}`))
   });

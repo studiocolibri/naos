@@ -2,17 +2,30 @@
 
     <h1>{{ .Title }}</h1>
 
-    <div class="flex-2-cols">
-        <div class="atelier-text flex-2-cols__col tw">
-            {{ .Content }}
-        </div>
-        <div class="atelier-img flex-2-cols__col">
-            <picture>
-                <source srcset="/assets/dest/400{{ .Params.img }}" media="(max-width: 400px)">
-                <source srcset="/assets/dest/768{{ .Params.img }}" media="(max-width: 980px)">
-                <img class="atelier-img__img" src="/assets/dest/620{{ .Params.img }}" alt="Photo de l'atelier" width="620" height="412">
-            </picture>
-        </div>
-    </div>
+    <section class="atelier-img" aria-label="Infos sur l'atelier">
+        <picture>
+            <source srcset="/assets/dest/400{{ .Params.atelier_img }}" media="(max-width: 400px)">
+            <source srcset="/assets/dest/620{{ .Params.atelier_img }}" media="(max-width: 620px)">
+            <source srcset="/assets/dest/768{{ .Params.atelier_img }}" media="(max-width: 768px)">
+            <img src="/assets/dest/1240{{ .Params.atelier_img }}" alt="Photo de l'atelier" width="1240" height="827">
+        </picture>
+        <p>{{ .Params.atelier_text_01 }}</p>
+        <p>{{ .Params.atelier_text_02 }}</p>
+    </section>
+
+    <section class="team observed">
+        <h2>Notre équipe</h2>
+        <div class="team__text">{{ .Params.team_text | markdownify }}</div>
+        <ul class="team__members">
+            {{ range .Params.team_members }}
+                <li>
+                    <figure>
+                        <img src="/assets/uploads{{ .img }}" alt="Photo de {{ .name }}">
+                        <figcaption>{{ .name }}</figcaption>
+                    </figure>
+                </li>
+            {{ end }}
+        </ul>
+    </section>
 
 {{ end }}

@@ -8,7 +8,7 @@
 		{{ .Content }}
 	</div>
 
-	<div class="gallery">
+	<div class="gallery" id="gallery">
 		<div class="gallery_slider">
 			{{ range .Params.gallery }}
 				<div class="gallery_item">
@@ -16,13 +16,11 @@
 						<source srcset="/assets/dest/400{{ . }}" media="(max-width: 400px)">
 						<source srcset="/assets/dest/620{{ . }}" media="(max-width: 620px)">
 						<source srcset="/assets/dest/768{{ . }}" media="(max-width: 768px)">
-						<img class="gallery_img" src="/assets/dest/1240{{ . }}" alt="" width="1240" height="824">
+						<img class="gallery_img" src="/assets/dest/1240{{ . }}" alt="" width="1240" height="827">
 					</picture>
 				</div>
 			{{ end }}
 		</div>
-		<button class="gallery_btn prev" title="Image précédente"> < </button>
-		<button class="gallery_btn next" title="Image suivante"> > </button>
 	</div>
 {{ end }}
 

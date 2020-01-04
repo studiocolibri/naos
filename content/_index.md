@@ -7,7 +7,7 @@ blocks:
   img: "/naos-atelier-salons.jpg"
   link: creations
 - title: Atelier
-  img: "/naos-atelier.jpg"
+  img: "/naos-atelier-01.jpg"
   link: atelier
 - title: Contact
   img: "/naos-atelier-salons.jpg"

@@ -4,13 +4,18 @@ const imagemin = require('gulp-imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageResize = require("gulp-image-resize");
 const gulpNewer = require("gulp-newer");
-const sizeOf = require('image-size');
 
 function minify() {
   return src('public/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest('public'));
 }
+
+function copyImagesFromCache() {
+  return src("/opt/build/cache/static/assets/dest/**/*")
+  .pipe(gulpNewer('static/assets/dest'))
+  .pipe(gulp.dest('static/assets/dest'));
+};
 
 const imgSrc = "static/assets/uploads/**";
 const dimensions = [ 400, 620, 768, 1240 ];
@@ -33,5 +38,6 @@ function images(cb) {
 }
 
 exports.default = series(minify, images);
+exports.copyImagesFromCache = copyImagesFromCache;
 exports.images = images;
 exports.minify = minify;

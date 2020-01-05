@@ -17,7 +17,7 @@ const dimensions = [ 400, 620, 768, 1240 ];
 function images(cb) {
   dimensions.forEach(function (size) {
     src(imgSrc)
-      .pipe(gulpNewer(`static/assets/dest/${size}`))
+      .pipe(gulpNewer(`static/assets/uploadsOut/${size}`))
       .pipe(imagemin([    
           imagemin.jpegtran({progressive: true}),
           imageminMozjpeg({
@@ -25,7 +25,7 @@ function images(cb) {
           })
       ]))
       .pipe(imageResize({ width: size, upscale: false, crop: false }))
-      .pipe(dest(`static/assets/dest/${size}`))
+      .pipe(dest(`static/assets/uploadsOut/${size}`))
   });
   cb();
 }

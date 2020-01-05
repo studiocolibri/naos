@@ -14,7 +14,7 @@ function minify() {
 function copyImagesFromCache() {
   return src("/opt/build/cache/static/assets/dest/**/*")
   .pipe(gulpNewer('static/assets/dest'))
-  .pipe(gulp.dest('static/assets/dest'));
+  .pipe(dest('static/assets/dest'));
 };
 
 const imgSrc = "static/assets/uploads/**";

@@ -18,7 +18,7 @@ let dimensions = [ 400, 620, 768, 1240 ];
 function images(cb) {
   dimensions.forEach(function (size) {
     src(imgSrc)
-      .pipe(changed(`static/assets/dest/${size}`))
+      .pipe(changed(`static/assets/uploads`))
       .pipe(imagemin([    
           imagemin.jpegtran({progressive: true}),
           imageminMozjpeg({

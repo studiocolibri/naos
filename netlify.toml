@@ -30,7 +30,7 @@
 
 [build]
 publish = "public"
-command = "gulp copyImagesFromCache; gulp images; hugo; gulp minify"
+command = " hugo; gulp images; gulp minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.60.1"

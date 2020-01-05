@@ -1,9 +1,10 @@
-const {series, src, dest} = require('gulp');
-const htmlmin = require('gulp-htmlmin');
-const imagemin = require('gulp-imagemin');
-const imageminMozjpeg = require('imagemin-mozjpeg');
-const imageResize = require("gulp-image-resize");
-const gulpNewer = require("gulp-newer");
+let {series, src, dest} = require('gulp');
+let htmlmin = require('gulp-htmlmin');
+let imagemin = require('gulp-imagemin');
+let imageminMozjpeg = require('imagemin-mozjpeg');
+let imageResize = require("gulp-image-resize");
+/* let gulpNewer = require("gulp-newer"); */
+let changed = require("gulp-changed");
 
 function minify() {
   return src('public/**/*.html')
@@ -11,13 +12,13 @@ function minify() {
     .pipe(dest('public'));
 }
 
-const imgSrc = "static/assets/uploads/**";
-const dimensions = [ 400, 620, 768, 1240 ];
+let imgSrc = "static/assets/uploads/**";
+let dimensions = [ 400, 620, 768, 1240 ];
 
 function images(cb) {
   dimensions.forEach(function (size) {
     src(imgSrc)
-      .pipe(gulpNewer(`static/assets/uploads/dest/${size}`))
+      .pipe(changed(`static/assets/dest/${size}`))
       .pipe(imagemin([    
           imagemin.jpegtran({progressive: true}),
           imageminMozjpeg({
@@ -25,7 +26,7 @@ function images(cb) {
           })
       ]))
       .pipe(imageResize({ width: size, upscale: false, crop: false }))
-      .pipe(dest(`static/assets/uploads/dest/${size}`))
+      .pipe(dest(`static/assets/dest/${size}`))
   });
   cb();
 }

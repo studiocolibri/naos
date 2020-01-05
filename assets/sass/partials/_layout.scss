@@ -105,6 +105,7 @@ body * {
 
     @media screen and (min-width:980px) {
         flex-direction:row;
+        justify-content: space-between;
     }
 }
 
@@ -112,7 +113,7 @@ body * {
     width:100%;
 
     @media screen and (min-width:980px) {
-        width:calc(50% - #{$su*2});
+        width:calc(50% - #{$su});
         
         &:first-of-type {
             margin-right:$su*2;

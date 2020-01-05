@@ -2,13 +2,6 @@
   "name": "naos",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "ie 10-11",
-    "not dead"
-  ],
   "postcss": {
     "plugins": {
       "autoprefixer": {}

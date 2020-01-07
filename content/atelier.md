@@ -13,7 +13,7 @@ team_text: |-
 
   Un principe cher à Naos qui garantit la qualité de ses réalisations et la motivation de son équipe.
 team_members:
-- name: Alan
+- name: Allan
   img: "/Alan.jpg"
 - name: Allaoui
   img: "/Allaoui.jpg"

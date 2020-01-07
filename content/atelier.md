@@ -17,18 +17,18 @@ team_members:
   img: "/Alan.jpg"
 - name: Allaoui
   img: "/Allaoui.jpg"
-- name: Georges
-  img: "/george.jpg"
-- name: Jérôme
-  img: "/jerome.jpg"
 - name: Julien
   img: "/julien.jpg"
-- name: Nicolas
-  img: "/Nicolas.jpg"
+- name: Georges
+  img: "/george.jpg"
 - name: Olivier
   img: "/olivier.jpg"
+- name: Jérôme
+  img: "/jerome.jpg"
 - name: Xavier
   img: "/xavier.jpg"
+- name: Nicolas
+  img: "/Nicolas.jpg"
 
 ---
 Le travail se fait en articulation permanente entre l’atelier de réalisation et le bureau de conception.

@@ -25,3 +25,5 @@ fields:
   - type: text
     name: link
     label: Lien
+pages:
+- content/_index.md

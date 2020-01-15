@@ -22,11 +22,11 @@ team_members:
 - name: Georges
   img: "/george.jpg"
 - name: Olivier
-  img: "/olivier.jpg"
+  img: "/Olivier.jpg"
 - name: Jérôme
-  img: "/jerome.jpg"
+  img: "/Jerome.jpg"
 - name: Xavier
-  img: "/xavier.jpg"
+  img: "/Xavier.jpg"
 - name: Nicolas
   img: "/Nicolas.jpg"
 

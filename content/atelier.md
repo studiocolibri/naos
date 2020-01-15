@@ -28,6 +28,6 @@ team_members:
 - name: Xavier
   img: "/Xavier.jpg"
 - name: Nicolas
-  img: "/Nicolas.jpg"
+  img: "/Nicolas-1.jpg"
 
 ---

@@ -10,7 +10,7 @@ fields:
   label: Date du projet
   config:
     date_format: YYYY/MM/DD
-    export_format: YYYY/MM/DD
+    export_format: YYYY-MM-DD
     display_utc: true
 - type: image_gallery
   name: gallery

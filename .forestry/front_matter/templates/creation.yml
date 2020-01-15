@@ -1,5 +1,5 @@
 ---
-label: Création
+label: Projet
 hide_body: false
 fields:
 - type: text
@@ -10,7 +10,7 @@ fields:
   label: Date du projet
   config:
     date_format: YYYY/MM/DD
-    export_format: YYYY/MM/DD
+    export_format: YYYY-MM-DD
     display_utc: true
 - type: image_gallery
   name: gallery
@@ -22,3 +22,4 @@ fields:
   label: Catégorie
 pages:
 - content/creations/cuisines/cuisine-super-top.md
+- content/creations/cuisines/liège-202001.md

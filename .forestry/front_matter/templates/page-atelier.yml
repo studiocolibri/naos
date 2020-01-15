@@ -1,6 +1,6 @@
 ---
 label: Page atelier
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: type

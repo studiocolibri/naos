@@ -20,7 +20,7 @@
     {{ if .IsAncestor $sectionPage }}
         <section class="list-categories" aria-label="Catégories">
             {{ range .Sections.ByWeight }}
-                <div class="list-categories__item observed">
+                <div class="list-categories__item observed {{ if .Params.long }}list-categories__item--long{{ end }}">
                     <a href="{{ .Permalink }}">
                         <picture>
                             <source srcset="/assets/dest/400{{ .Params.img }}" media="(max-width: 400px)">

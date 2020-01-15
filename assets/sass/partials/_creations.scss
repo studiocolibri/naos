@@ -73,6 +73,26 @@
 		}
 	}
 
+	&--long {
+		
+		a {
+
+			h2 {
+				width: 70%;
+			}
+
+			&:hover, &:focus {
+	
+				h2 {
+
+					@media screen and (min-width:1024px) {
+						width:60%;
+					}
+				}
+			}
+		}
+	}
+	
 	picture {
 		display:block;
 		margin-top:1.25em;

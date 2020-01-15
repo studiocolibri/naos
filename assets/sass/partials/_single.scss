@@ -10,8 +10,11 @@
 
 .atelier {
 	
-	h1, h2 {
-		text-align: center;
+	h2 {
+
+		@media screen and (min-width:768px) {
+			text-align: center;
+		}
 	}
 }
 
@@ -25,7 +28,7 @@
 		order:2;
 		margin:$su 0;
 
-		@media screen and (min-width:600px) {
+		@media screen and (min-width:768px) {
 			margin:0;
 		}
 	}
@@ -35,7 +38,7 @@
 		margin:0;
 		max-width:100%;
 		
-		@media screen and (min-width:600px) {
+		@media screen and (min-width:768px) {
 			background-color:$red;
 			background-color:rgba(220,8,20,0.8);
 			background-blend-mode: multiply;
@@ -70,7 +73,10 @@
 
 .team__text {
 	margin:0 auto;
-	max-width: ( $cw/2 - $su ) ;
+
+	@media screen and (min-width:768px) {
+		max-width: ( $cw/2 - $su ) ;
+	}
 }
 
 .team__members {
@@ -89,6 +95,7 @@
 		width:100%;
 		max-width: 12.5%;
 		opacity:0;
+		justify-content: center;
 		transform:translateY(40px);
 		transition:all 150ms ease-out;
 

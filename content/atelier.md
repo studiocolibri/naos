@@ -18,7 +18,7 @@ team_members:
 - name: Allaoui
   img: "/Allaoui.jpg"
 - name: Julien
-  img: "/julien.jpg"
+  img: "/Ju.jpg"
 - name: Georges
   img: "/george.jpg"
 - name: Olivier
@@ -28,6 +28,6 @@ team_members:
 - name: Xavier
   img: "/Xavier.jpg"
 - name: Nicolas
-  img: "/Nicolas.jpg"
+  img: "/Nicolas-1.jpg"
 
 ---

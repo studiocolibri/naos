@@ -1,6 +1,6 @@
 ---
 title: Commerces
-img: "/naos-atelier-salons.jpg"
+img: "/LO17-07.jpg"
 weight: "15"
 
 ---

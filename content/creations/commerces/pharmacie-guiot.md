@@ -7,4 +7,4 @@ title = "Pharmacie Guiot"
 +++
 Placage chêne - Panneau cintré
 
-_Projet :_ [**Atelier AGAT**](http://atelieragat.be/)
+_Crédits :_ **Fabian Rouwette**

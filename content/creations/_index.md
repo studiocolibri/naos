@@ -1,6 +1,7 @@
 ---
 slug: creations
 title: Nos créations
+type: ''
 
 ---
 La particularité de Naos Atelier est l’intégration de l’objet dans son contexte et son adéquation avec la demande du client et/ou de l’architecte.

@@ -5,7 +5,7 @@ gallery = ["/RA08-02.jpg", "/RA08-04.jpg", "/RA08-03.jpg", "/RA08-01.jpg", "/RA0
 title = "Hotel Radisson"
 
 +++
-Placage Chêne - Tablette pivotante
+Placage Chêne - Tablette pivotante - Porte coulissante
 
 _Projet :_ [Artau Architectures](https://www.artau.be/0132/fr/Accueil)
 

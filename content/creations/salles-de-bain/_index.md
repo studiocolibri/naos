@@ -1,6 +1,6 @@
 ---
 title: Salles de bain
-img: "/LI18-00.jpg"
+img: "/MT15-03.jpg"
 weight: 20
 
 ---

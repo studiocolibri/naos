@@ -10,7 +10,7 @@ blocks:
   img: "/933A0306-2.jpg"
   link: atelier
 - title: Contact
-  img: "/NA01-01.jpg"
+  img: "/NA12-05.jpg"
   link: contact
 
 ---

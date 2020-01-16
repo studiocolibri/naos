@@ -21,6 +21,7 @@ fields:
     required: false
   label: Catégorie
 pages:
+- content/creations/bibliothèque-dv.md
 - content/creations/commerces/les-opticiennes.md
 - content/creations/commerces/pharmacie-guiot.md
 - content/creations/commerces/pharmacie-lejear.md

@@ -19,7 +19,6 @@ fields:
     max: 
     step: 
 pages:
-- content/creations/archives/_index.md
 - content/creations/commerces/_index.md
 - content/creations/cuisines/_index.md
 - content/creations/espace-professionnel/_index.md

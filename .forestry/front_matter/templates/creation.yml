@@ -21,6 +21,7 @@ fields:
     required: false
   label: Catégorie
 pages:
+- content/creations/archives/table-chêne-022018.md
 - content/creations/archives/table-chêne.md
 - content/creations/bibliothèque-dv.md
 - content/creations/commerces/les-opticiennes.md

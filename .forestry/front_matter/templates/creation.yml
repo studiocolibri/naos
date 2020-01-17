@@ -21,12 +21,6 @@ fields:
     required: false
   label: Catégorie
 pages:
-- content/creations/archives/table-afzélia-0314.md
-- content/creations/archives/table-afzélia-0516.md
-- content/creations/archives/table-chêne-022018.md
-- content/creations/archives/table-chêne.md
-- content/creations/archives/table-col0610.md
-- content/creations/bibliothèque-dv.md
 - content/creations/commerces/les-opticiennes.md
 - content/creations/commerces/pharmacie-guiot.md
 - content/creations/commerces/pharmacie-lejear.md
@@ -35,11 +29,15 @@ pages:
 - content/creations/commerces/pharmacie-romsée.md
 - content/creations/cuisines/cuisine-bol18.md
 - content/creations/cuisines/cuisine-fal17.md
+- content/creations/cuisines/cuisine-fer17.md
 - content/creations/cuisines/cuisine-huy17.md
 - content/creations/cuisines/cuisine-huy18.md
+- content/creations/cuisines/cuisine-lie13.md
+- content/creations/cuisines/cuisine-lie14.md
 - content/creations/cuisines/cuisine-lie15.md
 - content/creations/cuisines/cuisine-lie16.md
 - content/creations/cuisines/cuisine-lon16.md
+- content/creations/cuisines/cuisine-sou14.md
 - content/creations/cuisines/cuisine-super-top.md
 - content/creations/cuisines/cuisine-til15.md
 - content/creations/cuisines/cuisine-til17.md
@@ -55,8 +53,6 @@ pages:
 - content/creations/espace-professionnel/pavillonchamps-bureau-d-architecture.md
 - content/creations/espace-professionnel/stoler-immobilier.md
 - content/creations/espace-professionnel/workplace-lampiris.md
-- content/creations/meubletv-me.md
-- content/creations/meubletv-th.md
 - content/creations/publics/acceuil-bam-mons.md
 - content/creations/publics/cinéma-caméo.md
 - content/creations/publics/cinéma-sauvenière.md
@@ -76,7 +72,6 @@ pages:
 - content/creations/sejours/bureau-dv.md
 - content/creations/sejours/bureau-ep.md
 - content/creations/sejours/bureau-jr.md
-- content/creations/sejours/entrée-cv.md
 - content/creations/sejours/foyer-bd.md
 - content/creations/sejours/meubletv-dc.md
 - content/creations/sejours/meubletv-gr.md

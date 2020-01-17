@@ -1,6 +1,6 @@
 ---
 title: Tables
-img: "/TA17-01.jpg"
+img: "/BO18-01.jpg"
 weight: 35
 
 ---

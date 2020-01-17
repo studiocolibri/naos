@@ -1,5 +1,6 @@
 ---
 title: Publics
-img: "/naos-atelier-salons.jpg"
+img: "/Cameo_21.jpg"
 weight: 30
+
 ---

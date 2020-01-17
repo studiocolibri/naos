@@ -4,7 +4,7 @@ title: Naos atelier,
 subtitle: du mobilier contemporain à&nbsp;votre&nbsp;mesure
 blocks:
 - title: Créations
-  img: "/BO18-01.jpg"
+  img: "/FA19-03.jpg"
   link: creations
 - title: Atelier
   img: "/933A0306-2.jpg"

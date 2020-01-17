@@ -1,11 +1,19 @@
 ---
-title: Liège 12.19
+title: Cuisine EMB18
 categories: cuisines
-date: 2018-12-06
+date: 2018-09-13
 gallery:
-- "/naos-atelier-cuisines-01.jpg"
-- "/naos-atelier-cuisines.jpg"
-- "/933A0241.jpg"
+- "/BO18-03.jpg"
+- "/BO18-02.jpg"
+- "/BO18-01.jpg"
+- "/BO18-04.jpg"
+- "/BO18-05.jpg"
 
 ---
-Cuisine réalisée en noyer et stratifié Black Sirocco, plan de travail en inox.
+Stratifié Polaris - Panneau ALFA Chêne - Plan de travail Dekton (Cuisine)
+
+Stratifié Polaris - Placage Chêne sur mdf noir (Hall)
+
+_Projet :_ [**Pavillonchamps**](https://www.pavillonchamps.be/)
+
+_Crédits :_ **Samuel Defourny**

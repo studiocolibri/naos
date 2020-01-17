@@ -1,5 +1,6 @@
 ---
 title: Séjours
-img: "/naos-atelier-salons.jpg"
-weight: 10
+img: "/LE14-02.jpg"
+weight: "10"
+
 ---

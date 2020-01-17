@@ -6,3 +6,5 @@ title = "Cuisine FER17"
 
 +++
 Stratifié blanc Full Color - Plan de travail Inox
+
+_Crédits :_ **Samuel Defourny**

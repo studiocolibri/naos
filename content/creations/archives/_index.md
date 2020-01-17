@@ -1,6 +1,6 @@
 ---
 title: Tables
-img: "/BO18-01.jpg"
+img: "/VE15-02.jpg"
 weight: 35
 
 ---

@@ -1,5 +1,6 @@
 ---
 title: Cuisines
-img: "/naos-atelier-cuisines.jpg"
+img: "/FA19-04.jpg"
 weight: 5
+
 ---

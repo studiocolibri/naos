@@ -11,13 +11,13 @@ function minify() {
     .pipe(dest('public'));
 }
 
-let imgSrc = "public/assets/uploads/**";
+let imgSrc = "static/assets/uploads/**";
 let dimensions = [ 400, 620, 768, 1240 ];
 
 function images(cb) {
   dimensions.forEach(function (size) {
     src(imgSrc)
-      .pipe(gulpNewer(`public/assets/dest/${size}`))
+      .pipe(gulpNewer(`static/assets/dest/${size}`))
       .pipe(imagemin([    
           imagemin.jpegtran({progressive: true}),
           imageminMozjpeg({
@@ -25,7 +25,7 @@ function images(cb) {
           })
       ]))
       .pipe(imageResize({ width: size, upscale: false, crop: false }))
-      .pipe(dest(`public/assets/dest/${size}`))
+      .pipe(dest(`static/assets/dest/${size}`))
   });
   cb();
 }

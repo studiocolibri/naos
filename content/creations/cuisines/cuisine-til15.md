@@ -1,5 +1,5 @@
 +++
-categories = ""
+categories = "cuisines"
 date = 2015-07-06T00:00:00Z
 gallery = ["/PO15-01.jpg", "/PO15-02.jpg", "/PO15-03.jpg", "/PO15-04.jpg"]
 title = "Cuisine TIL15"

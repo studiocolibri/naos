@@ -1,5 +1,5 @@
 +++
-categories = ""
+categories = "tables"
 date = 2010-06-17T00:00:00Z
 gallery = ["/TA06-01.jpg", "/TA15-03.jpg"]
 title = "Table Col0610"

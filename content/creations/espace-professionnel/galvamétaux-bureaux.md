@@ -1,5 +1,5 @@
 +++
-categories = ""
+categories = "espace-professionnel"
 date = 2010-09-08T00:00:00Z
 gallery = ["/GM15-02.jpg", "/GM15-01.jpg", "/GM15-03.jpg"]
 title = "Galvamétaux (Bureaux)"

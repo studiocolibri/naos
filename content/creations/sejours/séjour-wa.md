@@ -1,5 +1,5 @@
 +++
-categories = ""
+categories = "sejours"
 date = 2018-09-14T00:00:00Z
 gallery = ["/WA18-01.jpg", "/WA18-02.jpg", "/WA18-03.jpg", "/WA18-04.jpg", "/WA18-05.jpg"]
 title = "Séjour WA"

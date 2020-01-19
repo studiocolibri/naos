@@ -26,5 +26,10 @@ fields:
 - type: text
   name: email
   label: E-mail
+- name: facebook_link
+  type: text
+  config:
+    required: false
+  label: Adresse de la page Facebook
 pages:
 - data/contact.toml

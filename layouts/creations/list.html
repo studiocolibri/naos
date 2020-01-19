@@ -24,7 +24,7 @@
                     <a href="{{ .Permalink }}">
                         <picture>
                             <source srcset="/assets/dest/400{{ .Params.img }}" media="(max-width: 400px)">
-                            <img src="/assets/dest/620{{ .Params.img }}" alt="" width="620" height="412">
+                            <img loading="lazy" src="/assets/dest/620{{ .Params.img }}" alt="" width="620" height="412">
                         </picture>
                         <h2>{{ .Title }}</h2>
                     </a>
@@ -41,7 +41,7 @@
                     <a class="list-projects__item observed" href="{{ .Permalink }}">
                         <picture>
                             <source srcset="/assets/dest/400{{ range first 1 $list }}{{ . }}{{ end }}" media="(max-width: 400px)">
-                            <img src="/assets/dest/620{{ range first 1 $list }}{{ . }}{{ end }}" alt="{{ .Title }}" width="620" height="412">
+                            <img loading="lazy" src="/assets/dest/620{{ range first 1 $list }}{{ . }}{{ end }}" alt="{{ .Title }}" width="620" height="412">
                         </picture>
                     </a>
                 {{ end }}

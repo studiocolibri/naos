@@ -20,6 +20,8 @@ fields:
   config:
     required: false
   label: Catégorie
+  description: 'Ajouter le nom du dossier dans lequel le projet se trouve (exemple
+    : cuisines pour les cuisines ou espace-professionnel, etc.))'
 pages:
 - content/creations/commerces/les-opticiennes.md
 - content/creations/commerces/pharmacie-guiot.md
@@ -38,7 +40,6 @@ pages:
 - content/creations/cuisines/cuisine-lie16.md
 - content/creations/cuisines/cuisine-lon16.md
 - content/creations/cuisines/cuisine-sou14.md
-- content/creations/cuisines/cuisine-super-top.md
 - content/creations/cuisines/cuisine-til15.md
 - content/creations/cuisines/cuisine-til17.md
 - content/creations/cuisines/cuisine-vie16.md

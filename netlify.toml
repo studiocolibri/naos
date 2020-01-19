@@ -30,7 +30,7 @@
 
 [build]
 publish = "public"
-command = "tree /opt/build/cache/hugo_cache && hugo && gulp minify"
+command = "tree /opt/build/ && hugo && gulp minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.60.1"

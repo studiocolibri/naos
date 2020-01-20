@@ -30,7 +30,7 @@
 
 [build]
 publish = "public"
-command = "hugo -F && gulp minify"
+command = "hugo -F --minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.59.1"

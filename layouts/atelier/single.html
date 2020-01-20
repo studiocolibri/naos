@@ -4,10 +4,10 @@
 
     <section class="atelier-img" aria-label="Infos sur l'atelier">
         <picture>
-            <source srcset="/assets/dest/400{{ .Params.atelier_img }}" media="(max-width: 400px)">
-            <source srcset="/assets/dest/620{{ .Params.atelier_img }}" media="(max-width: 620px)">
-            <source srcset="/assets/dest/768{{ .Params.atelier_img }}" media="(max-width: 768px)">
-            <img src="/assets/dest/1240{{ .Params.atelier_img }}" alt="Photo de l'atelier" width="1240" height="827">
+            <source srcset="{{ $.Site.Params.cloudinary_url }}q_80,w_400{{ .Params.atelier_img }}" media="(max-width: 400px)">
+            <source srcset="{{ $.Site.Params.cloudinary_url }}q_80,w_620{{ .Params.atelier_img }}" media="(max-width: 620px)">
+            <source srcset="{{ $.Site.Params.cloudinary_url }}q_80,w_768{{ .Params.atelier_img }}" media="(max-width: 768px)">
+            <img src="{{ $.Site.Params.cloudinary_url }}q_80,w_1240{{ .Params.atelier_img }}" alt="Photo de l'atelier" width="1240" height="827">
         </picture>
         <p>{{ .Params.atelier_text_01 }}</p>
         <p>{{ .Params.atelier_text_02 }}</p>
@@ -20,7 +20,7 @@
             {{ range .Params.team_members }}
                 <li>
                     <figure>
-                        <img src="/assets/uploads{{ .img }}" alt="Photo de {{ .name }}">
+                        <img src="{{ $.Site.Params.cloudinary_url }}{{ .img }}" alt="Photo de {{ .name }}">
                         <figcaption>{{ .name }}</figcaption>
                     </figure>
                 </li>

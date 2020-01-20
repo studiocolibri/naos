@@ -6,3 +6,4 @@ disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
 [params]
     description = "Du mobilier contemporain conçu et réalisé « sur mesure » et surtout « à la mesure » de l’environnement de chaque personne afin d’y intégrer au mieux l’objet ou l’aménagement."
     author = "Robin Foguenne | Studio Colibri"
+    cloudinary_url = "https://res.cloudinary.com/naos/image/upload/"

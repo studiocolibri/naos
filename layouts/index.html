@@ -15,8 +15,8 @@
                     <h2>{{ .title }}</h2>
                 </div>
                 <picture>
-                    <source srcset="/assets/dest/400{{ .img }}" media="(max-width: 400px)">
-                    <img src="/assets/dest/620{{ .img }}" alt="" width="620" height="412">
+                    <source srcset="{{ $.Site.Params.cloudinary_url }}q_80,w_400{{ .img }}" media="(max-width: 400px)">
+                    <img src="{{ $.Site.Params.cloudinary_url }}q_80,w_620{{ .img }}" alt="" width="620" height="412">
                 </picture>
             </a>
         {{ end }}

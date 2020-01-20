@@ -39,6 +39,7 @@
                     {{- $list := .Params.gallery -}}
                     {{- $len := len $list -}}
                     <a class="list-projects__item observed" href="{{ .Permalink }}">
+                        <h1>{{ .Title }}</h1>
                         <picture>
                             <source srcset="{{ $.Site.Params.cloudinary_url }}q_80,w_400{{ range first 1 $list }}{{ . }}{{ end }}" media="(max-width: 400px)">
                             <img loading="lazy" src="{{ $.Site.Params.cloudinary_url }}q_80,w_620{{ range first 1 $list }}{{ . }}{{ end }}" alt="{{ .Title }}" width="620" height="412">

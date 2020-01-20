@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://naos-atelier.netlify.com/* http://www.naos-atelier.be/:splat 301!

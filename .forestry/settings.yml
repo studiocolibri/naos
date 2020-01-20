@@ -17,8 +17,8 @@ sections:
   label: Créations
   create: all
   match: "**/*"
-upload_dir: static/assets/uploads
-public_path: "/uploads"
+upload_dir: ''
+public_path: ''
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"

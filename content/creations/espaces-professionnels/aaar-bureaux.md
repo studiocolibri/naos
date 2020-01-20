@@ -1,5 +1,5 @@
 +++
-categories = "espace-professionnel"
+categories = "espaces-professionnels"
 date = 2010-11-27T00:00:00Z
 gallery = ["/AR10-01.jpg", "/AR10-02.jpg"]
 title = "AA-AR (Bureaux)"

@@ -7,4 +7,4 @@ disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
     author = "Robin Foguenne | Studio Colibri"
     cloudinary_url = "https://res.cloudinary.com/naos/image/upload/"
 [markup.goldmark.renderer]
-unsafe= true
+    unsafe = true

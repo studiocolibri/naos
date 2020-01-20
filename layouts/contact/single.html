@@ -3,14 +3,15 @@
 <div class="flex-2-cols">
 	<div class="flex-2-cols__col">
 		<h1>{{ .Title }}</h1>
-		<p class="contact-title">{{ .Site.Data.contact.title | safeHTML }}</p>
+		<p class="contact-title">{{ $.Site.Data.contact.title | safeHTML }}</p>
 		<address>
-		    {{ .Site.Data.contact.address | safeHTML }}
+		    {{ $.Site.Data.contact.address | safeHTML }}
 		</address>
-		<p><a href="tel:{{ .Site.Data.contact.tel_for_robots }}">{{ .Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
-		<p><a href="mailto:{{ .Site.Data.contact.email }}">{{ .Site.Data.contact.email }}</a></p>
+		<p><a href="tel:{{ $.Site.Data.contact.tel_for_robots }}">{{ $.Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
+		<p><a href="mailto:{{ $.Site.Data.contact.email }}">{{ $.Site.Data.contact.email }}</a></p>
+		<p>Numéro d'entreprise : {{ $.Site.Data.contact.tva }}</p>
 		{{ .Content }}
-		<p><svg id="fb-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32px" height="32px"><path d="M28.2 0H3.8C1.7 0 0 1.7 0 3.8v24.4C0 30.3 1.7 32 3.8 32h13.27V19.67h-4.12v-4.91h4.12v-3.83c0-3.58 2.91-6.5 6.5-6.5h3.51v5.12h-3.51c-.76 0-1.38.62-1.38 1.38v3.83h4.89l-.77 4.91h-4.12V32h6.01c2.1 0 3.8-1.7 3.8-3.8V3.8C32 1.7 30.3 0 28.2 0z" fill="#484747"/></svg> Visitez notre <a href="{{ .Site.Data.contact.facebook_link }}">page Facebook</a>.</p>
+		<p><svg id="fb-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32px" height="32px"><path d="M28.2 0H3.8C1.7 0 0 1.7 0 3.8v24.4C0 30.3 1.7 32 3.8 32h13.27V19.67h-4.12v-4.91h4.12v-3.83c0-3.58 2.91-6.5 6.5-6.5h3.51v5.12h-3.51c-.76 0-1.38.62-1.38 1.38v3.83h4.89l-.77 4.91h-4.12V32h6.01c2.1 0 3.8-1.7 3.8-3.8V3.8C32 1.7 30.3 0 28.2 0z" fill="#484747"/></svg> Visitez notre <a href="{{ $.Site.Data.contact.facebook_link }}">page Facebook</a>.</p>
 	</div>
 	<div class="flex-2-cols__col" style="position:relative;z-index:1;">
 		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.681912047731!2d5.600711951540981!3d50.65159838063079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f094182db11f%3A0x30ede601dffb406c!2sNaos%20Atelier!5e0!3m2!1sfr!2sbe!4v1573822476141!5m2!1sfr!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>

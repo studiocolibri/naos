@@ -1,0 +1,24 @@
+<script type="application/ld+json">
+  {
+  "@context" : "http://schema.org",
+  "@type": "LocalBusiness",
+  "name" : "Naos Atelier",
+  "legalName": "Naos Atelier srl",
+  "logo" : "https://www.naos-atelier.be/assets/img/naos-atelier-logo.svg",
+  "image": "https://www.naos-atelier.be/assets/img/naos-atelier-fb-og-image.jpg",
+  "url": "{{ .Site.BaseURL }}",
+  "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Quai de Coronmeuse, 32",
+  "addressLocality": "Liège",
+  "addressRegion": "Liège",
+  "postalCode": "4000"
+  },
+  "telephone": "04 227 74 05",
+  "email" :"info@naos-atelier.be",
+  "vatID": "745898665",
+  "sameAs" :
+    [ "{{ $.Site.Data.contact.facebook_link }}" ],
+  "description": "{{ $.Site.Data.contact.description }}"
+  }
+  </script>

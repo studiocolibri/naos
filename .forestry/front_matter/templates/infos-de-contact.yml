@@ -31,5 +31,15 @@ fields:
   config:
     required: false
   label: Adresse de la page Facebook
+- name: tva
+  type: text
+  config:
+    required: false
+  label: Numéro d'entreprise
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description du site
 pages:
 - data/contact.toml

@@ -14,6 +14,6 @@ Stratifié Polaris - Panneau ALFA Chêne - Plan de travail Dekton (Cuisine)
 
 Stratifié Polaris - Placage Chêne sur mdf noir (Hall)
 
-_Projet :_ [**Pavillonchamps**](https://www.pavillonchamps.be/)
+_Projet :_ <a target="_blank" href="https://www.pavillonchamps.be/"><strong>Pavillonchamps</strong></a>
 
 _Crédits :_ **Samuel Defourny**

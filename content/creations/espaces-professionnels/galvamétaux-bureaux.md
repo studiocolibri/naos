@@ -7,6 +7,6 @@ title = "Galvamétaux (Bureaux)"
 +++
 Multiplex Bouleau - Stratifié blanc - Tôles Galva pliées
 
-_Projet :_ [**PMAA**](http://www.pierremonseuarchitecte.be/)
+_Projet :_ <a target="_blank" href="http://www.pierremonseuarchitecte.be/"><strong>PMAA</strong></a>
 
 _Crédits :_ **Samuel Defourny**

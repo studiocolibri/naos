@@ -7,6 +7,6 @@ title = "MeubleTV TH"
 +++
 Verres Laqués - Stratifié blanc - Mdf noir
 
-_Projet :_ [**PMAA**](http://www.pierremonseuarchitecte.be/)
+_Projet :_ <a target="_blank" href="http://www.pierremonseuarchitecte.be/"><strong>PMAA</strong></a>
 
 _Crédits :_ **Fabian Rouwette**

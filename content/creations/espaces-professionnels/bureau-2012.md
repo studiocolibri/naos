@@ -5,4 +5,4 @@ gallery = ["/GU12-01.JPG", "/GU12-03.JPG", "/GU12-02.JPG"]
 title = "Bureau 2012"
 
 +++
-_Projet :_ [**Atelier AGAT**](http://atelieragat.be/)
+_Projet :_ <a target="_blank" href="http://atelieragat.be/"><strong>Atelier AGAT</strong></a>

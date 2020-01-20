@@ -7,6 +7,6 @@ title = "Cuisine TIL17"
 +++
 Stratifié blanc Full Color - Mdf laqué Jaune - Plan de travail Corian
 
-_Projet :_ [**Pavillonchamps**](https://www.pavillonchamps.be/)
+_Projet :_ <a target="_blank" href="https://www.pavillonchamps.be/"><strong>Pavillonchamps</strong></a>
 
 _Crédits :_ **Samuel Defourny**

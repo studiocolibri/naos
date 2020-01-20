@@ -7,6 +7,6 @@ title = "MeubleTV GR"
 +++
 Stratifié blanc - Placage .. 
 
-_Projet :_ **PMAA**
+_Projet :_ <a target="_blank" href="http://www.pierremonseuarchitecte.be/"><strong>PMAA</strong></a>
 
 _Crédits :_ **Fabian Rouwette**

@@ -9,4 +9,4 @@ Stratifié blanc Full Color - Placage Chêne - Verre laqué rouge - Plan de trav
 
 _Crédits :_ **Fabian Rouwette**
 
-[**Red & Breakfast**](https://redandbreakfast.be/)
+<a target="_blank" href="https://redandbreakfast.be/"><strong>Red & Breakfast</strong></a>

@@ -7,6 +7,6 @@ title = "Cinéma Caméo"
 +++
 Placage Chêne - Panneau Alvéolaire - Chêne massif - Tablette pivotante
 
-_Projet :_ [**V+**](http://www.vplus.org/)
+_Projet :_ <a target="_blank" href="http://www.vplus.org/"><strong>V+</strong></a>
 
 _Crédits :_ **Fabian Rouwette**

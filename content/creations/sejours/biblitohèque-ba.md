@@ -7,6 +7,6 @@ title = "Biblitohèque BA"
 +++
 Stratifié blanc Full Color - Placage Afzélia
 
-_Projet :_ [**Sabina Ianieri**](https://mon-architecte.eu/fr/architects/405)
+_Projet :_ <a target="_blank" href="https://mon-architecte.eu/fr/architects/405"><strong>Sabina Ianieri</strong></a>
 
 _Crédits :_ **Fabian Rouwette**

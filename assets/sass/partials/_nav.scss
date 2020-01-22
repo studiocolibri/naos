@@ -173,12 +173,15 @@
 
     @media screen and (min-width:768px) {
 
-        &:hover, &:focus {
-    
-            .site-nav__submenu {
-                opacity:1;
-                overflow: visible;
-                height:auto;
+        @media (hover: hover) {
+
+            &:hover, &:focus {
+        
+                .site-nav__submenu {
+                    opacity:1;
+                    overflow: visible;
+                    height:auto;
+                }
             }
         }
     }

@@ -6,3 +6,4 @@ gallery = ["/v1579518343/HE15-02.jpg", "/v1579518343/HE15-03.jpg", "/v1579518343
 title = "Cuisine BEY12"
 
 +++
+Stratifié blanc Full Color - Placage Afzélia - Afzélia massif - Plan de travail Pral - Piétement Inox

@@ -5,6 +5,6 @@ gallery = ["/v1579518366/MU08-01.jpg", "/v1579518366/MU08-02.jpg", "/v1579518366
 title = "Cuisine LIE08"
 
 +++
-Stratifié Gris - Plan de travail en Schiste
+Stratifié Gris - Niche laquée Bleue - Plan de travail en Schiste
 
 _Crédits :_ **Fabian Rouwette**

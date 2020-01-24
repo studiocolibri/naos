@@ -7,6 +7,6 @@ title = "Cuisine LIE10"
 +++
 Placage Chêne teinté Noir - Stratifié blanc - Crédence verre - Menuiserie intégrée
 
-_Projet :_ <a target="_blank" href="[http://www.pierremonseuarchitecte.be/](http://www.pierremonseuarchitecte.be/ "http://www.pierremonseuarchitecte.be/")"><strong>PMAA</strong></a>
+_Projet :_ <a target="_blank" href="http://www.pierremonseuarchitecte.be/"><strong>PMAA</strong></a>
 
 _Crédits :_ **Fabian Rouwette**

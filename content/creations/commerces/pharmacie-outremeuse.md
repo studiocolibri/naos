@@ -7,6 +7,6 @@ title = "Pharmacie Outremeuse"
 +++
 Sipo massif abouté - Étagères de verres.
 
-Projet : <a target="_blank" href="[https://aiud.be/](https://aiud.be/ "https://aiud.be/")"><strong>AUID</strong></a>
+Projet : <a target="_blank" href="https://aiud.be/"><strong>AUID</strong></a>
 
 _Crédits :_ **Samuel Defourny**

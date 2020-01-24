@@ -7,6 +7,6 @@ title = "Cuisine BAU09"
 +++
 Panneau ALFA Bouleau - MDF noir vernis - Crédence verre Jaune-Plan de travail Stratifié Massif noir
 
-_Projet :_ <a target="_blank" href="[http://www.pierremonseuarchitecte.be/](http://www.pierremonseuarchitecte.be/ "http://www.pierremonseuarchitecte.be/")"><strong>PMAA</strong></a>
+_Projet :_ <a target="_blank" href="http://www.pierremonseuarchitecte.be/"><strong>PMAA</strong></a>
 
 _Crédits :_ **Fabian Rouwette**

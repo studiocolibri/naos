@@ -1,25 +1,25 @@
 {{ define "main" }}
 
-    <section class="home-intro cw">
-        <h1>{{ .Title }}<br>
-            <span>{{ .Params.subtitle | safeHTML }}</span>
-        </h1>
-        <p class="tw">{{ .Content | plainify }}</p>
-        <p class="more-info"><a href="#home-blocks">Plus d'infos</a></p>
-    </section>
+<section class="home-intro cw">
+    <h1>{{ .Title }}<br>
+        <span>{{ .Params.subtitle | safeHTML }}</span>
+    </h1>
+    <p class="tw">{{ .Content | plainify }}</p>
+    <p class="more-info"><a href="#home-blocks">Plus d'infos</a></p>
+</section>
 
-    <section class="home-blocks cw" id="home-blocks">
-        {{ range .Params.blocks }}
-            <a class="home-block observed" href="/{{ .link }}">
-                <div class="home-block__title-container">
-                    <h2>{{ .title }}</h2>
-                </div>
-                <picture>
-                    <source srcset="{{ $.Site.Params.cloudinary_url }}q_80,w_400{{ .img }}" media="(max-width: 400px)">
-                    <img src="{{ $.Site.Params.cloudinary_url }}q_80,w_620{{ .img }}" alt="" width="620" height="412">
-                </picture>
-            </a>
-        {{ end }}
-    </section>
-    
+<section class="home-blocks cw" id="home-blocks">
+    {{ range .Params.blocks }}
+    <a class="home-block observed" href="/{{ .link }}">
+        <div class="home-block__title-container">
+            <h2>{{ .title }}</h2>
+        </div>
+        <picture>
+            <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ .img }}" media="(max-width: 400px)">
+            <img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .img }}" alt="" width="620" height="412">
+        </picture>
+    </a>
+    {{ end }}
+</section>
+
 {{ end }}

@@ -1,31 +1,31 @@
 {{ define "main" }}
 
-    <h1>{{ .Title }}</h1>
+<h1>{{ .Title }}</h1>
 
-    <section class="atelier-img" aria-label="Infos sur l'atelier">
-        <picture>
-            <source srcset="{{ $.Site.Params.cloudinary_url }}q_80,w_400{{ .Params.atelier_img }}" media="(max-width: 400px)">
-            <source srcset="{{ $.Site.Params.cloudinary_url }}q_80,w_620{{ .Params.atelier_img }}" media="(max-width: 620px)">
-            <source srcset="{{ $.Site.Params.cloudinary_url }}q_80,w_768{{ .Params.atelier_img }}" media="(max-width: 768px)">
-            <img src="{{ $.Site.Params.cloudinary_url }}q_80,w_1240{{ .Params.atelier_img }}" alt="Photo de l'atelier" width="1240" height="827">
-        </picture>
-        <p>{{ .Params.atelier_text_01 }}</p>
-        <p>{{ .Params.atelier_text_02 }}</p>
-    </section>
+<section class="atelier-img" aria-label="Infos sur l'atelier">
+    <picture>
+        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ .Params.atelier_img }}" media="(max-width: 400px)">
+        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .Params.atelier_img }}" media="(max-width: 620px)">
+        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_768{{ .Params.atelier_img }}" media="(max-width: 768px)">
+        <img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1240{{ .Params.atelier_img }}" alt="Photo de l'atelier" width="1240" height="827">
+    </picture>
+    <p>{{ .Params.atelier_text_01 }}</p>
+    <p>{{ .Params.atelier_text_02 }}</p>
+</section>
 
-    <section class="team observed">
-        <h2>Notre équipe</h2>
-        <div class="team__text">{{ .Params.team_text | markdownify }}</div>
-        <ul class="team__members">
-            {{ range .Params.team_members }}
-                <li>
-                    <figure>
-                        <img src="{{ $.Site.Params.cloudinary_url }}{{ .img }}" alt="Photo de {{ .name }}">
-                        <figcaption>{{ .name }}</figcaption>
-                    </figure>
-                </li>
-            {{ end }}
-        </ul>
-    </section>
+<section class="team observed">
+    <h2>Notre équipe</h2>
+    <div class="team__text">{{ .Params.team_text | markdownify }}</div>
+    <ul class="team__members">
+        {{ range .Params.team_members }}
+        <li>
+            <figure>
+                <img src="{{ $.Site.Params.cloudinary_url }}{{ .img }}" alt="Photo de {{ .name }}">
+                <figcaption>{{ .name }}</figcaption>
+            </figure>
+        </li>
+        {{ end }}
+    </ul>
+</section>
 
 {{ end }}

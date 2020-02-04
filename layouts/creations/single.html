@@ -1,26 +1,24 @@
 {{ define "main" }}
-	<h1>
-		<small><a href="/creations">Nos créations</a> > <a href="/creations/{{ .Params.categories }}">{{ .Params.categories }}</a></small><br>
-		{{ .Title }} <small>({{ .Date.Format "2006" }})</small>
-	</h1>
-	
-	<div class="tw">
-		{{ .Content | safeHTML }}
-	</div>
+<h1>
+    <small><a href="/creations">Nos créations</a> > <a href="/creations/{{ .Params.categories }}">{{ .Params.categories }}</a></small><br> {{ .Title }} <small>({{ .Date.Format "2006" }})</small>
+</h1>
 
-	<div class="gallery" id="gallery">
-		<div class="gallery_slider">
-			{{ range .Params.gallery }}
-				<div class="gallery_item">
-					<picture>
-						<source srcset="{{ $.Site.Params.cloudinary_url }}/q_80,w_400{{ . }}" media="(max-width: 400px)">
-						<source srcset="{{ $.Site.Params.cloudinary_url }}/q_80,w_620{{ . }}" media="(max-width: 620px)">
-						<source srcset="{{ $.Site.Params.cloudinary_url }}/q_80,w_768{{ . }}" media="(max-width: 768px)">
-						<img class="gallery_img" src="{{ $.Site.Params.cloudinary_url }}q_80,w_1240{{ . }}" alt="" width="1240" height="827">
-					</picture>
-				</div>
-			{{ end }}
-		</div>
-	</div>
+<div class="tw">
+    {{ .Content | safeHTML }}
+</div>
+
+<div class="gallery" id="gallery">
+    <div class="gallery_slider">
+        {{ range .Params.gallery }}
+        <div class="gallery_item">
+            <picture>
+                <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_400{{ . }}" media="(max-width: 400px)">
+                <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_620{{ . }}" media="(max-width: 620px)">
+                <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_768{{ . }}" media="(max-width: 768px)">
+                <img class="gallery_img" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1240{{ . }}" alt="" width="1240" height="827">
+            </picture>
+        </div>
+        {{ end }}
+    </div>
+</div>
 {{ end }}
-

@@ -1,7 +1,8 @@
 <footer class="site-footer" id="site-footer">
-	<h1>{{ $.Site.Data.contact.title | safeHTML }}</h1>
-	<address>{{ $.Site.Data.contact.address | safeHTML }}</address>
-	<a href="tel:{{ $.Site.Data.contact.tel_for_robots }}">{{ $.Site.Data.contact.tel_for_humans | safeHTML }}</a>
-	<a href="mailto:{{ $.Site.Data.contact.email }}">{{ $.Site.Data.contact.email}}</a>
+    <h1>{{ $.Site.Data.contact.title | safeHTML }}</h1>
+    <address>{{ $.Site.Data.contact.address | safeHTML }}</address>
+    <a href="tel:{{ $.Site.Data.contact.tel_for_robots }}">{{ $.Site.Data.contact.tel_for_humans | safeHTML }}</a>
+    <a href="mailto:{{ $.Site.Data.contact.email }}">{{ $.Site.Data.contact.email}}</a>
+    <span class="site-footer__signature">Développé de manière éco-responsable&nbsp;par <a href="https://www.studiocolibri.be">Studio&nbsp;Colibri</a></span>
 </footer>
 <button id="top-btn" onclick="goToTop()" title="Revenir en haut de page" aria-label="Haut de page">⌃</button>

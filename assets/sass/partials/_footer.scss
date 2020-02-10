@@ -3,10 +3,10 @@
 */
 
 .site-footer {
-    font-size:0.8rem;
+    font-size: 0.8rem;
     text-align: center;
-    margin:0 auto;
-    padding:$su $su/2 $su*1.5;
+    margin: 0 auto;
+    padding: $su $su/2 $su*1.5;
     position: relative;
     bottom: 0;
     left: 50%;
@@ -14,36 +14,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    @media screen and (min-width:768px) {
-        padding:$su $su $su*1.5;
+    @media screen and (min-width: 768px) {
+        padding: $su $su $su*1.5;
     }
-
     body.open & {
-        display:none;
+        display: none;
     }
-
-    h1, .single & h1, .home & h1 {
+    h1,
+    .single & h1,
+    .home & h1 {
         font-size: 1.2rem;
-        margin:0 auto 0.25em;
-        width:100%;
+        margin: 0 auto 0.25em;
+        width: 100%;
         @include ff-r;
     }
-
-    address, a {
+    address,
+    a {
         display: block;
     }
-    
     address {
         font-style: normal;
-        display:inline;
+        display: inline;
     }
-
-    a {
+    >a {
         white-space: nowrap;
-        margin-left:1em;
+        margin-left: 1em;
         position: relative;
-
         &:before {
             content: '•';
             display: inline-block;
@@ -51,14 +47,22 @@
             position: absolute;
         }
     }
-
+    .site-footer__signature {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.3em;
+        a {
+            display: inline-block;
+        }
+    }
     &:after {
         content: '';
         position: absolute;
         display: block;
         width: 14rem;
         height: 1px;
-        background-color:#dc0814;
+        background-color: #dc0814;
         left: 50%;
         transform: translateX(-50%);
         top: 0;
@@ -69,7 +73,7 @@
     position: fixed;
     right: $su;
     bottom: $su;
-    opacity:0;
+    opacity: 0;
     font-size: 32px;
     background: white;
     border-radius: 50%;
@@ -79,21 +83,19 @@
     display: block;
     text-align: center;
     padding: 0.2em;
-    transition:color 150ms ease-out, background-color 150ms ease-out, opacity 150ms ease-out;
-
+    transition: color 150ms ease-out, background-color 150ms ease-out, opacity 150ms ease-out;
     &.visible {
-        opacity:0.7;
-
-        &:hover, &:focus {
-            background-color:$red;
-            color:white;
-            border-color:$red;
-            opacity:1;
-            cursor:pointer;
+        opacity: 0.7;
+        &:hover,
+        &:focus {
+            background-color: $red;
+            color: white;
+            border-color: $red;
+            opacity: 1;
+            cursor: pointer;
         }
-    
         &:active {
-            opacity:0.7;
+            opacity: 0.7;
         }
     }
 }

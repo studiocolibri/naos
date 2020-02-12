@@ -11,13 +11,17 @@ if(!('IntersectionObserver' in window)) {
 		rootMargin: '0px',
 		threshold: 0.2
 	};
-	let observer = new IntersectionObserver((entries, observer) => { 
-		entries.forEach(entry => {
+	let observer = new IntersectionObserver( function(entries, observer) {
+		for (var i=0; i < entries.length; i++) {
+			let entry = entries[i];
 			if(entry.intersectionRatio > 0) {
 				entry.target.classList.add('is-visible');
 				observer.unobserve(entry.target);
 			}
-		});
+		}
 	}, config);
-	document.querySelectorAll('.observed').forEach(obj => { observer.observe(obj) });
+	let observed = document.querySelectorAll('.observed');
+	for (var i=0; i < observed.length; i++) {
+		observer.observe(observed[i]);
+	}
 }

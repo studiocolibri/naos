@@ -7,7 +7,7 @@
     <meta name="language" content="{{ .Site.LanguageCode }}" />
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <title>
-        {{ if .IsHome }}{{ $.Site.Data.contact.homepage_title }} {{ else }}Naos Atelier{{ with .Params.categories }} | {{ . }}{{ end }}{{ with .Params.Title }} | {{ . }}{{ end }} {{ end }}
+        {{ if .IsHome }} {{ $.Site.Data.contact.homepage_title }} {{ else }} Naos Atelier {{ if .Params.categories }} | {{ $cat := .Params.categories }} {{ $name := $.Site.GetPage (printf "/creations/%s" $cat) }} {{ $name.Title }} {{ end }} {{ with .Params.Title }} | {{ . }}{{ end }} {{ end }}
     </title>
     <meta name="author" content='{{ .Site.Params.Author }}' />
     <meta name="description" content='{{ with .Content }}{{ . | truncate 158 }}{{ else }}{{ $.Site.Data.contact.description }}{{ end }}' />
@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink | relURL }}"> {{ partial "site-favicon.html" . }} {{ if .IsHome }}{{ partial "home-snippet.html" . }}{{ end }}
 </head>
 
-<body id="root" class="{{ with .IsHome }}home{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ if eq .Page.Section " creations " }} creations{{ end }}">
+<body id="root" class="{{ with .IsHome }}home{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ if eq .Page.Section "creations" }} creations{{ end }}">
     <div class="site-wrapper mw">
         {{ partial "site-header.html" .}}
         <main class="site-main {{ if ne .IsHome true }}main-single{{ else }}main-home{{ end }}" id="site-main">{{ block "main" . }}{{ end }}</main>

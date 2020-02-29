@@ -7,13 +7,13 @@
     <meta name="language" content="{{ .Site.LanguageCode }}" />
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <title>
-        {{ if .IsHome }} {{ $.Site.Data.contact.homepage_title }} {{ else }} Naos Atelier {{ if .Params.categories }} | {{ $cat := .Params.categories }} {{ $name := $.Site.GetPage (printf "/creations/%s" $cat) }} {{ $name.Title }} {{ end }} {{ with .Params.Title }} | {{ . }}{{ end }} {{ end }}
+        {{ if .IsHome }}{{ $.Site.Data.contact.homepage_title }}{{ else }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ if .Params.categories }}{{ $cat := .Params.categories }}{{ $name := $.Site.GetPage (printf "/creations/%s" $cat) }}{{ $name.Title }} | {{ end }}Naos Atelier{{ end }}
     </title>
     <meta name="author" content='{{ .Site.Params.Author }}' />
     <meta name="description" content='{{ with .Content }}{{ . | truncate 158 }}{{ else }}{{ $.Site.Data.contact.description }}{{ end }}' />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:title" content="{{ if .IsHome }}{{ $.Site.Data.contact.homepage_title }}{{ else }}Naos Atelier{{ with .Params.categories }} | {{ . }}{{ end }}{{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}" />
+    <meta property="og:title" content="{{ if .IsHome }}{{ $.Site.Data.contact.homepage_title }}{{ else }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ if .Params.categories }}{{ $cat := .Params.categories }}{{ $name := $.Site.GetPage (printf "/creations/%s" $cat) }}{{ $name.Title }} | {{ end }}Naos Atelier{{ end }}" />
     <meta property="og:description" content='{{ with .Content }}{{ . | truncate 158 }}{{ else }}{{ $.Site.Data.contact.description }}{{ end }}' />
     <meta property="og:image" content="{{ if .Params.img }}{{ $.Site.Params.cloudinary_url }}{{ .Params.img }}{{ else if .Params.gallery }}{{ $list := .Params.gallery }}{{ $.Site.Params.cloudinary_url }}{{ range first 1 $list }}{{ . }}{{ end }}{{ else }}{{ .Site.BaseURL }}assets/img/naos-atelier-Ref_FB.jpg{{ end }}"
     />

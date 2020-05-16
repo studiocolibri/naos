@@ -27,7 +27,5 @@ team_members:
   img: "/Jerome.jpg"
 - name: Xavier
   img: "/Xavier.jpg"
-- name: Nicolas
-  img: "/Nicolas-1.jpg"
 
 ---

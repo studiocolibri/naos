@@ -7,6 +7,6 @@ title = "Cuisine LIE19"
 +++
 Chêne rustique - Plan de travail Quartzite
 
-Projet : <a target="_blank" href="[https://www.facebook.com/GaetanGrenierArchi/](https://www.facebook.com/GaetanGrenierArchi/ "https://www.facebook.com/GaetanGrenierArchi/")"><strong>Gaëtan Grenier</strong></a>
+<a target="_blank" href="[https://www.facebook.com/GaetanGrenierArchi](https://www.facebook.com/GaetanGrenierArchi/ "https://www.facebook.com/GaetanGrenierArchi/")/"><strong>Gaëtan Grenier</strong></a>
 
 _Crédits :_ Samuel Defourny

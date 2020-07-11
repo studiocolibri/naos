@@ -9,4 +9,4 @@ Chêne rustique - Plan de travail Quartzite
 
 _Projet :_ <a target="_blank" href="[https://www.facebook.com/GaetanGrenierArchi/](https://www.facebook.com/GaetanGrenierArchi/ "https://www.facebook.com/GaetanGrenierArchi/")"><strong>Gaëtan Grenier</strong></a>
 
-_Crédits :_ Samuel Defourny
+_Crédits :_ **Samuel Defourny**

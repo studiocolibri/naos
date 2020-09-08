@@ -15,3 +15,5 @@ blocks:
 
 ---
 Nos projets de mobiliers sont conçus et réalisés « sur mesure » et surtout « à la mesure » de l’environnement de chaque personne afin d’y intégrer au mieux l’objet ou l’aménagement.
+
+Passionnés du bois depuis de nombreuses années, nous mettons un point d'honneur à choisir et proposer les matériaux les plus nobles et les plus durables. Ceci afin de garantir une longévité ainsi qu’un aspect écologique.

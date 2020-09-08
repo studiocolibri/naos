@@ -14,9 +14,8 @@ blocks:
   link: contact
 
 ---
+Nos projets de mobiliers sont conçus et réalisés « sur mesure » et surtout « à la mesure » de l’environnement de chaque personne afin d’y intégrer au mieux l’objet ou l’aménagement.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Nos projets de mobiliers sont conçus et réalisés « sur mesure » et surtout « à la mesure » de l’environnement de chaque personne afin d’y intégrer au mieux l’objet ou l’aménagement.
+Passionnés du bois depuis de nombreuses années, nous mettons un point d'honneur à choisir et proposer les matériaux les plus nobles et les plus durables. Cela nous permet de garantir une longévité ainsi qu’un aspect écologique.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Passionnés du bois depuis de nombreuses années, nous mettons un point d'honneur à choisir et proposer les matériaux les plus nobles et les plus durables. Cela nous permet de garantir une longévité ainsi qu’un aspect écologique.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Faces à l’industrie et ses dérives technologiques, nous défendons notre position d’artisan qui veut garder le contrôle et la finalité de son produit, où chaque intervenant joue son propre rôle pour amener à bien l'aboutissement d'un projet.
+Faces à l’industrie et ses dérives technologiques, nous défendons notre position d’artisan qui veut garder le contrôle et la finalité de son produit, où chaque intervenant joue son propre rôle pour amener à bien l'aboutissement d'un projet.

@@ -12,7 +12,6 @@ blocks:
 - title: Contact
   img: "/NA12-05.jpg"
   link: contact
-draft: true
 
 ---
 Nos projets de mobiliers sont conçus et réalisés « sur mesure » et surtout « à la mesure » de l’environnement de chaque personne afin d’y intégrer au mieux l’objet ou l’aménagement.

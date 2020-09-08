@@ -4,7 +4,9 @@
     <h1>{{ .Title }}<br>
         <span>{{ .Params.subtitle | safeHTML }}</span>
     </h1>
-    <p class="tw">{{ .Content | plainify }}</p>
+    <div class="tw">
+        {{ .Content }}
+    </div>
     <p class="more-info"><a href="#home-blocks">Plus d'infos</a></p>
 </section>
 

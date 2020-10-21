@@ -12,10 +12,10 @@
         {{ range .Params.gallery }}
         <div class="gallery_item">
             <picture>
-                <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_400{{ . }}" media="(max-width: 400px)">
-                <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_620{{ . }}" media="(max-width: 620px)">
-                <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_768{{ . }}" media="(max-width: 768px)">
-                <img class="gallery_img" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1240{{ . }}" alt="" width="1240" height="827">
+                <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_800{{ . }}" media="(max-width: 400px)">
+                <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_1240{{ . }}" media="(max-width: 620px)">
+                <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_1536{{ . }}" media="(max-width: 768px)">
+                <img class="gallery_img" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_2480{{ . }}" alt="" width="1240" height="827">
             </picture>
         </div>
         {{ end }}

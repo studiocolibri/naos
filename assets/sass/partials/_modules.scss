@@ -17,6 +17,10 @@ a {
         background-size: 100% 1px;
     }
 
+    &:focus {
+        outline:1px dashed $red;
+    }
+
     &:active {
         opacity:0.7;
     }

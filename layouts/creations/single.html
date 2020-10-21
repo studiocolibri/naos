@@ -1,6 +1,6 @@
 {{ define "main" }}
 <h1>
-    <small><a href="/creations">Nos créations</a> > <a href="/creations/{{ .Params.categories }}">{{ .Params.categories }}</a></small><br> {{ .Title }} <small>({{ .Date.Format "2006" }})</small>
+    <small><a href="/creations">Nos créations</a> > <a href="/creations/{{ .Params.categories | urlize }}">{{ .Params.categories }}</a></small><br> {{ .Title }} <small>({{ .Date.Format "2006" }})</small>
 </h1>
 
 <div class="tw">

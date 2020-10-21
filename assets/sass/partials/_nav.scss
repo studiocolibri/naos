@@ -130,7 +130,6 @@
 
     &:hover, &:focus {
         color:$red;
-        outline:0;
 
         span:before {
             opacity:1;
@@ -175,8 +174,20 @@
 
         @media (hover: hover) {
 
-            &:hover, &:focus {
-        
+            .site-nav__link {
+                
+                &:hover, &:focus  {
+            
+                    ~ .site-nav__submenu {
+                        opacity:1;
+                        overflow: visible;
+                        height:auto;
+                    }
+                }
+            }
+
+            &:hover, &:focus, &:focus-within  {
+            
                 .site-nav__submenu {
                     opacity:1;
                     overflow: visible;

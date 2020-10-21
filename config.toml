@@ -2,6 +2,7 @@ baseURL = "https://www.naos-atelier.be/"
 languageCode = "fr-be"
 title = "Naos Atelier"
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
+removePathAccents = true
 
 [params]
     author = "Robin Foguenne | Studio Colibri"

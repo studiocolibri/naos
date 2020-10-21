@@ -1,9 +1,7 @@
 {{ define "main" }} {{ $sectionPage := .Site.GetPage "section" "creations" }} {{ if .IsAncestor $sectionPage }}
 <h1>{{ .Title }}</h1>
 {{ else }}
-<h1>
-    <small><a href="{{ $sectionPage.Permalink }}">{{ $sectionPage.Title }}</a></small><br> {{ .Title }}
-</h1>
+<h1><small><a href="{{ $sectionPage.Permalink }}">{{ $sectionPage.Title }}</a></small><br>{{ .Title }}</h1>
 {{ end }} {{ with .Content }}
 <div class="tw">
     {{ . }}

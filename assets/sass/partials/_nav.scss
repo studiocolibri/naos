@@ -128,12 +128,17 @@
         transition:opacity 150ms ease-in;
     }
 
-    &:hover, &:focus {
+    &:hover, &:focus-visible {
         color:$red;
+        outline:0;
 
         span:before {
             opacity:1;
         }
+    }
+
+    &:focus {
+        outline:inherit;
     }
 
     &:active {

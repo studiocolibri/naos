@@ -37,6 +37,11 @@ $su: 20px; // spacing-unit
     unicode-range:U+0020-007F,U+00A0-00FF;
 }
 
+*:focus,
+*:focus-visible {
+    outline:1px dashed $red;
+}
+
 
 @import 'partials/_reset';
 @import 'partials/_mixins';

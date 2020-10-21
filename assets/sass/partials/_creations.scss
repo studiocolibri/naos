@@ -55,6 +55,7 @@
 	
 		&:hover, &:focus {
 			background: none;
+			outline:0;
 
 			h2 {
 				width:60%;
@@ -221,7 +222,8 @@
 	}
 
 	&:hover, &:focus {
-		
+		outline:0;
+
 		&:before {
 			opacity:1;
 		}

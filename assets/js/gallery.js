@@ -17,11 +17,15 @@ var btnPrev = document.createElement('button');
 btnPrev.className = 'gallery_btn prev';
 btnPrev.id = 'galleryPrev';
 btnPrev.innerHTML = '<';
+btnPrev.title = "Photo précédente";
+btnPrev.setAttribute('aria-label', 'Photo précédente');
 
 var btnNext = document.createElement('button');
 btnNext.className = 'gallery_btn next';
 btnNext.id = 'galleryNext';
 btnNext.innerHTML = '>';
+btnNext.title = "Photo suivante";
+btnNext.setAttribute('aria-label', 'Photo suivante');
 
 document.getElementById("gallery").append(btnPrev);
 document.getElementById("gallery").append(btnNext);

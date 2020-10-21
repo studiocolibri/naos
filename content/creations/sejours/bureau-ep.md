@@ -7,4 +7,4 @@ title = "Bureau EP"
 +++
 Placage Wengé - Mdf laqué
 
-_Projet :_ <a target="_blank" href="http://www.pierremonseuarchitecte.be/"><strong>PMAA</strong></a>
+_Projet :_ [**PMAA**](http://www.pierremonseuarchitecte.be/)

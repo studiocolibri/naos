@@ -7,6 +7,6 @@ title = "Hotel Radisson"
 +++
 Placage Chêne - Tablette pivotante - Porte coulissante
 
-_Projet :_ <a target="_blank" href="https://www.artau.be/0132/fr/Accueil"><strong>Artau Architectures</strong></a>
+_Projet :_ [**Artau Architectures**](https://www.artau.be/0132/fr/Accueil)
 
 _Crédits :_ **Fabian Rouwette**

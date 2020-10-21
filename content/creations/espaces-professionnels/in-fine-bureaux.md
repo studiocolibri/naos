@@ -7,6 +7,6 @@ title = "In Fine (Bureaux)"
 +++
 Mdf laqué - Mdf noir vernis - Placage chêne
 
-_Projet :_ <a target="_blank" href="http://www.pierremonseuarchitecte.be/"><strong>PMAA</strong></a>
+_Projet :_ [**PMAA**](http://www.pierremonseuarchitecte.be/)
 
 _Crédits :_ **Samuel Defourny**

@@ -7,4 +7,4 @@ title = "Stoler Immobilier"
 +++
 Mdf laqué rouge
 
-_Projet :_ <a target="_blank" href="https://www.debie.com"><strong>Studio Debie</strong></a>
+_Projet :_ [**Studio Debie**](https://www.debie.com)

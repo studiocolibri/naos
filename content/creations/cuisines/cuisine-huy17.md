@@ -7,6 +7,6 @@ title = "Cuisine HUY17"
 +++
 Stratifié blanc Full Color - Stratifié Polaris noir - Placage chêne - Plan de travail Corian
 
-_Projet :_ <a target="_blank" href="http://www.pierremonseuarchitecte.be/"><strong>PMAA</strong></a>
+_Projet :_ [**PMAA**](http://www.pierremonseuarchitecte.be/)
 
 _Crédits :_ **Steve Collin**

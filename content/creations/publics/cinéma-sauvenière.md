@@ -7,6 +7,6 @@ title = "Cinéma Sauvenière"
 +++
 Mdf laqué - Banquettes postformées placage Chêne
 
-_Projet :_ <a target="_blank" href="http://www.vplus.org/"><strong>V+</strong></a>
+_Projet :_ [**V+**](http://www.vplus.org/)
 
 _Crédits :_ **Alain Janssens**

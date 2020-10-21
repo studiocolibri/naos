@@ -7,6 +7,6 @@ title = "Les Opticiennes (Huy)"
 +++
 Stratifié blanc Full Color - Tôles Aluminium façonnées, anodisation Or
 
-_Projet :_ <a target="_blank" href="http://www.pierremonseuarchitecte.be/"><strong>PMAA</strong></a>
+_Projet :_ [**PMAA**](http://www.pierremonseuarchitecte.be/)
 
 _Crédits :_ **Steve Collin**

@@ -7,6 +7,6 @@ title = "Pharmacie Romsée"
 +++
 Placage Wengé - mdf laqué - Crédence verre rétroéclairé
 
-_Projet :_ <a target="_blank" href="https://www.lavaux.be/">AAL</a>
+_Projet :_ [**AAL**](https://www.lavaux.be/)
 
 _Crédits :_ **Fabian Rouwette**

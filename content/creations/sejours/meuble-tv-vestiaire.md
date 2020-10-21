@@ -7,6 +7,6 @@ title = "Meuble tv / vestiaire BAS20"
 +++
 Stratifié gris vert - Chêne
 
-_Projet_ : <a target="_blank" href="[https://www.feltes.lu/fr/accueil](https://www.feltes.lu/fr/accueil "https://www.feltes.lu/fr/accueil")"><strong>Lara Mertens</strong></a>
+_Projet_ : [**Lara Mertens**](https://www.feltes.lu/fr/accueil)
 
 _Crédits_ : **Samuel Defourny**

@@ -9,4 +9,4 @@ Polaris - Pierre composit - Structure métallique laquée
 
 _Projet_ : [**Lara Mertens**](https://www.feltes.lu/fr/accueil)
 
-_Crédits_ : **Samuel Defourny**
+_Crédits_ : [**Samuel Defourny**](https://www.smdf.be/)

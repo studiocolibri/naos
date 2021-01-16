@@ -6,8 +6,10 @@ gallery = ["/v1610799652/NAO_201105_vannerum_058_yaru7h.jpg", "/v1610799652/NAO_
 title = "Cuisine EMB20"
 
 +++
-**Aménagement** d'une habitation à **Embourg**
+Aménagement d'une habitation à **Embourg**
 
 Plan de travail Inox - Chêne - Stratifié Jaune - Stratifié blanc
 
-_Crédits_ : **Samuel Defourny** 
+_Projets :_
+
+_Crédits :_ [**Samuel Defourny**](https://www.smdf.be/)

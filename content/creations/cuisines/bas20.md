@@ -5,6 +5,8 @@ gallery = ["/v1603221941/LG19-01_rbqply.jpg", "/v1603221940/LG19-02_csvld2.jpg",
 title = "CUISINE BAS20"
 
 +++
+**_Bastogne_**
+
 Polaris - Pierre composit - Structure métallique laquée
 
 _Projet_ : [**Lara Mertens**](https://www.feltes.lu/fr/accueil)

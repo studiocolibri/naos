@@ -5,7 +5,7 @@ gallery = ["/v1579518364/MT15-04.jpg", "/v1579518365/MT15-08.jpg", "/v1579518364
 title = "Cuisine BAU09"
 
 +++
-Panneau ALFA Bouleau - MDF noir vernis - Crédence verre Jaune-Plan de travail Stratifié Massif noir
+Panneau ALFA Bouleau - MDF noir vernis - Crédence Jaune - Plan de travail Stratifié Massif noir
 
 _Projet :_ [**PMAA**](http://www.pierremonseuarchitecte.be/)
 

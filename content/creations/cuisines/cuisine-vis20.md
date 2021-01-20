@@ -7,4 +7,4 @@ title = "Cuisine VIS20"
 +++
 Chêne massif - plan de travail et crédence en Quartzite - Stratifié blanc
 
-_Crédits :_ [Samuel Defourny](https://www.smdf.be/)
+_Crédits :_ [**Samuel Defourny**](https://www.smdf.be/)

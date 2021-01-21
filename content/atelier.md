@@ -19,13 +19,13 @@ team_members:
   img: ''
 - name: Julien
   img: "/Ju.jpg"
+- name: Benjamin
+  img: ''
 - name: Jérôme
   img: "/Jerome.jpg"
-- name: Benjamin
+- name: Léo
   img: ''
 - name: Olivier
   img: "/Olivier.jpg"
-- name: Léo
-  img: ''
 
 ---

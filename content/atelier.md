@@ -13,19 +13,19 @@ team_text: |-
 
   Un principe cher à Naos qui garantit la qualité de ses réalisations et la motivation de son équipe.
 team_members:
+- name: Georges
+  img: "/george.jpg"
 - name: Alexandre
   img: ''
 - name: Julien
   img: "/Ju.jpg"
-- name: Georges
-  img: "/george.jpg"
-- name: Olivier
-  img: "/Olivier.jpg"
-- name: Jérôme
-  img: "/Jerome.jpg"
-- name: Xavier
-  img: "/Xavier.jpg"
 - name: Benjamin
   img: ''
+- name: Jérôme
+  img: "/Jerome.jpg"
+- name: Léo
+  img: ''
+- name: Olivier
+  img: "/Olivier.jpg"
 
 ---

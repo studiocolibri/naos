@@ -19,12 +19,8 @@
 
 .site-header__container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-
-    @media screen and (min-width: 768px) {
-        align-items:center;
-    }
 }
 
 .site-logo {
@@ -40,7 +36,6 @@
     
     img {
         max-width:140px;
-        margin-top:$su/2;
         height:auto;
         
         @media screen and (min-width:768px) {

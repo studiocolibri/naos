@@ -7,4 +7,4 @@ title = "Séjour/Bureau"
 +++
 Séjour et bureau en bouleau + peinture
 
-Crédits : Maureen Schmetz
+_Crédits :_ **Maureen Schmetz**

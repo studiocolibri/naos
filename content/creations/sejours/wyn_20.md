@@ -11,4 +11,4 @@ Stratifié blanc - Portes coulissantes grands formats - Portes miroirs
 
 Architecte : Guillaume Joachim
 
-Photos : [Jean-Luc Deru](https://www.photo-daylight.com/home.html)
+Photos : [**_Jean-Luc Deru_**](https://www.photo-daylight.com/home.html)

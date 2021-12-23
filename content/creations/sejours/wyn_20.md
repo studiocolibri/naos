@@ -9,6 +9,6 @@ Aménagement d'appartement
 
 Stratifié blanc - Portes coulissantes grands formats - Portes miroirs
 
-Architecte : Guillaume Joachim
+Architecte : **_Guillaume Joachim_**
 
 Photos : [**_Jean-Luc Deru_**](https://www.photo-daylight.com/home.html)

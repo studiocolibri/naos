@@ -6,3 +6,10 @@ gallery = ["/v1640246337/WYN_00_ptvjtc.jpg", "/v1640246339/WYN_01_sxwfgn.jpg", "
 title = "Ensemble_Séjour_WYN"
 
 +++
+Aménagement d'appartement
+
+Stratifié blanc - Portes coulissantes grands formats - Portes miroirs
+
+Architecte : Guillaume Joachim
+
+Photos : [Jean-Luc Deru](https://www.photo-daylight.com/home.html)

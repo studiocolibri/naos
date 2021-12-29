@@ -5,9 +5,9 @@ gallery = ["/v1640764965/NAO_211130_JAC_307_cff8yt.jpg", "/v1640764965/NAO_21113
 title = "Cuisine BOL21"
 
 +++
-Plan de travail en chêne massif - Stratifié blanc - Peinture.
+Plan de travail en chêne massif - Stratifié blanc - Peinture. Ensemble en cohérence avec le mobilier foyer.
 
-Ensemble en cohérence avec le mobilier foyer. A retrouver [ici](https://www.naos-atelier.be/creations/sejours/ "link")
+A retrouver [ici](https://www.naos-atelier.be/creations/sejours/ "link")
 
 _Architecture :_ [**Pavillonchamps**](https://www.pavillonchamps.be/ "link")
 

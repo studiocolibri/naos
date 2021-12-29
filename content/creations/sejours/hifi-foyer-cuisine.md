@@ -9,6 +9,6 @@ Habillage de foyer en chêne massif et stratifié blanc, mobilier recto verso en
 
 _Projet cuisine à retrouver_ [_ici_](https://www.naos-atelier.be/creations/cuisines/ "Link")
 
-Architecture : [**_Pavillonchamps_**](https://www.pavillonchamps.be/ "Link")
+_Architecture :_ [**Pavillonchamps**](https://www.pavillonchamps.be/ "Link")
 
-Photos : [**_Samuel Defourny_**](https://www.smdf.be/ "Link")
+_Photos :_ [**Samuel Defourny**](https://www.smdf.be/ "Link")

@@ -42,11 +42,6 @@ body * {
     margin: 0 auto;
     position: relative;
     min-height: 100vh;
-
-    @media screen and (min-width:1900px) {
-        border-right:1px solid $red;
-        border-left:1px solid $red;
-    }
 }
 
 #site-main {

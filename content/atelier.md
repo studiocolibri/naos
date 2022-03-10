@@ -22,6 +22,6 @@ team_members:
 - name: Matthias
   img: "/v1646915549/IMG_4880_Ret_y752ib.jpg"
 - name: Léo
-  img: ''
+  img: "/v1646915548/IMG_4875_Ret_pz8wyc.jpg"
 
 ---

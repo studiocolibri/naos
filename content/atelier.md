@@ -16,7 +16,7 @@ team_members:
 - name: Alexandre
   img: "/v1646915549/IMG_4882_Ret_bcy0iq.jpg"
 - name: Benjamin
-  img: ''
+  img: "/v1646915549/IMG_4876_Ret_r0qrgc.jpg"
 - name: Jérôme
   img: ''
 - name: Matthias

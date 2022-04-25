@@ -9,4 +9,4 @@ Stratifié gris vert - Chêne
 
 _Projet_ : [**Lara Mertens**](https://www.feltes.lu/fr/accueil)
 
-_Crédits_ : **Samuel Defourny**
+_Photos_ : [**Samuel Defourny**](https://www.smdf.be/)

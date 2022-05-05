@@ -24,6 +24,7 @@ fields:
     : cuisines pour les cuisines ou espace-professionnel, etc.))'
 pages:
 - content/creations/commerces/les-opticiennes.md
+- content/creations/commerces/my-optic-wanze.md
 - content/creations/commerces/pharmacie-guiot.md
 - content/creations/commerces/pharmacie-lejear.md
 - content/creations/commerces/pharmacie-nandrin.md

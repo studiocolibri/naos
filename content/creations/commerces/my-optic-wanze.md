@@ -6,8 +6,12 @@ gallery = ["/v1651736939/NAO_220318_myo_146_hjltbq.jpg", "/v1651736940/NAO_22031
 title = "My Optic (Wanze)"
 
 +++
-Aménagement intérieur d'un magasin d'optique en mettant en concordance divers matériaux :
+Aménagement intérieur d'un magasin d'optique en mettant en concordance divers matériaux.
 
 Bois - Acier - Stratifié - Laquage 
 
-[www.myoptic.be](www.myoptic.be)
+Mise à l'honneur d'un accueil chaleureux et serein
+
+[www.myoptic.be](https://www.myoptic.be/)
+
+_Photos :_ [**Samuel Defourny**](https://www.smdf.be/)

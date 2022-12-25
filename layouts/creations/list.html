@@ -22,15 +22,19 @@
 </section>
 {{ else }}
 <section class="list-projects" aria-label="Projets">
-    {{ $projects := .Pages.ByDate.Reverse }} {{ if gt (len $projects) 0 }} {{ range $projects }} {{- $list := .Params.gallery -}} {{- $len := len $list -}}
-    <a class="list-projects__item observed" href="{{ .Permalink }}">
-        <picture>
-            <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ range first 1 $list }}{{ . }}{{ end }}" media="(max-width: 400px)">
-            <img loading="lazy" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ range first 1 $list }}{{ . }}{{ end }}" alt="{{ .Title }}" width="620" height="412">
-        </picture>
-    </a>
-    {{ end }} {{ else }}
-    <p>Il n'y a aucun projet correspondant à cette catégorie pour l'instant.</p>
+    {{ $projects := .Pages.ByDate.Reverse }}
+    {{ if gt (len $projects) 0 }} 
+        {{ range $projects }}
+            {{- $list := .Params.gallery -}}
+            <a class="list-projects__item observed" href="{{ .Permalink }}">
+                <picture>
+                    <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ range first 1 $list }}{{ . }}{{ end }}" media="(max-width: 400px)">
+                    <img loading="lazy" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ range first 1 $list }}{{ . }}{{ end }}" alt="{{ .Title }}" width="620" height="412">
+                </picture>
+            </a>
+        {{ end }}
+    {{ else }}
+        <p>Il n'y a aucun projet correspondant à cette catégorie pour l'instant.</p>
     {{ end }}
 </section>
 {{ end }} {{ end }}

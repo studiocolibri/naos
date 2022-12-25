@@ -21,10 +21,8 @@
   },
   "homepage": "https://github.com/rbiiiii/naos#readme",
   "dependencies": {
-    "autoprefixer": "^9.7.4",
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0",
-    "gulp-htmlmin": "^5.0.1",
-    "postcss-cli": "^6.1.3"
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0"
   }
 }

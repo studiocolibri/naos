@@ -7,3 +7,5 @@ title = "ARDENNEN LODGE (2022)"
 
 +++
 Aménagement mobilier pour ce gîte à Samrée.
+
+Les ensemble sont réalisés en **chêne massif** sablé. 

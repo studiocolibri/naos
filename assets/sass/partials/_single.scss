@@ -80,26 +80,21 @@
 }
 
 .team__members {
-	display:flex;
-	flex-wrap:wrap;
+	display:grid;
+	grid-template-columns: repeat( auto-fit, minmax(152px, 1fr) );
+	justify-content: center;
+	grid-row-gap: $su;
 	margin:$su*2.5 0;
 
-	@supports (display:grid) {
-		display:grid;
-		grid-template-columns: repeat( auto-fit, minmax(152px, 1fr) );
-		justify-content: center;
-		grid-row-gap: $su;
-	}
-
 	li {
-		width:100%;
-		max-width: 12.5%;
-		opacity:0;
+		position:relative;
+		//max-width: 12.5%;
 		justify-content: center;
+		margin:0;
+		opacity:0;
 		transform:translateY(40px);
 		transition:all 150ms ease-out;
 
-		
 		.team.is-visible & {
 			opacity:1;
 			transform:translateY(0px);
@@ -119,13 +114,6 @@
 			}
 		}
 
-		@supports (display:grid) {
-			position:relative;
-			width:auto;
-			max-width: none;
-			margin:0;
-		}
-
 		&:after {
 			content: '';
 			display: block;
@@ -142,14 +130,15 @@
 	}
 
 	figure {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
+		display: grid;
+		justify-items: center;
 		margin:0;
 	}
 
 	img {
 		padding:0 $su/2;
+		width:100%;
+		height:auto;
 	}
 
 	figcaption {

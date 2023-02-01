@@ -20,7 +20,14 @@
         {{ range .Params.team_members }}
         <li>
             <figure>
-                {{ if (ne .img "") }}<img src="{{ $.Site.Params.cloudinary_url }}{{ .img }}" alt="Photo de {{ .name }}">{{ end }}
+                {{ if (ne .img "") }}
+                    <img
+                        src="{{ $.Site.Params.cloudinary_url }}{{ .img }}"
+                        alt="Photo de {{ .name }}"
+                        width="244"
+                        height="336"
+                        loading="lazy">
+                {{ end }}
                 <figcaption {{ if (eq .img "") }}class="no-image"{{ end }}>{{ .name }}</figcaption>
             </figure>
         </li>

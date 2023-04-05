@@ -8,8 +8,6 @@ logo_url: https://www.naos-atelier.be/assets/img/naos-atelier-logo.svg
 
 locale: 'fr'
 
-show_preview_links: false
-
 slug:
   encoding: "ascii"
   clean_accents: true

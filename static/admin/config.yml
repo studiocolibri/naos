@@ -47,3 +47,147 @@ collections:
         label_singular: "Image"
         field: {label: Image, name: image, widget: image}
       - {label: "Contenu", name: "body", widget: "markdown"}
+  - name: "cuisines"
+    label: "Cuisines" 
+    folder: "content/creations/cuisines" 
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "categories", name: "categories", widget: "hidden", default: "cuisines"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        format: "YYYY-MM-DD"
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: false
+      - label: "Galerie d'images"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        label_singular: "Image"
+        field: {label: Image, name: image, widget: image}
+      - {label: "Contenu", name: "body", widget: "markdown"}  
+  - name: "espaces-professionnels"
+    label: "Espaces professionnels" 
+    folder: "content/creations/espaces-professionnels" 
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "categories", name: "categories", widget: "hidden", default: "espaces-professionnels"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        format: "YYYY-MM-DD"
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: false
+      - label: "Galerie d'images"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        label_singular: "Image"
+        field: {label: Image, name: image, widget: image}
+      - {label: "Contenu", name: "body", widget: "markdown"}  
+  - name: "publics"
+    label: "Espaces publics" 
+    folder: "content/creations/publics" 
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "categories", name: "categories", widget: "hidden", default: "publics"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        format: "YYYY-MM-DD"
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: false
+      - label: "Galerie d'images"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        label_singular: "Image"
+        field: {label: Image, name: image, widget: image}
+      - {label: "Contenu", name: "body", widget: "markdown"}  
+  - name: "salles-de-bain"
+    label: "Salles de bain" 
+    folder: "content/creations/salles-de-bain" 
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "categories", name: "categories", widget: "hidden", default: "salles-de-bain"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        format: "YYYY-MM-DD"
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: false
+      - label: "Galerie d'images"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        label_singular: "Image"
+        field: {label: Image, name: image, widget: image}
+      - {label: "Contenu", name: "body", widget: "markdown"}  
+  - name: "sejours"
+    label: "Séjours" 
+    folder: "content/creations/sejours" 
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "categories", name: "categories", widget: "hidden", default: "sejours"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        format: "YYYY-MM-DD"
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: false
+      - label: "Galerie d'images"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        label_singular: "Image"
+        field: {label: Image, name: image, widget: image}
+      - {label: "Contenu", name: "body", widget: "markdown"}  
+  - name: "tables"
+    label: "Tables" 
+    folder: "content/creations/tables" 
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "categories", name: "categories", widget: "hidden", default: "tables"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        format: "YYYY-MM-DD"
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: false
+      - label: "Galerie d'images"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        label_singular: "Image"
+        field: {label: Image, name: image, widget: image}
+      - {label: "Contenu", name: "body", widget: "markdown"}  

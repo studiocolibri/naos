@@ -8,6 +8,8 @@ logo_url: https://www.naos-atelier.be/assets/img/naos-atelier-logo.svg
 
 locale: 'fr'
 
+show_preview_links: false
+
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -26,6 +28,8 @@ collections:
     folder: "content/creations" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false
     fields: # The fields for each document, usually in front matter
       - label: "Catégorie"
         name: "categories"
@@ -44,5 +48,6 @@ collections:
         name: "gallery"
         widget: "list"
         summary: '{{fields.image}}'
+        label_singular: "Image"
         field: {label: Image, name: image, widget: image}
       - {label: "Body", name: "body", widget: "markdown"}

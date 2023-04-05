@@ -6,8 +6,21 @@
 {{ $defaultJS := slice $nav $topBtn $observer | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
 <script src="{{ $globalJS.Permalink }}"></script>
-{{ if and (eq .Page.Section "creations") (eq .Page.Kind "page") }}
+{{ if and (eq .Page.Section "realisations") (eq .Page.Kind "page") }}
     <script src="/assets/js/siema.min.js"></script>
     <script src="{{ $galleryPublic.Permalink }}"></script>
+{{ end }}
+{{ if .IsHome }}
+<script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+</script>
 {{ end }}
 <noscript><style>.observed, .team.observed li {opacity:1;transform:none;}</style></noscript>

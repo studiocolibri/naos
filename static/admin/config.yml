@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+site_url: https://www.naos-atelier.be
+display_url: https://www.naos-atelier.be
+logo_url: https://www.naos-atelier.be/assets/img/naos-atelier-logo.svg
+
+locale: 'fr'
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: naos
+    api_key: 574487421299888
+    output_filename_only: true
+
+collections:
+  - name: "creations" # Used in routes, e.g., /admin/collections/blog
+    label: "Réalisations" # Used in the UI
+    folder: "content/creations" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - label: "Catégorie"
+        name: "categories"
+        widget: "select"
+        options:
+          - { label: "Commerces", value: "commerces" }
+          - { label: "Cuisines", value: "cuisines" }
+          - { label: "Espaces professionnels", value: "espaces-professionnels" }
+          - { label: "Espaces publics", value: "publics" }
+          - { label: "Salles de bain", value: "salles-de-bain" }
+          - { label: "Séjours", value: "sejours" }
+          - { label: "Tables", value: "tables" }
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date de publication", name: "date", widget: "datetime"}
+      - label: "Galerie d'images"
+        name: "gallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: {label: Image, name: image, widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}

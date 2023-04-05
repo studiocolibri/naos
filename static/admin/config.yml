@@ -8,6 +8,8 @@ logo_url: https://www.naos-atelier.be/assets/img/naos-atelier-logo.svg
 
 locale: 'fr'
 
+show_preview_links: false
+
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -29,13 +31,19 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "categories", name: "categories", widget: "string", default: "commerces", hidden: "true"}
+      - {label: "categories", name: "categories", widget: "hidden", default: "commerces"}
       - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Date de publication", name: "date", widget: "datetime"}
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        format: "YYYY-MM-DD"
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: false
       - label: "Galerie d'images"
         name: "gallery"
         widget: "list"
         summary: '{{fields.image}}'
         label_singular: "Image"
         field: {label: Image, name: image, widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Contenu", name: "body", widget: "markdown"}

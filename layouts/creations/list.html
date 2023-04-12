@@ -1,12 +1,14 @@
 {{ define "main" }} {{ $sectionPage := .Site.GetPage "section" "creations" }} {{ if .IsAncestor $sectionPage }}
-<h1>{{ .Title }}</h1>
-{{ else }}
-<h1><small><a href="{{ $sectionPage.Permalink }}">{{ $sectionPage.Title }}</a></small><br>{{ .Title }}</h1>
-{{ end }} {{ with .Content }}
+<h1>
+    {{ if ne .Page $sectionPage }}<small><a href="{{ $sectionPage.Permalink }}">{{ $sectionPage.Title }}</a></small><br>{{ end }}
+    {{ .Title }}
+</h1> 
+{{ with .Content }}
 <div class="tw">
     {{ . }}
 </div>
-{{ end }} {{ if .IsAncestor $sectionPage }}
+{{ end }}
+{{ if eq .Page $sectionPage }}
 <section class="list-categories" aria-label="Catégories">
     {{ range .Sections.ByWeight }}
     <div class="list-categories__item observed {{ if .Params.long }}list-categories__item--long{{ end }}">

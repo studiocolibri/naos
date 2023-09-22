@@ -6,7 +6,7 @@ title = "Cuisine DUM23"
 
 +++
 Cuisine condensée tout en longueur, axée sur la cuisinière gaz.  
-Le plan de travail est augmenté en épaisseur pour s’aligner sur cet élément central.
+Le plan de travail en crédence est augmenté en épaisseur pour s’aligner sur cet élément central.
 
 Le noyer est ici mis en œuvre pour son côté noble et chaleureux en contraste avec l’aspect industriel de l’inox.
 

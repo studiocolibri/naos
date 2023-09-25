@@ -6,23 +6,9 @@
 {{ $defaultJS := slice $nav $topBtn $observer | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
 <script src="{{ $globalJS.Permalink }}"></script>
-{{ if and (eq .Page.Section "creations") (eq .Page.Kind "page") }}
+{{ if and (eq .Page.Section "realisations") (eq .Page.Kind "page") }}
     <script src="/assets/js/siema.min.js"></script>
     <script src="{{ $galleryPublic.Permalink }}"></script>
-{{ end }}
-{{ if and (eq .Page.Section "realisations") (eq .Page.Kind "page") }}
-    <!-- <script>
-     const element = document.querySelector('#gallery_slider');
-     element.addEventListener('wheel', event => {
-        event.preventDefault();
-        console.log(element.scrollLeft);
-        if (event.wheelDelta > 0) {
-          element.scrollLeft -= 100;
-        } else {
-          element.scrollLeft += 100;
-        }
-      });
-    </script> -->
 {{ end }}
 {{ if .IsHome }}
 <script>

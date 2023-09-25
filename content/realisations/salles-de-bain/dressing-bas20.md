@@ -1,5 +1,5 @@
 +++
-categories = "salles de bain"
+categories = "salles-de-bain"
 date = 2020-01-30T00:00:00Z
 gallery = ["/v1603221940/LG19-11_bgusvc.jpg", "/v1603221940/LG19-12_hxwhrc.jpg"]
 title = "DRESSING BAS20"

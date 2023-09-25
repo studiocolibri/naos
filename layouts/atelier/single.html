@@ -28,7 +28,7 @@
                         height="336"
                         loading="lazy">
                 {{ end }}
-                <figcaption {{ if (eq .img "") }}class="no-image"{{ end }}>{{ .name }}</figcaption>
+                <figcaption {{ if (eq .img "") }}class="no-image"{{ end }}><strong>{{ .name }}</strong><br>{{ .function }}</figcaption>
             </figure>
         </li>
         {{ end }}

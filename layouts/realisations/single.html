@@ -1,6 +1,8 @@
 {{ define "main" }}
+{{ $subsection := site.GetPage (printf "/realisations/%s" .Params.categories) }}
+{{ $subsectionTitle := $subsection.Title }}
 <h1>
-    <small><a href="/realisations">Nos réalisations</a> > <a href="/realisations/{{ .Params.categories | urlize }}">{{ .Params.categories }}</a></small><br> {{ .Title }} <small>({{ .Date.Format "2006" }})</small>
+    <small><a href="/realisations">Nos réalisations</a> > <a href="/realisations/{{ .Params.categories | urlize }}">{{ $subsectionTitle }}</a></small><br> {{ .Title }} <small>({{ .Date.Format "2006" }})</small>
 </h1>
 
 <div class="tw">
@@ -23,8 +25,6 @@
 </div>
 
 <div class="tw" style="margin-top:40px">
-    {{ $subsection := site.GetPage (printf "/realisations/%s" .Params.categories) }}
-    {{ $subsectionTitle := $subsection.Title }}
     {{ $subsectionGender := $subsection.Params.gender }}
     {{ $genderText := "tous" }}
     {{ if eq $subsectionGender "female" }}{{ $genderText = "toutes" }}{{ end }}

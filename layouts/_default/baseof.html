@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:title" content="{{ if .IsHome }}{{ $.Site.Data.contact.homepage_title }}{{ else }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ if .Params.categories }}{{ $cat := .Params.categories }}{{ $name := $.Site.GetPage (printf "/realisations/%s" $cat) }}{{ $name.Title }} | {{ end }}Naos Atelier{{ end }}" />
-    <meta property="og:description" content='{{ with .Content }}{{ . | truncate 158 }}{{ else }}{{ $.Site.Data.contact.description }}{{ end }}' />
+    <meta property="og:description" content='{{ with .Content }}{{ chomp . | truncate 158 }}{{ else }}{{ $.Site.Data.contact.description }}{{ end }}' />
     <meta property="og:image" content="{{ if .Params.img }}{{ $.Site.Params.cloudinary_url }}{{ .Params.img }}{{ else if .Params.gallery }}{{ $list := .Params.gallery }}{{ $.Site.Params.cloudinary_url }}{{ range first 1 $list }}{{ . }}{{ end }}{{ else }}{{ .Site.BaseURL }}assets/img/naos-atelier-Ref_FB.jpg{{ end }}"
     />
     <meta property="og:site_name" content="{{ .Site.Title }}" /> {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.PostCSS (dict "config" "postcss.config.js") | resources.Minify | resources.Fingerprint }}

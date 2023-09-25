@@ -7,7 +7,7 @@ title = "HiFi / Foyer / Cuisine"
 +++
 Habillage de foyer en chêne massif et stratifié blanc, mobilier recto verso en continuité avec la cuisine.
 
-_Projet cuisine à retrouver_ [_ici_](https://www.naos-atelier.be/creations/cuisines/ "Link")
+_Projet cuisine à retrouver_ [_ici_](https://www.naos-atelier.be/realisations/cuisines/ "Link")
 
 _Architecture :_ [**Pavillonchamps**](https://www.pavillonchamps.be/ "Link")
 

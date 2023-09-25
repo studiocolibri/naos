@@ -7,6 +7,6 @@ title = "LEN22"
 +++
 Plan de travail inox - Stratifié blanc - Chêne massif
 
-Bibliothèque autour d'un escalier métallique laqué à retrouver [**ici**](https://www.naos-atelier.be/creations/sejours/len21/)
+Bibliothèque autour d'un escalier métallique laqué à retrouver [**ici**](https://www.naos-atelier.be/realisations/sejours/len21/)
 
 _Photos :_ [**Samuel Defourny**](https://www.smdf.be/)

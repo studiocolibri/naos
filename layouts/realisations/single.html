@@ -1,6 +1,6 @@
 {{ define "main" }}
 <h1>
-    <small><a href="/creations">Nos créations</a> > <a href="/creations/{{ .Params.categories | urlize }}">{{ .Params.categories }}</a></small><br> {{ .Title }} <small>({{ .Date.Format "2006" }})</small>
+    <small><a href="/realisations">Nos réalisations</a> > <a href="/realisations/{{ .Params.categories | urlize }}">{{ .Params.categories }}</a></small><br> {{ .Title }} <small>({{ .Date.Format "2006" }})</small>
 </h1>
 
 <div class="tw">
@@ -8,7 +8,7 @@
 </div>
 
 <div class="gallery" id="gallery">
-    <div class="gallery_slider">
+    <div class="gallery_slider" id="gallery_slider">
         {{ range .Params.gallery }}
         <div class="gallery_item">
             <picture>
@@ -20,5 +20,14 @@
         </div>
         {{ end }}
     </div>
+</div>
+
+<div class="tw" style="margin-top:40px">
+    {{ $subsection := site.GetPage (printf "/realisations/%s" .Params.categories) }}
+    {{ $subsectionTitle := $subsection.Title }}
+    {{ $subsectionGender := $subsection.Params.gender }}
+    {{ $genderText := "tous" }}
+    {{ if eq $subsectionGender "female" }}{{ $genderText = "toutes" }}{{ end }}
+    <a href="/realisations/{{ .Params.categories | urlize }}" style="font-size: 1rem;">< Voir {{ $genderText }} les {{ $subsectionTitle | lower }}</a>
 </div>
 {{ end }}

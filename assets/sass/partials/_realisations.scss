@@ -1,4 +1,4 @@
-.creations {
+.realisations {
 
 	h1 {
 		margin-bottom:$su*1.5;
@@ -151,6 +151,7 @@
 	flex-wrap: wrap;
 	align-items:flex-start;
 	justify-content: flex-start;
+	margin-top:$su*2;
 }
 
 .list-projects__item {
@@ -249,6 +250,32 @@
 	display:flex;
 	align-items:center;
 }
+
+/***************************** TEST **********************/
+
+@media screen and (min-width:1240px) {
+	
+	.gallery_slider {
+		cursor: move;
+		display: flex;
+		overflow: auto;
+		//scroll-snap-type: x mandatory;
+		padding-bottom: 20px;
+	 }
+	 
+	 .gallery_slider>div {
+		display:flex;
+		align-items:center;
+		flex-shrink: 0;
+		scroll-snap-align: start;
+		width: 100%;
+	 }
+}
+
+ 
+
+
+/*********************************************************/
 
 .gallery_item {
 	display:flex;

@@ -10,6 +10,20 @@
     <script src="/assets/js/siema.min.js"></script>
     <script src="{{ $galleryPublic.Permalink }}"></script>
 {{ end }}
+{{ if and (eq .Page.Section "realisations") (eq .Page.Kind "page") }}
+    <!-- <script>
+     const element = document.querySelector('#gallery_slider');
+     element.addEventListener('wheel', event => {
+        event.preventDefault();
+        console.log(element.scrollLeft);
+        if (event.wheelDelta > 0) {
+          element.scrollLeft -= 100;
+        } else {
+          element.scrollLeft += 100;
+        }
+      });
+    </script> -->
+{{ end }}
 {{ if .IsHome }}
 <script>
     if (window.netlifyIdentity) {

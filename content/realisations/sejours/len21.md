@@ -7,6 +7,6 @@ title = "LEN21"
 +++
 Bibliothèque en stratifié blanc autour d'un escalier métallique
 
-Projet Cuisine à retrouver [**ici**](https://www.naos-atelier.be/creations/cuisines/len/)
+Projet Cuisine à retrouver [**ici**](https://www.naos-atelier.be/realisations/cuisines/len/)
 
 _Photos :_ [**Samuel Defourny**](https://www.smdf.be/)

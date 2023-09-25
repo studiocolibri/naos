@@ -2,9 +2,8 @@
 
 	h1 {
 		margin:$su*2 0;
-		font-size: 1.6rem;
+		font-size: 2.2rem;
 		color:$gray-logo;
-		font-weight: bold;
 	}
 }
 
@@ -67,23 +66,20 @@
 	margin-top:$su*4;
 
 	h2 {
-		margin-bottom: $su*2;
+		margin-top: $su*4;
+		margin-bottom: 0;
 	}
 }
 
 .team__text {
-	margin:0 auto;
-
-	@media screen and (min-width:768px) {
-		max-width: ( $cw/2 - $su ) ;
-	}
+	margin:0 0 $su*2 0;
 }
 
 .team__members {
 	display:grid;
-	grid-template-columns: repeat( auto-fit, minmax(152px, 1fr) );
+	grid-template-columns: repeat( auto-fit, minmax(310px, 1fr) );
 	justify-content: center;
-	grid-row-gap: $su;
+	gap: $su*2 $su;
 	margin:$su*2.5 0;
 
 	li {
@@ -114,16 +110,6 @@
 			}
 		}
 
-		&:after {
-			content: '';
-			display: block;
-			position: absolute;
-			bottom: 1.9em;
-			width: 100%;
-			height: 1px;
-			background:$red;
-		}
-
 		&:before {
 			display:none;
 		}
@@ -136,18 +122,23 @@
 	}
 
 	img {
-		padding:0 $su/2;
 		width:100%;
+		max-width: 400px;
 		height:auto;
 	}
 
 	figcaption {
 		margin-top:0.5em;
 		padding:0 $su/2;
-		text-transform:uppercase;
 		text-align: center;
 		@include ff-b;
+		font-weight: 200;
 		transition:transform 150ms ease-out;
+		
+		strong {
+			text-transform:uppercase;
+			font-weight: 400;
+		}
 
 		&.no-image {
 			margin:$su*2 0;

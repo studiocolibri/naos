@@ -87,20 +87,20 @@
     @include ff-l;
     color:$gray-text;
     margin:0;
-    padding:1em;
+    padding:0.7em;
     text-transform: uppercase;
     background:none;
-    width:7.2em;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     transition: opacity 200ms ease-out, color 200ms ease-out;
 
     @media screen and (min-width:768px) {
         font-size:1.1rem;
     }
 
-    @media screen and (min-width:800px) {
+    @media screen and (min-width:840px) {
         font-size:1.2rem;
+        padding:1em;
     }
 
     body.open & {
@@ -145,25 +145,12 @@
         opacity:0.7;
     }
 
-    $pages: creations atelier contact;
+    $pages: home realisations atelier equipe contact;
 
     @each $page in $pages {
         body.#{$page} &[href="/#{$page}"] {
             @include ff-r;
             color:$red;
-
-            span:before {
-                opacity: 1;
-            }
-        }
-    }
-
-    body.home &[href="/"] {
-        @include ff-r;
-        color:$red;
-
-        span:before {
-            opacity:1;
         }
     }
 

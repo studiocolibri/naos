@@ -9,9 +9,6 @@ blocks:
 - title: Atelier
   img: "/933A0306-2.jpg"
   link: atelier
-- title: Equipe
-  img: "/NA12-05.jpg"
-  link: equipe
 - title: Contact
   img: "/NA12-05.jpg"
   link: contact

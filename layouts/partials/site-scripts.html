@@ -6,7 +6,7 @@
 {{ $defaultJS := slice $nav $topBtn $observer | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
 <script src="{{ $globalJS.Permalink }}"></script>
-{{ if and (eq .Page.Section "realisations") (eq .Page.Kind "page") }}
+{{ if and (eq .Page.Section "creations") (eq .Page.Kind "page") }}
     <script src="/assets/js/siema.min.js"></script>
     <script src="{{ $galleryPublic.Permalink }}"></script>
 {{ end }}

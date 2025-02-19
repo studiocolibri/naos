@@ -17,8 +17,19 @@
     <meta property="og:description" content='{{ with .Content }}{{ chomp . | truncate 158 }}{{ else }}{{ $.Site.Data.contact.description }}{{ end }}' />
     <meta property="og:image" content="{{ if .Params.img }}{{ $.Site.Params.cloudinary_url }}{{ .Params.img }}{{ else if .Params.gallery }}{{ $list := .Params.gallery }}{{ $.Site.Params.cloudinary_url }}{{ range first 1 $list }}{{ . }}{{ end }}{{ else }}{{ .Site.BaseURL }}assets/img/naos-atelier-Ref_FB.jpg{{ end }}"
     />
-    <meta property="og:site_name" content="{{ .Site.Title }}" /> {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.PostCSS (dict "config" "postcss.config.js") | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" type="text/css" href="{{ $style.Permalink | relURL }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    {{ with resources.Get "sass/main.scss" }}
+        {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+        {{ with . | toCSS $opts }}
+            {{ if hugo.IsDevelopment }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}">
+            {{ else }}
+            {{ with . | minify | fingerprint }}
+                <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+            {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
     {{ partial "site-favicon.html" . }}
     {{ if .IsHome }}{{ partial "home-snippet.html" . }}{{ end }}
     {{ if .IsHome }}<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{{ end }}

@@ -9,4 +9,4 @@ Projet mis en valeur par son côté rétro en alliant un plan de travail inox et
 
 Les poignées en chêne massif teinté rehausse le côté vintage de cette cuisine chaleureuse.
 
-Projet salle de bain à retrouver [**ici**](https://www.naos-atelier.be/realisations/salles-de-bain/sdb-mon24).
+Projet salle de bain à retrouver [**ici**](/realisations/salles-de-bain/sdb-mon24).

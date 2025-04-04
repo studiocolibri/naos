@@ -1,40 +1,37 @@
-const gallery = new Siema({
-    selector: '.gallery_slider',
-    duration: 200,
-    easing: 'ease-out',
-    perPage: 1,
-    startIndex: 0,
-    draggable: true,
-    multipleDrag: true,
-    threshold: 20,
-    loop: true,
-    rtl: false,
-    onInit: () => {},
-    onChange: () => {},
-});    
+const allGalleryItems = Array.from(document.querySelectorAll('.gallery_item'));
 
-var btnPrev = document.createElement('button');
-btnPrev.className = 'gallery_btn prev';
-btnPrev.id = 'galleryPrev';
-btnPrev.innerHTML = '<';
-btnPrev.title = "Photo précédente";
-btnPrev.setAttribute('aria-label', 'Photo précédente');
-
-var btnNext = document.createElement('button');
-btnNext.className = 'gallery_btn next';
-btnNext.id = 'galleryNext';
-btnNext.innerHTML = '>';
-btnNext.title = "Photo suivante";
-btnNext.setAttribute('aria-label', 'Photo suivante');
-
-document.getElementById("gallery").append(btnPrev);
-document.getElementById("gallery").append(btnNext);
-
-document.addEventListener('click',function(e){
-    if(e.target && e.target.id== 'galleryPrev'){
-        gallery.prev();
-    }
-    if(e.target && e.target.id== 'galleryNext'){
-        gallery.next();
-    }
+allGalleryItems.forEach((item) => {
+    item.addEventListener('pointermove', function(event) {
+        if (event.pointerType !== "mouse") {return;}
+        handleMouseMove(event, this);
+    });
+    item.addEventListener('pointerleave', function(event) {
+      if (event.pointerType !== "mouse") {return;}
+        handleMouseLeave(this);
+    });
 });
+
+function handleMouseMove(event, item) {
+    let img = item.querySelector('.gallery_item_img');
+    let highRes = img.getAttribute('data-high');
+    let zoomWindow = item.querySelector('.gallery_item_zoom-window');
+    if (!highRes) return;
+    zoomWindow.style.backgroundImage = `url(${highRes})`;
+    zoomWindow.style.display = 'block';
+    
+    let rect = img.getBoundingClientRect();
+    let x = event.clientX - rect.left;
+    let y = event.clientY - rect.top;
+    
+    let zoomX = (x / rect.width) * 100;
+    let zoomY = (y / rect.height) * 100;
+    
+    zoomWindow.style.left = `${x}px`;
+    zoomWindow.style.top = `${y}px`;
+    zoomWindow.style.backgroundPosition = `${zoomX}% ${zoomY}%`;
+}
+
+function handleMouseLeave(item) {
+    let zoomWindow = item.querySelector('.gallery_item_zoom-window');
+    zoomWindow.style.display = 'none';
+}

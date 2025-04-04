@@ -10,6 +10,12 @@
     padding-bottom:$su/2;
     padding-left:$su/2;
 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background: white;
+
     @media screen and (min-width: 768px) {
         padding-top:$su;
         padding-bottom:$su;

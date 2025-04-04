@@ -4,6 +4,8 @@
 		margin-bottom:$su*1.5;
 
 		small {
+			display: block;
+			line-height: 1.4;
 			font-size:60%;
 		}
 	}
@@ -160,7 +162,7 @@
 	line-height: 0;
 	display: block;
 	position: relative;
-	overflow:hidden;
+	overflow:clip;
 
 	@media screen and (min-width:768px) {
 		flex:0 0 50%;
@@ -237,7 +239,23 @@
 			filter:blur(1px);
 			transform: scale(1.1);
 		}
+
+		.list-projects__item-txt {
+			transform: translateY(5em);
+		}
+
 	}
+}
+
+.list-projects__item-txt {
+	position: absolute;
+  bottom: 0;
+  background: rgba(255,255,255,0.8);
+  width: 100%;
+  margin: 0;
+  padding: 0.55em;
+  color: #484747;
+	transition: transform 150ms ease-out;
 }
 
 .gallery {

@@ -7,7 +7,6 @@
 html {
     scroll-behavior: smooth;
     min-height:100%;
-    font-size: 15px;
 }
 
 body {
@@ -39,11 +38,12 @@ body * {
 #site-main {
     position:relative;
     min-height:100%;
-    margin:0 auto $su*9 auto;
+    margin:130px auto $su*9 auto;
     padding-right:$su/2;
     padding-left:$su/2;
     
     @media screen and (min-width:768px) {
+        margin-top:170px;
         padding-right:$su/2;
         padding-left:$su/2;
     }
@@ -77,6 +77,29 @@ body * {
 .tw {
     max-width: 56ch;
     width:100%;
+
+    @media (min-width:768px) {
+        columns: 2;
+        column-gap: $su*2;
+        column-fill: balance;
+        max-width: 100%;
+
+        & :first-child {
+            margin-top: 0;
+        }
+
+        h2 {
+            column-span: all;
+        }
+
+        h2 + * {
+            margin-top: 0;
+        }
+
+        > * {
+            break-inside: avoid;
+        }
+    }
 }
 
 .flex-2-cols {

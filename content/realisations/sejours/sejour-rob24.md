@@ -13,3 +13,5 @@ Un fil conducteur donné dans les différentes pièces en utilisant les mêmes m
 Du stratifié blanc, du chêne et des lignes noires que l’on retrouve dans le hall d’entrée, le salon et la salle de jeux.
 
 Le monobloc vers la chambre parentale quant à lui se veut le plus discret possible en utilisant un jeu de ligne ton sur ton.
+
+_Photos :_ [**Samuel Defourny**](https://www.smdf.be/)

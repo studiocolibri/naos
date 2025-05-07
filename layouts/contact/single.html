@@ -1,5 +1,5 @@
 {{ define "main" }}
-
+<!-- 
 <div class="flex-2-cols">
 	<div class="flex-2-cols__col">
 		<h1>{{ .Title }}</h1>
@@ -16,6 +16,88 @@
 	<div class="flex-2-cols__col" style="position:relative;z-index:1;">
 		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.681912047731!2d5.600711951540981!3d50.65159838063079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f094182db11f%3A0x30ede601dffb406c!2sNaos%20Atelier!5e0!3m2!1sfr!2sbe!4v1573822476141!5m2!1sfr!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 	</div>
+</div> -->
+
+<style>
+	.contact-img-wrapper {
+		position: relative;
+		perspective: 145px;
+		overflow: clip;
+		margin-top: 60px;
+	}
+
+	.contact-img-wrapper .flex-2-cols {
+		position: absolute;
+		top: -17.2%;
+		left: 0;
+		width: 80.3%;
+		height: 82.3%;
+		padding: 1rem;
+		background: transparent;
+		color: black;
+		box-sizing: content-box;
+		transform-origin: left;
+		transform: rotateY(7deg);
+		transition: backdrop-filter 200ms ease-out;
+		backdrop-filter: blur(3px) opacity(0.2);
+	}
+
+	.contact-img-wrapper .flex-2-cols:hover {
+		backdrop-filter: blur(2px) opacity(1);
+	}
+
+	.contact-img-wrapper .flex-2-cols > div:first-child {
+		margin-top: 15%;
+		margin-left: 2%;
+	}
+	.contact-img-wrapper .flex-2-cols > div:nth-of-type(2) {
+		position:relative;
+		z-index:1;
+		margin-right:15%;
+	}
+
+	.contact-img-wrapper h1 {
+		margin-bottom: 0.75em;
+		font-weight:bold;
+		color:black;
+	}
+
+	.contact-img-wrapper a {
+		text-shadow: 0px 0px 12px rgba(255,255,255,0.7);
+	}
+
+	.contact-map {
+		margin-top: 30%;
+		height: 62%;
+		opacity: 0.9;
+	}
+
+</style>
+
+<div class="contact-img-wrapper">
+  <img src="/assets/img/NAO_250320_atelier_137-opacity.jpg" alt="">
+  <div class="flex-2-cols">
+		<div class="flex-2-cols_col">
+		<h1>Contact</h1>
+		<p class="contact-title">Naos&nbsp;Atelier&nbsp;<small>srl</small></p>
+		<address>
+		    Quai&nbsp;de&nbsp;Coronmeuse,&nbsp;32
+4000&nbsp;Liège
+		</address>
+		<p><a href="tel:003242277405">0032&nbsp;(0)4&nbsp;227&nbsp;74&nbsp;05</a></p>
+		<p><a href="mailto:info@naos-atelier.be">info@naos-atelier.be</a></p>
+		<p>Numéro d'entreprise : 0436796839</p>
+		<p>Nos bureaux sont ouverts<br>
+			du lundi au vendredi de 8h à 17h.</p>
+
+		<p>Visitez notre <img class="social-logo" src="/assets/img/facebook-logo.svg" width="16" height="16"><a href="https://www.facebook.com/NAOSAtelier.mobilierContemporain">page Facebook</a><br>et notre <img class="social-logo" src="/assets/img/instagram-logo.svg" width="16" height="16"><a  href="https://www.instagram.com/naosatelier/">page Instagram</a>.</p>
+	</div>
+	<div class="flex-2-cols__col">
+		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.681912047731!2d5.600711951540981!3d50.65159838063079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f094182db11f%3A0x30ede601dffb406c!2sNaos%20Atelier!5e0!3m2!1sfr!2sbe!4v1573822476141!5m2!1sfr!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</div>
+</div>
+
+	
 </div>
 
 {{ end }}

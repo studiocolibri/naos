@@ -826,10 +826,22 @@ strong {
     font-weight: 400; }
 
 .home-intro {
-  position: relative; }
+  --intro-max-w: 1310px;
+  --intro-gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: var(--intro-gap);
+  max-width: var(--intro-max-w);
+  margin: 200px auto 0; }
+  .home-intro > div {
+    max-width: calc((var(--intro-max-w)/2) - var(--intro-gap)); }
+  .home-intro p:last-of-type {
+    margin-bottom: 5px; }
 
 .home .last-projects {
-  margin-top: 40px; }
+  margin-top: 80px; }
 
 .home .list-projects {
   margin-bottom: 40px; }

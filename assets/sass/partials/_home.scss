@@ -15,11 +15,27 @@
 }
 
 .home-intro {
-    position: relative;
+    --intro-max-w: 1310px;
+    --intro-gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: var(--intro-gap);
+    max-width: var(--intro-max-w);
+    margin: 200px auto 0;
+
+    > div {
+        max-width: calc((var(--intro-max-w)/2) - var(--intro-gap));
+    }
+
+    p:last-of-type {
+        margin-bottom: 5px;
+    }
 }
 
 .home .last-projects {
-    margin-top: $su*2;
+    margin-top: $su*4;
 }
 
 .home .list-projects {

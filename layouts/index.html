@@ -1,10 +1,15 @@
 {{ define "main" }}
 
-<section class="home-intro cw">
-    <h1>{{ .Title }} 
-        <span>{{ .Params.subtitle | safeHTML }}</span>
-    </h1>
-    <div class="tw">
+
+
+<section class="home-intro">
+    <div>
+        <img src="/assets/img/NAO_250320_atelier_109.png" alt="">
+    </div>
+    <div>
+        <h1>{{ .Title }} 
+            <span>{{ .Params.subtitle | safeHTML }}</span>
+        </h1>
         {{ .Content }}
     </div>
 </section>
@@ -21,7 +26,7 @@
                         width="620" height="413">
                 </picture>
                 {{ $t := .Date }}
-                <p class="list-projects__item-txt">{{ .Title }} - {{ time.Format "2006" $t }}</p>
+                <p class="list-projects__item-txt">{{ .Title }}</p>
             </a>
         {{ end }}
     </div>

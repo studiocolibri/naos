@@ -3,12 +3,14 @@
 <h1>{{ .Title }}</h1>
 
 <section class="atelier-img" aria-label="Infos sur l'atelier">
-    <picture>
+    <!-- <picture>
         <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ .Params.atelier_img }}" media="(max-width: 400px)">
         <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .Params.atelier_img }}" media="(max-width: 620px)">
         <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_768{{ .Params.atelier_img }}" media="(max-width: 768px)">
         <img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1240{{ .Params.atelier_img }}" alt="Photo de l'atelier" width="1240" height="827">
-    </picture>
+    </picture> -->
+    <img src="/assets/img/NAO_250319_atelier_102.jpg" width="2550" height="1700" alt="">
+    
     <p>{{ .Params.atelier_text_01 }}</p>
     <p>{{ .Params.atelier_text_02 }}</p>
 </section>

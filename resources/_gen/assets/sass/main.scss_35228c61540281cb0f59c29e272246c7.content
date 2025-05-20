@@ -457,7 +457,7 @@ h1 {
   font-weight: 200; }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   margin-bottom: 0.5em; }
 
 p, ul {
@@ -531,22 +531,16 @@ strong {
   background: none;
   height: auto;
   line-height: 1; }
-  .site-logo:hover .site-logo__img-mask, .site-logo:focus .site-logo__img-mask {
-    clip-path: inset(0% 0% 0% 0%); }
+  .site-logo:hover .site-logo__img, .site-logo:focus-visible .site-logo__img {
+    transform: scale(1.03) translate(-3px, -2px);
+    filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.2)); }
 
 .site-logo__img {
-  max-width: 140px;
-  height: auto; }
-  @media screen and (min-width: 768px) {
+  height: auto;
+  transition: all 150ms ease-out; }
+  @media (max-width: 767px) {
     .site-logo__img {
-      max-width: 240px; } }
-.site-logo__img-mask {
-  position: absolute;
-  z-index: 10;
-  filter: grayscale(1);
-  clip-path: inset(0% 100% 0% 0%);
-  transition: clip-path 200ms ease-out; }
-
+      max-width: 146px; } }
 .site-nav {
   width: 0;
   display: flex;
@@ -816,13 +810,13 @@ strong {
       opacity: 0.7; }
 
 .home h1 {
-  font-size: 2.2rem; }
+  font-size: 1.8rem; }
   .home h1 span {
     display: block;
     max-width: 24em;
     margin-top: 20px;
     line-height: 1.25;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 400; }
 
 .home-intro {
@@ -843,12 +837,16 @@ strong {
 .home .last-projects {
   margin-top: 80px; }
 
-.home .list-projects {
+.home .home-projects {
   margin-bottom: 40px; }
+
+.home .home-projects__item {
+  display: flex;
+  gap: 2em; }
 
 .single h1 {
   margin: 40px 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #6D6467; }
 
 @media screen and (min-width: 768px) {
@@ -861,34 +859,10 @@ strong {
   display: flex;
   flex-direction: column; }
   .atelier-img picture {
-    order: 2;
     margin: 20px 0; }
     @media screen and (min-width: 768px) {
       .atelier-img picture {
         margin: 0; } }
-  .atelier-img p {
-    display: block;
-    margin: 0;
-    max-width: 100%; }
-    @media screen and (min-width: 768px) {
-      .atelier-img p {
-        background-color: #DC0814;
-        background-color: rgba(220, 8, 20, 0.8);
-        background-blend-mode: multiply;
-        color: white;
-        padding: 0.8em 1em;
-        position: absolute;
-        font-size: 1.2rem;
-        max-width: 27em; } }
-  .atelier-img p:first-of-type {
-    order: 1;
-    top: 40px;
-    left: 40px; }
-  .atelier-img p:nth-of-type(2) {
-    order: 3;
-    bottom: 40px;
-    right: 40px; }
-
 .team {
   margin-top: 80px; }
   .team h2 {
@@ -1088,33 +1062,18 @@ picture {
   @media screen and (min-width: 768px) {
     .list-categories__item {
       flex: 0 0 calc(50% - 20px);
-      align-items: stretch; }
-      .list-categories__item:nth-of-type(2n) {
-        margin: 30px 0 0 0; } }
+      align-items: stretch; } }
   @media screen and (min-width: 1280px) {
     .list-categories__item {
       flex: 0 0 calc(50% - 40px); } }
-  .list-categories__item:nth-of-type(2n) h2 {
-    text-align: left;
-    right: 0; }
   .list-categories__item a {
     display: block;
     line-height: 0; }
     .list-categories__item a:hover, .list-categories__item a:focus {
       background: none;
       outline: 0; }
-      .list-categories__item a:hover h2, .list-categories__item a:focus h2 {
-        width: 60%; }
-        @media screen and (min-width: 1024px) {
-          .list-categories__item a:hover h2, .list-categories__item a:focus h2 {
-            width: 50%; } }
       .list-categories__item a:hover picture:after, .list-categories__item a:focus picture:after {
         opacity: 0.5; }
-  .list-categories__item--long a h2 {
-    width: 70%; }
-  @media screen and (min-width: 1024px) {
-    .list-categories__item--long a:hover h2, .list-categories__item--long a:focus h2 {
-      width: 60%; } }
   .list-categories__item picture {
     display: block;
     margin-top: 1.25em; }
@@ -1135,27 +1094,17 @@ picture {
     height: auto; }
   .list-categories__item h2 {
     position: absolute;
-    top: -0.9em;
+    bottom: 0;
     background-color: #DC0814;
-    width: 80%;
+    width: 100%;
     margin: 0;
-    text-align: right;
     font-family: "Poppins","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: white;
     padding: 0.25em 0.4em;
     transition: width 150ms ease-out; }
-    @media screen and (min-width: 380px) {
-      .list-categories__item h2 {
-        font-size: 1.6rem; } }
-    @media screen and (min-width: 768px) {
-      .list-categories__item h2 {
-        font-size: 1.4rem; } }
-    @media screen and (min-width: 1024px) {
-      .list-categories__item h2 {
-        font-size: 1.6rem;
-        width: 60%; } }
+
 .list-projects {
   display: flex;
   flex-wrap: wrap;

@@ -11,30 +11,8 @@
     </picture> -->
     <img src="/assets/img/NAO_250319_atelier_102.jpg" width="2550" height="1700" alt="">
     
-    <p>{{ .Params.atelier_text_01 }}</p>
-    <p>{{ .Params.atelier_text_02 }}</p>
-</section>
-
-<section class="team observed">
-    <h2>Notre équipe</h2>
-    <div class="team__text tw">{{ .Params.team_text | markdownify }}</div>
-    <ul class="team__members">
-        {{ range .Params.team_members }}
-        <li>
-            <figure>
-                {{ if (ne .img "") }}
-                    <img
-                        src="{{ $.Site.Params.cloudinary_url }}{{ .img }}"
-                        alt="Photo de {{ .name }}"
-                        width="244"
-                        height="336"
-                        loading="lazy">
-                {{ end }}
-                <figcaption {{ if (eq .img "") }}class="no-image"{{ end }}><strong>{{ .name }}</strong><br>{{ .function }}</figcaption>
-            </figure>
-        </li>
-        {{ end }}
-    </ul>
+<p>Nous travaillons directement avec les clients privés, publics et les architectes en assurant le cas échéant le rôle de coordination de plusieurs intervenants et/ou sous-traitants.</p>
+<p>L'évolution du meuble se fait en articulation permanente entre l’atelier de réalisation et le bureau de conception.</p>
 </section>
 
 {{ end }}

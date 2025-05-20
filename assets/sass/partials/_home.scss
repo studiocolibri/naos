@@ -1,14 +1,14 @@
 .home {
 
     h1 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
 
         span {
             display: block;
             max-width: 24em;
             margin-top:$su;
             line-height: 1.25;
-            font-size: 1.3rem;
+            font-size: 1.15rem;
             font-weight: 400;
         }
     }
@@ -38,7 +38,15 @@
     margin-top: $su*4;
 }
 
-.home .list-projects {
-    margin-bottom:$su*2;
+.home {
+    .home-projects {
+        margin-bottom:$su*2;
+    }
+    .home-projects__item {
+        display:flex;
+        gap:2em;
+    }
+    .home-projects__item-txt {
+    }
 }
 

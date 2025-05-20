@@ -2,7 +2,7 @@
 
 	h1 {
 		margin:$su*2 0;
-		font-size: 2rem;
+		font-size: 1.7rem;
 		color:$gray-logo;
 	}
 }
@@ -24,41 +24,11 @@
 	flex-direction: column;
 
 	picture {
-		order:2;
 		margin:$su 0;
 
 		@media screen and (min-width:768px) {
 			margin:0;
 		}
-	}
-
-	p {
-		display: block;
-		margin:0;
-		max-width:100%;
-		
-		@media screen and (min-width:768px) {
-			background-color:$red;
-			background-color:rgba(220,8,20,0.8);
-			background-blend-mode: multiply;
-			color:white;
-			padding:0.8em 1em;
-			position:absolute;
-			font-size: 1.2rem;
-			max-width:27em;
-		}
-	}
-
-	p:first-of-type {
-		order:1;
-		top:$su*2;
-		left:$su*2;
-	}
-
-	p:nth-of-type(2) {
-		order:3;
-		bottom:$su*2;
-		right:$su*2;
 	}
 }
 

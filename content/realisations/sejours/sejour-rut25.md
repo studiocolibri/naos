@@ -1,7 +1,7 @@
 +++
 categories = "sejours"
 date = 2025-05-01T00:00:00Z
-gallery = ["https://res.cloudinary.com/naos/image/upload/v1747748805/NAO_250506_RUT_026_1.jpg","https://res.cloudinary.com/naos/image/upload/v1747748804/NAO_250506_RUT_038_1.jpg","https://res.cloudinary.com/naos/image/upload/v1747748801/NAO_250506_RUT_207.jpg","https://res.cloudinary.com/naos/image/upload/v1747748801/NAO_250506_RUT_043.jpg"]
+gallery = ["/v1747748805/NAO_250506_RUT_026_1.jpg","/v1747748804/NAO_250506_RUT_038_1.jpg","/v1747748801/NAO_250506_RUT_207.jpg","/v1747748801/NAO_250506_RUT_043.jpg"]
 title = "Séjour RUT25"
 
 +++

@@ -1,4 +1,38 @@
-const allGalleryItems = Array.from(document.querySelectorAll('.gallery_item'));
+document.addEventListener('DOMContentLoaded', function () {
+    let splideInstance = null;
+
+    function handleResize() {
+        console.log('loaded');
+        
+      const isWide = window.innerWidth >= 1240;
+
+      if (isWide && !splideInstance) {
+        // Initialiser si largeur suffisante et pas encore initialisé
+        splideInstance = new Splide('.splide', {
+          type: 'loop',
+          heightRatio: 0.666,
+          autoHeight: true,
+          snap: true
+        });
+        splideInstance.mount();
+        console.log('Splide initialisé');
+      } else if (!isWide && splideInstance) {
+        // Détruire si déjà initialisé mais largeur trop petite
+        splideInstance.destroy('completely');
+        splideInstance = null;
+        console.log('Splide détruit');
+      }
+    }
+
+    // Vérifier au chargement de la page
+    handleResize();
+
+    // Vérifier au redimensionnement
+    window.addEventListener('resize', handleResize);
+  });
+
+
+/* const allGalleryItems = Array.from(document.querySelectorAll('.gallery_item'));
 
 allGalleryItems.forEach((item) => {
     item.addEventListener('pointermove', function(event) {
@@ -34,4 +68,4 @@ function handleMouseMove(event, item) {
 function handleMouseLeave(item) {
     let zoomWindow = item.querySelector('.gallery_item_zoom-window');
     zoomWindow.style.display = 'none';
-}
+} */

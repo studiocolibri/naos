@@ -15,4 +15,18 @@
 <p>L'évolution du meuble se fait en articulation permanente entre l’atelier de réalisation et le bureau de conception.</p>
 </section>
 
+<h2>L'équipe</h2>
+
+    {{ range .Params.team_members }}
+        <div>
+            <h3>{{ .name }}</h3>
+            <picture>
+                <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ .img }}" media="(max-width: 400px)">
+                <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .img }}" media="(max-width: 620px)">
+                <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_768{{ .img }}" media="(max-width: 768px)">
+                <img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1240{{ .img }}" alt="" width="1240" height="827">
+            </picture>
+        </div>
+    {{ end }}
+
 {{ end }}

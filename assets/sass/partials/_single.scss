@@ -1,5 +1,15 @@
 .single {
 
+	#site-main {
+		
+		@media (min-width:1240px) {
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 0 $su*2;
+			max-width: 2000px;
+		}
+	}
+
 	h1 {
 		margin:$su*2 0;
 		font-size: 1.7rem;
@@ -136,7 +146,7 @@
 
 		address {
 			font-style: normal;
-			margin:1em 0;
+			margin:1em 0 0.25em;
 			max-width: 12em;
 			font-size: 1.2rem;
 	
@@ -145,6 +155,20 @@
 				font-size: 1rem;
 			}
 		}
+	}
+}
+
+.contact__content {
+
+	@media (min-width:1240px) {
+		align-self: center;
+	}
+}
+
+.contact__img {
+
+	@media (min-width:1240px) {
+		grid-column: span 2;
 	}
 }
 

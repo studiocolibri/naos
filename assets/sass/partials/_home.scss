@@ -1,32 +1,43 @@
 .home {
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
 
         span {
             display: block;
             max-width: 24em;
-            margin-top:$su;
+            margin-top:0.5em;
             line-height: 1.25;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: 400;
         }
     }
 }
 
 .home-intro {
-    --intro-max-w: 1310px;
     --intro-gap: 60px;
+    
+    position: relative;
+    top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     gap: var(--intro-gap);
-    max-width: var(--intro-max-w);
-    margin: 200px auto 0;
+    overflow: hidden;
+    background-image: url(../../assets/img/NAOS-batiment_480.webp);
+    background-size: cover;
+    background-position: center;
+    font-size: 0.95rem;
 
-    > div {
-        max-width: calc((var(--intro-max-w)/2) - var(--intro-gap));
+    @media (min-width:480px) {
+        background-image: url(../../assets/img/NAOS-batiment_1340.webp);
+    }
+    @media (min-width:1340px) {
+        background-image: url(../../assets/img/NAOS-batiment_2011.webp);
+    }
+    @media (min-width:2011px) {
+        background-image: url(../../assets/img/NAOS-batiment_2400.webp);
     }
 
     p:last-of-type {
@@ -34,19 +45,56 @@
     }
 }
 
-.home .last-projects {
-    margin-top: $su*4;
+
+
+.home-intro__text {
+    position: relative;
+    top: 0;
+    max-width: 60ch;
+    margin-block: Min(33.3vw,300px);
+    padding: 0.5em 1em;
+    background: rgba(255,255,255,0.9);
 }
 
-.home {
-    .home-projects {
-        margin-bottom:$su*2;
+
+.last-projects {
+    margin-top: $su*8;
+
+    h2 {
+        margin-block: $su*3;
+        text-align: center;
     }
-    .home-projects__item {
-        display:flex;
-        gap:2em;
+}
+
+.home-projects {
+    display: grid;
+    gap: $su*4;
+}
+
+.home-projects__item {
+  display: grid;
+  gap: 0 $su*2;
+  align-items: center;
+  
+    @media (min-width:980px) {
+        grid-template-columns: 1fr 1fr;
     }
-    .home-projects__item-txt {
+
+    .list-projects__item {
+        margin:0;
+    }
+
+    img {
+        max-height: 100% !important;
+    }
+}
+
+.home-projects__item-txt {
+    display:none;
+    max-width: 60ch;
+
+    @media (min-width:980px) {
+        display:block;
     }
 }
 

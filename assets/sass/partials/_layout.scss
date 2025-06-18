@@ -44,16 +44,17 @@ body * {
     
     @media screen and (min-width:768px) {
         margin-top:170px;
-        padding-right:$su/2;
-        padding-left:$su/2;
+        padding-right:$su;
+        padding-left:$su;
+    }
+
+    @media screen and (min-width:1240px) {
+        padding-right:$su*2;
+        padding-left:$su*2;
     }
 
     body.open & {
         z-index:-2;
-    }
-
-    body.single & {
-        max-width: $cw;
     }
 }
 

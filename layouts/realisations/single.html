@@ -2,70 +2,34 @@
 {{ $subsection := site.GetPage (printf "/realisations/%s" .Params.categories) }}
 {{ $subsectionTitle := $subsection.Title }}
 
-<style>
-    .gallery_item a:active {
-        opacity: 1;
-    }
-    .gallery_item_img-container {
-        position: relative;
-        overflow: hidden;
-        line-height: 1;
-        cursor: zoom-in;
-    }
-    .gallery_item_zoom-window {
-        position: absolute;
-        border: 2px solid #dc0814;
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        display: none;
-        pointer-events: none;
-        background-repeat: no-repeat;
-        transform: translate(-50%, -50%);
-        cursor: zoom-in;
-    }
-</style>
 <h1>
     <small><a href="/realisations">Nos réalisations</a> > <a href="/realisations/{{ .Params.categories | urlize }}">{{ $subsectionTitle }}</a></small> {{ .Title }} <small>({{ .Date.Format "2006" }})</small>
 </h1>
 
-<div class="tw">
+<div class="realisations-intro tw">
     {{ .Content | safeHTML }}
 </div>
 
-<style>
- .lg-backdrop {
-    background-color: white !important;
- }
- .lg-toolbar .lg-icon,
- .lg-next, .lg-prev,
- .lg-counter {
-    color: white !important;
- }
- .lg-toolbar,
- .lg-next, .lg-prev  {
-    background-color: #DC0814 !important;
-}
-</style>
-
-
-<div class="gallery" id="gallery">
-    {{ range .Params.gallery }}
-        <!-- <div class="gallery_item"> -->
-            <a class="spotlight gallery_item_img-container" href="{{ $.Site.Params.cloudinary_url }}/f_auto{{ . }}" data-animation="fade">
-                <picture>
-                    <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_800{{ . }}" media="(max-width: 400px)">
-                    <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_1240{{ . }}" media="(max-width: 620px)">
-                    <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_1536{{ . }}" media="(max-width: 768px)">
-                    <img class="gallery_item_img" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_2480{{ . }}" alt="" width="1240" height="827" loading="lazy" data-high="{{ $.Site.Params.cloudinary_url }}/f_auto{{ . }}">
-                </picture>
-            </a>
-        <!-- </div> -->
-    {{ end }}
+<div class="gallery splide" id="gallery" aria-label="Galerie photo">
+    <div class="splide__track">
+        <ul class="splide__list unstyled">
+            {{ range .Params.gallery }}
+                <li class="splide__slide">
+                    <a class="gallery_item_img-container unstyled" href="{{ $.Site.Params.cloudinary_url }}/f_auto{{ . }}" data-animation="fade">
+                        <picture>
+                            <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_800{{ . }}" media="(max-width: 400px)">
+                            <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_1240{{ . }}" media="(max-width: 620px)">
+                            <source srcset="{{ $.Site.Params.cloudinary_url }}/f_auto,q_80,w_1536{{ . }}" media="(max-width: 768px)">
+                            <img class="gallery_item_img" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_2480{{ . }}" alt="" width="1240" height="827" loading="lazy" data-high="{{ $.Site.Params.cloudinary_url }}/f_auto{{ . }}">
+                        </picture>
+                    </a>
+                </li>
+            {{ end }}
+		</ul>
+  </div>
 </div>
 
-
-<div class="tw" style="margin-top:40px">
+<div class="view-all tw">
     {{ $subsectionGender := $subsection.Params.gender }}
     {{ $genderText := "tous" }}
     {{ if eq $subsectionGender "female" }}{{ $genderText = "toutes" }}{{ end }}

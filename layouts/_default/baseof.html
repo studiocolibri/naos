@@ -19,7 +19,7 @@
     />
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     {{ if and (eq .Page.Section "realisations") (eq .Page.Kind "page") }}
-        <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/lightgallery-bundle.min.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/splide.min.css">
     {{ end }}
     {{ with resources.Get "sass/main.scss" }}
         {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
@@ -37,7 +37,7 @@
     {{ if .IsHome }}{{ partial "home-snippet.html" . }}{{ end }}
 </head>
 
-<body id="root" class="{{ with .IsHome }}home{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ if eq .Page.Section "realisations" }} realisations{{ end }}">
+<body id="root" class="{{ with .IsHome }}home{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ if eq .Page.Section "realisations" }} realisations{{ end }}{{ if .IsPage }} page{{ end }}">
     <div class="site-wrapper">
         {{ partial "site-header.html" .}}
         <main class="site-main {{ if ne .IsHome true }}main-single{{ else }}main-home{{ end }}" id="site-main">{{ block "main" . }}{{ end }}</main>

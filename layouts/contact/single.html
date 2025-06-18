@@ -1,21 +1,31 @@
 {{ define "main" }}
 
-<div class="flex-2-cols">
-	<div class="flex-2-cols__col">
-		<h1>{{ .Title }}</h1>
-		<p class="contact-title">{{ $.Site.Data.contact.title | safeHTML }}</p>
-		<address>
-		    {{ $.Site.Data.contact.address | safeHTML }}
-		</address>
-		<p><a href="tel:{{ $.Site.Data.contact.tel_for_robots }}">{{ $.Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
-		<p><a href="mailto:{{ $.Site.Data.contact.email }}">{{ $.Site.Data.contact.email }}</a></p>
-		<p>Numéro d'entreprise : {{ $.Site.Data.contact.tva }}</p>
-		{{ .Content }}
-		<p>Visitez notre <img class="social-logo" src="/assets/img/facebook-logo.svg" width="16" height="16"><a target="_blank" href="{{ $.Site.Data.contact.facebook_link }}">page Facebook</a> et notre <img class="social-logo" src="/assets/img/instagram-logo.svg" width="16" height="16"><a target="_blank" href="{{ $.Site.Data.contact.instagram_link }}">page Instagram</a>.</p>
-	</div>
-	<div class="flex-2-cols__col" style="position:relative;z-index:1;">
-		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.681912047731!2d5.600711951540981!3d50.65159838063079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f094182db11f%3A0x30ede601dffb406c!2sNaos%20Atelier!5e0!3m2!1sfr!2sbe!4v1573822476141!5m2!1sfr!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-	</div>
+<div class="contact__content">
+	<h1>{{ .Title }}</h1>
+	<p class="contact-title">{{ $.Site.Data.contact.title | safeHTML }}</p>
+	<address>
+		{{ $.Site.Data.contact.address | safeHTML }}
+	</address>
+	<p style="margin-top:0"><a
+			href="https://www.google.com/maps/place/Naos+Atelier/@50.652069,5.603522,16z/data=!4m6!3m5!1s0x47c0f094182db11f:0x30ede601dffb406c!8m2!3d50.6520687!4d5.6035218!16s%2Fg%2F1trvkl0_?hl=fr&entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D">Voir
+			la carte</a></p>
+	<p><a href="tel:{{ $.Site.Data.contact.tel_for_robots }}">{{ $.Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
+	<p><a href="mailto:{{ $.Site.Data.contact.email }}">{{ $.Site.Data.contact.email }}</a></p>
+	<p>Numéro d'entreprise : {{ $.Site.Data.contact.tva }}</p>
+	{{ .Content }}
+	<p>Visitez notre <img class="social-logo" src="/assets/img/facebook-logo.svg" width="16" height="16"><a target="_blank"
+			href="{{ $.Site.Data.contact.facebook_link }}">page Facebook</a> et notre <img class="social-logo"
+			src="/assets/img/instagram-logo.svg" width="16" height="16"><a target="_blank" href="{{ $.Site.Data.contact.instagram_link }}">page
+			Instagram</a>.</p>
+</div>
+
+<div class="contact__img">
+
+	<img sizes="(max-width: 1270px) 100vw, 1270px" srcset="
+	/assets/img/NAOS-contact_480.webp 480w,
+	/assets/img/NAOS-contact_1154.webp 1154w,
+	/assets/img/NAOS-contact_1270.webp 1270w" src="/assets/img/NAOS-contact_1270.webp" alt="">
+
 </div>
 
 {{ end }}

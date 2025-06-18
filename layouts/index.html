@@ -1,26 +1,6 @@
 {{ define "main" }}
 
-
-
-<style>
-    .home-intro__text {
-        position: relative;
-        padding: 0.35em 1.5em;
-        background: rgba(255,255,255,0.8);
-    }
-@media (min-width:1260px) {
-    .home-intro__img {
-        transform: scale(1.5) translate(16%, 10%);
-        transform-origin: right bottom;
-        opacity: 0.85;
-    }
-}
-</style>
-
-<section class="home-intro">
-    <div>
-        <img class="home-intro__img" src="/assets/img/NAO_250320_atelier_109.jpg" alt="" >
-    </div>
+<section class="home-intro cw">
     <div class="home-intro__text">
         <h1>{{ .Title }} 
             <span>{{ .Params.subtitle | safeHTML }}</span>
@@ -29,19 +9,22 @@
     </div>
 </section>
 
-<section class="last-projects cw" style="margin-top:140px">
+<section class="last-projects cw">
     <h2>Nos dernières réalisations</h2>
     <div class="home-projects">
         {{ range first 4 (sort (where .Site.RegularPages "Section" "realisations") "Date" "desc") }}
             {{- $list := .Params.gallery -}}
-            <a class="home-projects__item observed" href="{{ .Permalink }}">
-                <picture>
-                    <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ index ($list) 0 }}" media="(max-width: 400px)">
-                    <img loading="lazy" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ index ($list) 0 }}" alt="{{ .Title }}"
-                        width="620" height="413">
-                </picture>
-                <p class="home-projects__item-txt">{{ .Title }}</p>
-            </a>
+            <div class="home-projects__item observed">
+                <a class="list-projects__item" href="{{ .Permalink }}">
+                    <picture>
+                        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ index ($list) 0 }}" media="(max-width: 400px)">
+                        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_768{{ index ($list) 0 }}" media="(max-width: 768px)">
+                        <img loading="lazy" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1200{{ index ($list) 0 }}" alt="{{ .Title }}"
+                            width="620" height="413">
+                    </picture>
+                </a>
+                <div class="home-projects__item-txt">{{ .Content }}</div>
+            </div>
         {{ end }}
     </div>
     <p><a href="/realisations">Voir toutes nos réalisations ></a></p>

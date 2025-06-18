@@ -9,7 +9,7 @@
 
 
 {{ if eq .Page $sectionPage }}
-    <div class="tw">
+    <div class="realisations-intro tw">
             <h2>De la cuisine au dressing et tous les meubles de rangement</h2>
             <p>NAOS Atelier ne possède pas de limites dans la réalisation de ses projets. Nos artisans confectionnent des meubles sur mesure pour toutes les pièces de votre maison.</p>
             <p>Que vous soyez architecte, entrepreneur ou particulier, nous sommes à l&#39;écoute de votre demande et mettons tout en œuvre pour la réaliser. Nous désirons <strong>donner vie à chaque projet</strong> que vous nous confiez.</p>
@@ -23,7 +23,7 @@
     <section class="list-categories" aria-label="Catégories">
         {{ range .Sections.ByWeight }}
         <div class="list-categories__item observed {{ if .Params.long }}list-categories__item--long{{ end }}">
-            <a href="{{ .Permalink }}">
+            <a class="list-projects__item" href="{{ .Permalink }}">
                 <picture>
                     <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400,c_fill{{ .Params.img }}" media="(max-width: 400px)">
                     <img loading="lazy" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .Params.img }}" alt="" width="620"
@@ -36,7 +36,9 @@
     </section>
 {{ else }}
     {{ with .Content }}
-        {{ . | safeHTML }}
+        <div class="realisations-intro tw">
+            {{ . | safeHTML }}
+        </div>
     {{ end }}
     <section class="list-projects" aria-label="Projets">
         {{ $projects := .Pages.ByDate.Reverse }}
@@ -56,13 +58,12 @@
         {{ else }}
         <p>Il n'y a aucun projet correspondant à cette catégorie pour l'instant.</p>
         {{ end }}
+        {{ if ne .Page $sectionPage }}
+            <div class="tw" style="font-size: 1rem;margin-top:40px">
+                <a href="/realisations/" style="font-size: 1rem;">< Voir toutes nos réalisations</a>
+            </div>
+        {{ end }}
     </section>
-{{ end }}
-
-{{ if ne .Page $sectionPage }}
-    <div class="tw" style="font-size: 1rem;margin-top:40px">
-        <a href="/realisations/" style="font-size: 1rem;">< Voir toutes nos réalisations</a>
-    </div>
 {{ end }}
 
 {{ end }}

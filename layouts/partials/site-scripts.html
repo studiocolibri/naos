@@ -8,17 +8,6 @@
 <script src="{{ $globalJS.Permalink }}"></script>
 {{ if and (eq .Page.Section "realisations") (eq .Page.Kind "page") }}
     <script src="{{ $galleryPublic.Permalink }}"></script>
-    <script src="{{ .Site.BaseURL }}assets/js/lightgallery.min.js"></script>
-    <script src="{{ .Site.BaseURL }}assets/js/lg-zoom.min.js"></script>
-    <script src="{{ .Site.BaseURL }}assets/js/lg-fullscreen.min.js"></script>
-    <script type="text/javascript">
-        lightGallery(document.getElementById('gallery'), {
-            licenseKey: '922A87BC-C169-43B3-8CD8-00A1F76BC3A9',
-            plugins: [lgZoom, lgFullscreen],
-            speed: 500,
-            download: false,
-            mobileSettings: { controls: false, showCloseIcon: true, download: false, },
-        });
-    </script>
+    <script src="{{ .Site.BaseURL }}assets/js/splide.min.js"></script>
 {{ end }}
 <noscript><style>.observed, .team.observed li {opacity:1;transform:none;}</style></noscript>

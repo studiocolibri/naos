@@ -15,3 +15,5 @@ Du stratifié blanc, du chêne et des lignes noires que l’on retrouve dans le 
 Le monobloc vers la chambre parentale quant à lui se veut le plus discret possible en utilisant un jeu de ligne ton sur ton.
 
 _Photos :_ [**Samuel Defourny**](https://www.smdf.be/)
+
+_Architecte :_ [**Samuel Defourny**](https://www.samueldefourny.be/)

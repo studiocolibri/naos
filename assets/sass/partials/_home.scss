@@ -68,7 +68,13 @@
 
 .home-projects {
     display: grid;
-    gap: $su*4;
+    gap: $su*2;
+    margin-bottom: $su*2;
+    
+    @media (min-width:980px) {
+        gap: $su*4;
+        margin-bottom: $su*4;
+    }
 }
 
 .home-projects__item {

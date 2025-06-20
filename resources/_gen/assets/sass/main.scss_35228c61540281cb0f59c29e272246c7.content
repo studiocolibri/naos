@@ -1264,7 +1264,8 @@ picture {
     content: '';
     display: none; }
   #gallery.splide .splide__arrow {
-    background-color: #DC0814; }
+    background-color: #DC0814;
+    border-radius: 0; }
     #gallery.splide .splide__arrow svg path {
       fill: white; }
 

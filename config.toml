@@ -1,7 +1,7 @@
 baseURL = "https://newnaos.netlify.app"
 languageCode = "fr-be"
 title = "Naos Atelier"
-disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
+disableKinds = ["taxonomy", "term", "RSS"]
 removePathAccents = true
 defaultContentLanguage = 'fr'
 

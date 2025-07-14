@@ -2,7 +2,7 @@
 
 <h1>{{ .Title }}</h1>
 
-<section class="atelier-img" aria-label="Infos sur l'atelier">
+<div class="atelier-img" aria-label="Infos sur l'atelier">
     <!-- <picture>
         <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ .Params.atelier_img }}" media="(max-width: 400px)">
         <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .Params.atelier_img }}" media="(max-width: 620px)">
@@ -11,22 +11,32 @@
     </picture> -->
     <img src="/assets/img/NAO_250319_atelier_102.jpg" width="2550" height="1700" alt="">
     
-<p>Nous travaillons directement avec les clients privés, publics et les architectes en assurant le cas échéant le rôle de coordination de plusieurs intervenants et/ou sous-traitants.</p>
-<p>L'évolution du meuble se fait en articulation permanente entre l’atelier de réalisation et le bureau de conception.</p>
-</section>
+    <p>Nous travaillons directement avec les clients privés, publics et les architectes en assurant le cas échéant le rôle de coordination de plusieurs intervenants et/ou sous-traitants.</p>
+    <p>L'évolution du meuble se fait en articulation permanente entre l’atelier de réalisation et le bureau de conception.</p>
+</div>
 
-<h2>L'équipe</h2>
-
+<div class="team">
+    <h2>L'équipe</h2>
     {{ range .Params.team_members }}
-        <div>
+        <div class="team-member">
+            <div class="team-member__img-wrapper">
+                <picture class="team-member__main-img">
+                    <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ .img }}" media="(max-width: 400px)">
+                    <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .img }}" media="(max-width: 620px)">
+                    <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_768{{ .img }}" media="(max-width: 768px)">
+                    <img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1240{{ .img }}" alt="" width="1240" height="1240" loading="lazy">
+                </picture>
+                <picture class="team-member__secondary-img">
+                    <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ .img_bis }}" media="(max-width: 400px)">
+                    <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .img_bis }}" media="(max-width: 620px)">
+                    <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_768{{ .img_bis }}" media="(max-width: 768px)">
+                    <img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1240{{ .img_bis }}" alt="" width="1240" height="1240" loading="lazy">
+                </picture>
+            </div>
             <h3>{{ .name }}</h3>
-            <picture>
-                <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400{{ .img }}" media="(max-width: 400px)">
-                <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .img }}" media="(max-width: 620px)">
-                <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_768{{ .img }}" media="(max-width: 768px)">
-                <img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1240{{ .img }}" alt="" width="1240" height="827">
-            </picture>
+            <p>{{ .job }}</p>
         </div>
     {{ end }}
+</div>
 
 {{ end }}

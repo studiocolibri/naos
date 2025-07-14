@@ -33,7 +33,10 @@
 	grid-row-start: 2;
 
 	@media (min-width:1240px) {
+    align-self: start;
 		columns: unset;
+		position: sticky;
+    top: 160px;
 		max-width: 60ch;
 	}
 }
@@ -232,6 +235,8 @@
 		.splide__arrow {
 			background-color: $red;
 			border-radius: 0;
+			width:44px;
+			height:44px;
 
 			svg path {
 				fill:white;

@@ -2,6 +2,7 @@
 
 <section class="home-intro cw">
     <div class="home-intro__text">
+        <img class="home-intro__mobile-img" src="/assets/img/NAO_250603_atelier_345.jpg" width="2250" height="1500" alt="">
         <h1>{{ .Title }} 
             <span>{{ .Params.subtitle | safeHTML }}</span>
         </h1>
@@ -23,7 +24,9 @@
                             width="620" height="413">
                     </picture>
                 </a>
-                <div class="home-projects__item-txt">{{ .Content }}</div>
+                <div class="home-projects__item-txt">
+                    <h3>{{ .Title }}</h3>
+                    {{ .Content }}</div>
             </div>
         {{ end }}
     </div>

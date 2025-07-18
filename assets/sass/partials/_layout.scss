@@ -37,13 +37,15 @@ body * {
 
 #site-main {
     position:relative;
+    display: flex;
+    flex-direction: column;
     min-height:100%;
     margin:130px auto $su*9 auto;
     padding-right:$su/2;
     padding-left:$su/2;
     
     @media screen and (min-width:768px) {
-        margin-top:170px;
+        margin-top:160px;
         padding-right:$su;
         padding-left:$su;
     }

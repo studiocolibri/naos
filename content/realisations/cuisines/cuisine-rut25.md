@@ -9,4 +9,6 @@ La cuisine en bouleau massif rehaussée de son plan de travail et ses carrelages
 
 En fond, dans un encadrement plus brut et industriel, le foyer dont nous vous parlons [**ici**](/realisations/sejours/sejour-rut25/).
 
+_Projet :_ [**Patrick Leclerq – Bureau d’architecture AAHL**](http://www.aahl.be/)
+
 _Photos :_ [**Samuel Defourny**](https://www.smdf.be/)

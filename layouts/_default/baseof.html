@@ -37,7 +37,7 @@
     {{ if .IsHome }}{{ partial "home-snippet.html" . }}{{ end }}
 </head>
 
-<body id="root" class="{{ with .IsHome }}home{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ if eq .Page.Section "realisations" }} realisations{{ end }}{{ if .IsPage }} page{{ end }}">
+<body id="root" class="{{ with .IsHome }}home{{ else }}single{{ end }}{{ with .Params.slug }} {{ . }}{{ end }}{{ if eq .Page.Section "realisations" }} realisations{{ end }}{{ with .Page.Params.bodyclass }} {{.}}{{ end }}{{ if .IsPage }} page{{ end }}">
     <div class="site-wrapper">
         {{ partial "site-header.html" .}}
         <main class="site-main {{ if ne .IsHome true }}main-single{{ else }}main-home{{ end }}" id="site-main">{{ block "main" . }}{{ end }}</main>

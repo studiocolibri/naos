@@ -14,6 +14,6 @@ Le tout est placé au centre du séjour dans un contexte brut et industriel dét
 
 En fond, la cuisine à retrouver [**ici**](/realisations/cuisines/cuisine-rut25/).
 
-_Projet :_ [**Patrick Leclerq – Bureau d’architecture AAHL**](http://www.aahl.be/)
+_Projet :_ Patrick Leclerq – [**Bureau d’architecture AAHL**](http://www.aahl.be/)
 
 _Photos :_ [**Samuel Defourny**](https://www.smdf.be/)

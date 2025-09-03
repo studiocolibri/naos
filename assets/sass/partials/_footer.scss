@@ -15,18 +15,18 @@
     flex-wrap: wrap;
     justify-content: center;
     @media screen and (min-width: 768px) {
-        padding: $su $su $su*1.5;
+        padding: $su/2 $su $su*1.5;
     }
     body.open & {
         display: none;
     }
-    h1,
-    .single & h1,
-    .home & h1 {
+    &__title {
         font-size: 1.2rem;
         margin: 0 auto 0.25em;
         width: 100%;
+        text-transform: uppercase;
         @include ff-r;
+        margin-block: 0 0.2em;
     }
     address,
     a {
@@ -36,7 +36,7 @@
         font-style: normal;
         display: inline;
     }
-    >a {
+    &__link {
         white-space: nowrap;
         margin-left: 1em;
         position: relative;

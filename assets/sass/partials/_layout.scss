@@ -60,14 +60,6 @@ body * {
     }
 }
 
-//max width
-.mw {
-    width:100%;
-    max-width:$mw;
-    margin-right:auto;
-    margin-left:auto;
-}
-
 //content width
 .cw {
     width:100%;
@@ -110,7 +102,6 @@ body * {
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    max-width: $mw;
     padding:0;
     max-width: $cw;
     margin-right:auto;

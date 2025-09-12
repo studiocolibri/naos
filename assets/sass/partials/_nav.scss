@@ -26,7 +26,7 @@
         position: fixed;
     }
     
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         display:flex;
         transform:none;
         width:auto;
@@ -42,6 +42,7 @@
     border: none;
     color: $gray-logo;
     transition: opacity 200ms ease-out;
+    margin-right: 10px;
     margin-left: auto;
     line-height: 1;
     font-family: poppins,helvetica neue,Helvetica,Arial,sans-serif;
@@ -71,7 +72,7 @@
         }
     }
 
-    @media screen and (min-width:768px) {
+    @media (min-width:768px) {
         display:none;
     } 
 
@@ -94,11 +95,11 @@
     font-size: 1.4rem;
     transition: opacity 200ms ease-out, color 200ms ease-out;
 
-    @media screen and (min-width:768px) {
+    @media (min-width:768px) {
         font-size:1.1rem;
     }
 
-    @media screen and (min-width:840px) {
+    @media (min-width:840px) {
         font-size:1.2rem;
         padding:1em;
     }
@@ -154,7 +155,7 @@
         }
     }
 
-    @media screen and (min-width:980px) {
+    @media (min-width:980px) {
         font-size: 1.4rem;
     }
 }
@@ -162,7 +163,7 @@
 .site-nav__container {
     position:relative;
 
-    @media screen and (min-width:768px) {
+    @media (min-width:768px) {
 
         @media (hover: hover) {
 
@@ -203,7 +204,7 @@
     background-color:rgba(255,255,255,0.9);
     transition:opacity 150ms ease-out;
 
-    @media screen and (min-width:768px) {
+    @media (min-width:768px) {
         box-shadow: -2px 10px 22px -13px gray;
     }
 

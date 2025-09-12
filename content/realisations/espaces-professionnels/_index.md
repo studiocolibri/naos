@@ -1,10 +1,11 @@
 ---
 title: Espaces professionnels
-img: "/NA12-01.jpg"
+img: "/v1757596294/Espaces_pros.jpg"
 weight: 25
 long: true
 gender: male
 ---
+
 
 ## Un espace professionnel contemporain sur mesure
 

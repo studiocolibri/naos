@@ -1,6 +1,6 @@
 ---
 title: Salles de bain
-img: "/MT15-03.jpg"
+img: "/v1757596293/SDB.jpg"
 weight: 20
 gender: female
 ---

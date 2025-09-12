@@ -1,6 +1,6 @@
 ---
 title: Séjours
-img: "/LE14-02.jpg"
+img: "/v1757596293/S%C3%A9jour.jpg"
 weight: "10"
 gender: male
 ---

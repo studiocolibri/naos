@@ -1,6 +1,6 @@
 ---
 title: Cuisines
-img: "/FA19-04.jpg"
+img: "/v1757596294/Cuisine.jpg"
 weight: 5
 gender: female
 ---

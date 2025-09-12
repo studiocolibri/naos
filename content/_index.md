@@ -2,6 +2,7 @@
 layout: home
 title: Naos atelier
 subtitle: du mobilier contemporain à&nbsp;votre&nbsp;mesure pour un&nbsp;intérieur&nbsp;personnalisé
+bodyclass: page-static
 blocks:
 - title: Réalisations
   img: "/v1579533577/Creation20.01_zwhacq.jpg"

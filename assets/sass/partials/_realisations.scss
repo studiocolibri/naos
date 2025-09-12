@@ -12,11 +12,6 @@
 		h1 {
 			grid-column: 1 / -1;
 			grid-row-start: 1;
-			margin-bottom:$su*2;
-	
-			@media (min-width:1240px) {
-				margin-bottom:$su*4;
-			}
 	
 			small {
 				display: block;
@@ -33,8 +28,12 @@
 	#site-main {
 		
 		@media (min-width:1240px) {
-			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr;
 		}
+	}
+
+	.list-projects.list-categories {
+    grid-column: 1 / span 2;
 	}
 }
 
@@ -51,38 +50,64 @@
 	}
 }
 
+/* .realisations-intro__txt {
+	grid-column: 1 / -1;
+	grid-row-start: 2;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.15rem;
+	margin-block:0 $su *2;
+} */
+
 .list-projects {
 	grid-column: 1 / span 2;
-	grid-row-start: 2;
+  grid-row-start: 2;
 	display:grid;
 	gap:10px;
 	margin-top:$su*2;
 
-	@media screen and (min-width:768px) {
+	@media (min-width:900px) {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	@media screen and (min-width:1240px) {
+	@media (min-width:1240px) {
 		margin:0;
 	}
+}
 
-	&.list-categories {
+.list-projects.list-categories {
+	grid-template-columns: 1fr;
+	align-content: baseline;
+	align-items: flex-start;
 
-		grid-template-columns: repeat( auto-fill, minmax(Min(280px, 100%), 1fr) );
-		align-content: baseline;
-		
-		@media screen and (min-width:768px) {
-			grid-column: 1 / span 3;
+	@media (min-width:480px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	@media (min-width:900px) {
+		grid-column: 1 / span 3;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	> div {
+		align-self: flex-start;
+		padding-inline:$su/2;
+		grid-column: 1/-1;
+
+		@media (min-width:900px) {
+			grid-column: span 1;
 		}
 
-		/* @media screen and (min-width: 1240px) {
-			grid-column: 1 / span 3;
-		} */
+		p {
 
-		/* @media screen and (min-width:1680px) {
-			grid-template-columns: 1fr 1fr 1fr;
-			
-		} */
+			@media (min-width:900px) {
+				padding-inline:$su/2;
+			}
+
+			&:first-child {
+				margin-top:$su/2;
+			}
+		}
 	}
 }
 
@@ -132,6 +157,10 @@
 		height:auto;
 		transition: filter 150ms ease-out, transform 150ms ease-out;
 
+		.list-categories & {
+			aspect-ratio: 1284/1394;
+  		object-fit: cover;
+		}
 	}
 
 	&:hover, &:focus {
@@ -262,7 +291,7 @@
 		height:30px; 
 	}
 
-	@media screen and (min-width:400px) {
+	@media (min-width:400px) {
 		width:40px;
 		height:40px;
 		font-size:32px;

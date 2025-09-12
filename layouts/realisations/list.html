@@ -7,30 +7,26 @@
     {{ .Title }}
 </h1>
 
-
 {{ if eq .Page $sectionPage }}
     <div class="realisations-intro tw">
-        <h2>De la cuisine au dressing et tous les meubles de rangement</h2>
-        <p>NAOS Atelier ne possède pas de limites dans la réalisation de ses projets. Nos artisans confectionnent des meubles sur mesure pour toutes les pièces de votre maison.</p>
+        <p style="margin-top:0">NAOS Atelier ne possède pas de limites dans la réalisation de ses projets. Nos artisans confectionnent des meubles sur mesure pour toutes les pièces de votre maison.</p>
         <p>Que vous soyez architecte, entrepreneur ou particulier, nous sommes à l&#39;écoute de votre demande et mettons tout en œuvre pour la réaliser. Nous désirons <strong>donner vie à chaque projet</strong> que vous nous confiez.</p>
-        <p>Nous sommes donc présents dans <strong>toutes les pièces de votre maison</strong> , que ce soit pour la conception d&#39;un petit meuble de séjour ou pour l&#39;aménagement complet de votre cuisine.</p>
-    
+        <p>Nous sommes donc présents dans <strong>toutes les pièces de votre maison</strong>, que ce soit pour la conception d&#39;un petit meuble de séjour ou pour l&#39;aménagement complet de votre cuisine.</p>
         <p>La particularité de Naos Atelier est l’intégration de l’objet dans son contexte et son adéquation avec la demande du client et/ou de l’architecte.</p>
         <p>La clé de réussite d’un projet est sans conteste le dialogue avec le client dans une approche sur mesure.  C’est également la dimension humaine et artisanale de l’entreprise qui va maintenir un niveau élevé de qualité du produit fini.</p>
         <p>Nous portons un soin tout particulier au choix des matériaux durables et « restaurables » ainsi qu’à la recherche permanente d’innovations renforçant le côté unique de vos projets.</p> 
     </div>
-    <section class="list-categories list-projects" aria-label="Catégories">
+    <div class="list-categories list-projects" aria-label="Catégories">
         {{ range .Sections.ByWeight }}
             <a class="list-projects__item observed" href="{{ .Permalink }}">
                 <picture>
                     <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400,c_fill{{ .Params.img }}" media="(max-width: 400px)">
-                    <img loading="lazy" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .Params.img }}" alt="" width="620"
-                        height="413">
+                    <img loading="lazy" src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620{{ .Params.img }}" alt="" width="470" height="470">
                 </picture>
                 <h2 class="list-projects__item-txt">{{ .Title }}</h2>
             </a>
         {{ end }}
-    </section>
+    </div>
 {{ else }}
     {{ with .Content }}
         <div class="realisations-intro tw">

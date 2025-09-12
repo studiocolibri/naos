@@ -17,10 +17,10 @@ slug:
 
 media_library:
   name: cloudinary
+  output_filename_only: true
   config:
     cloud_name: naos
     api_key: 574487421299888
-    output_filename_only: true
 
 collections:
   - name: "commerces"

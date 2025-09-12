@@ -1,8 +1,15 @@
 {{ define "main" }}
 
 <section class="home-intro cw">
+    <picture class="home-intro__img">
+        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400/v1757593080/Naos-vue-globale.jpg" media="(max-width: 400px)">
+        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620/v1757593080/Naos-vue-globale.jpg" media="(max-width: 620px)">
+        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_768/v1757593080/Naos-vue-globale.jpg" media="(max-width: 768px)">
+        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1200/v1757593080/Naos-vue-globale.jpg" media="(max-width: 1200px)">
+        <source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1600/v1757593080/Naos-vue-globale.jpg" media="(max-width: 1600px)">
+        <img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1930/v1757593080/Naos-vue-globale.jpg" alt="" width="2250" height="1500" loading="eager">
+    </picture>
     <div class="home-intro__text">
-        <img class="home-intro__mobile-img" src="/assets/img/NAO_250603_atelier_345.jpg" width="2250" height="1500" alt="">
         <h1>{{ .Title }} 
             <span>{{ .Params.subtitle | safeHTML }}</span>
         </h1>

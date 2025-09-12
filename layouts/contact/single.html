@@ -1,41 +1,45 @@
 {{ define "main" }}
 
-<div class="contact__content">
-	<h1>{{ .Title }}</h1>
-	<p class="contact-title">{{ $.Site.Data.contact.title | safeHTML }}</p>
-	<div class="contact__adresse">
-		<address>
-		{{ $.Site.Data.contact.address | safeHTML }}
-		</address> 
-		<a
-			href="https://www.google.com/maps/place/Naos+Atelier/@50.652069,5.603522,16z/data=!4m6!3m5!1s0x47c0f094182db11f:0x30ede601dffb406c!8m2!3d50.6520687!4d5.6035218!16s%2Fg%2F1trvkl0_?hl=fr&entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D">
-			Voir la carte
-		</a>
+<div class="contact-wrapper cw">
+
+	<div class="contact__content">
+		<div class="contact__txt">
+			<h1>{{ .Title }}</h1>
+			<p class="contact__title">{{ $.Site.Data.contact.title | safeHTML }}</p>
+			<address class="contact__address">
+			{{ $.Site.Data.contact.address | safeHTML }}
+			</address>
+			<p><a href="tel:{{ $.Site.Data.contact.tel_for_robots }}">{{ $.Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
+			<p><a href="mailto:{{ $.Site.Data.contact.email }}">{{ $.Site.Data.contact.email }}</a></p>
+			<p>Numéro d'entreprise : {{ $.Site.Data.contact.tva }}</p>
+			{{ .Content }}
+			<p>
+				Suivez nous sur vos réseaux :
+				<a target="_blank" href="{{ $.Site.Data.contact.facebook_link }}" title="Page Facebook">
+					<img class="social-logo" src="/assets/img/facebook-logo.svg" width="16" height="16" alt="Facebook">
+				</a> 
+				<a target="_blank" href="{{ $.Site.Data.contact.instagram_link }}">
+					<img class="social-logo" src="/assets/img/instagram-logo.svg" width="16" height="16" alt="Instagram">
+				</a>
+			</p>
+		</div>
+		<div class="contact__map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.6565870593063!2d5.60094151337767!3d50.65206867151299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f094182db11f%3A0x30ede601dffb406c!2sNaos%20Atelier!5e0!3m2!1sfr!2sbe!4v1757664348330!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
 	</div>
 	
-	<p><a href="tel:{{ $.Site.Data.contact.tel_for_robots }}">{{ $.Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
-	<p><a href="mailto:{{ $.Site.Data.contact.email }}">{{ $.Site.Data.contact.email }}</a></p>
-	<p>Numéro d'entreprise : {{ $.Site.Data.contact.tva }}</p>
-	{{ .Content }}
-	<p>
-		Suivez nous sur vos réseaux :
-		<a target="_blank" href="{{ $.Site.Data.contact.facebook_link }}" title="Page Facebook">
-			<img class="social-logo" src="/assets/img/facebook-logo.svg" width="16" height="16" alt="Facebook">
-		</a> 
-		<a target="_blank" href="{{ $.Site.Data.contact.instagram_link }}">
-			<img class="social-logo" src="/assets/img/instagram-logo.svg" width="16" height="16" alt="Instagram">
-		</a>
-	</p>
-</div>
-
-<div class="contact__img">
-
-	<!-- <img sizes="(max-width: 1270px) 100vw, 1270px" srcset="
-	/assets/img/NAOS-contact_480.webp 480w,
-	/assets/img/NAOS-contact_1154.webp 1154w,
-	/assets/img/NAOS-contact_1270.webp 1270w" src="/assets/img/NAOS-contact_1270.webp" alt="" width="1270" height="847"> -->
-	<img src="/assets/img/NAO_250610_atelier_543.jpg" width="2250" height="1500" alt="">
+	<div class="contact__img">
+	
+		<picture>
+				<source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400/v1757598226/NAO_250610_atelier_466D.jpg" media="(max-width: 400px)">
+				<source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620/v1757598226/NAO_250610_atelier_466D.jpg" media="(max-width: 620px)">
+				<source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_900/v1757598226/NAO_250610_atelier_466D.jpg" media="(max-width: 900px)">
+				<img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1520/v1757598226/NAO_250610_atelier_466D.jpg" alt="" width="1240" height="827">
+		</picture>
+	
+	</div>
 
 </div>
+
 
 {{ end }}

@@ -25,7 +25,7 @@ media_library:
 collections:
   - name: "commerces"
     label: "Commerces" 
-    folder: "content/creations/commerces" 
+    folder: "content/realisations/commerces" 
     create: true
     slug: "{{slug}}"
     editor:
@@ -49,7 +49,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}
   - name: "cuisines"
     label: "Cuisines" 
-    folder: "content/creations/cuisines" 
+    folder: "content/realisations/cuisines" 
     create: true
     slug: "{{slug}}"
     editor:
@@ -73,7 +73,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}  
   - name: "espaces-professionnels"
     label: "Espaces professionnels" 
-    folder: "content/creations/espaces-professionnels" 
+    folder: "content/realisations/espaces-professionnels" 
     create: true
     slug: "{{slug}}"
     editor:
@@ -97,7 +97,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}  
   - name: "publics"
     label: "Espaces publics" 
-    folder: "content/creations/publics" 
+    folder: "content/realisations/publics" 
     create: true
     slug: "{{slug}}"
     editor:
@@ -121,7 +121,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}  
   - name: "salles-de-bain"
     label: "Salles de bain" 
-    folder: "content/creations/salles-de-bain" 
+    folder: "content/realisations/salles-de-bain" 
     create: true
     slug: "{{slug}}"
     editor:
@@ -145,7 +145,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}  
   - name: "sejours"
     label: "Séjours" 
-    folder: "content/creations/sejours" 
+    folder: "content/realisations/sejours" 
     create: true
     slug: "{{slug}}"
     editor:
@@ -169,7 +169,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}  
   - name: "tables"
     label: "Tables" 
-    folder: "content/creations/tables" 
+    folder: "content/realisations/tables" 
     create: true
     slug: "{{slug}}"
     editor:

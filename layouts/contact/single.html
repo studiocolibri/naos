@@ -3,38 +3,53 @@
 <div class="contact-wrapper cw">
 
 	<div class="contact__content">
+
 		<div class="contact__txt">
+			
 			<h1>{{ .Title }}</h1>
-			<p class="contact__title">{{ $.Site.Data.contact.title | safeHTML }}</p>
-			<address class="contact__address">
-			{{ $.Site.Data.contact.address | safeHTML }}
-			</address>
-			<p><a href="tel:{{ $.Site.Data.contact.tel_for_robots }}">{{ $.Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
-			<p><a href="mailto:{{ $.Site.Data.contact.email }}">{{ $.Site.Data.contact.email }}</a></p>
-			<p>Numéro d'entreprise : {{ $.Site.Data.contact.tva }}</p>
-			{{ .Content }}
-			<p>
-				Suivez nous sur vos réseaux :
-				<a target="_blank" href="{{ $.Site.Data.contact.facebook_link }}" title="Page Facebook">
-					<img class="social-logo" src="/assets/img/facebook-logo.svg" width="16" height="16" alt="Facebook">
-				</a> 
-				<a target="_blank" href="{{ $.Site.Data.contact.instagram_link }}">
-					<img class="social-logo" src="/assets/img/instagram-logo.svg" width="16" height="16" alt="Instagram">
-				</a>
-			</p>
+
+			<div>
+				<p>Nous fonctionnons exclusivement sur rendez-vous.</p>
+				<p>Il est essentiel pour nous de prendre le temps de vous accueillir dans de bonnes conditions afin de construire votre projet à vos côtés.</p>
+				<p>Pour toute demande ou prise de rendez-vous, <br>nous sommes disponibles au&nbsp;:</p>
+				<p><a href="tel:{{ $.Site.Data.contact.tel_for_robots }}">{{ $.Site.Data.contact.tel_for_humans | safeHTML }}</a></p>
+				<p>Ou par e-mail à l'adresse&nbsp;:</p>
+				<p><a href="mailto:{{ $.Site.Data.contact.email }}">{{ $.Site.Data.contact.email }}</a></p>
+			</div>
+
+			<div>
+				<p>Rendez-vous sur nos réseaux <br>pour vivre <a href="/atelier">l'atelier</a> de l'intérieur : 
+					<a target="_blank" href="{{ $.Site.Data.contact.facebook_link }}" title="Page Facebook">
+						<img class="social-logo" src="/assets/img/facebook-logo.svg" width="16" height="16" alt="Facebook">
+					</a> 
+					<a target="_blank" href="{{ $.Site.Data.contact.instagram_link }}">
+						<img class="social-logo" src="/assets/img/instagram-logo.svg" width="16" height="16" alt="Instagram">
+					</a>
+				</p>
+			</div>
+
+			<div>
+				<p class="contact__title">{{ $.Site.Data.contact.title | safeHTML }}</p>
+				<address class="contact__address">
+				{{ $.Site.Data.contact.address | safeHTML }}
+				</address>
+				<p style="margin-top: -0.3em;"><a href="https://maps.app.goo.gl/xLBMvdhFpvQS3dzf6">Voir la carte</a></p>
+				<p>Numéro d'entreprise : {{ $.Site.Data.contact.tva }}</p>
+			</div>
+
 		</div>
-		<div class="contact__map">
+		<!-- <div class="contact__map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.6565870593063!2d5.60094151337767!3d50.65206867151299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f094182db11f%3A0x30ede601dffb406c!2sNaos%20Atelier!5e0!3m2!1sfr!2sbe!4v1757664348330!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
+		</div> -->
 	</div>
 	
 	<div class="contact__img">
 	
 		<picture>
-				<source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400/v1757598226/NAO_250610_atelier_466D.jpg" media="(max-width: 400px)">
-				<source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620/v1757598226/NAO_250610_atelier_466D.jpg" media="(max-width: 620px)">
-				<source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_900/v1757598226/NAO_250610_atelier_466D.jpg" media="(max-width: 900px)">
-				<img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1520/v1757598226/NAO_250610_atelier_466D.jpg" alt="" width="1240" height="827">
+				<source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_400/v1757593080/Naos-vue-globale.jpg" media="(max-width: 400px)">
+				<source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_620/v1757593080/Naos-vue-globale.jpg" media="(max-width: 620px)">
+				<source srcset="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_900/v1757593080/Naos-vue-globale.jpg" media="(max-width: 900px)">
+				<img src="{{ $.Site.Params.cloudinary_url }}f_auto,q_80,w_1520/v1757593080/Naos-vue-globale.jpg" alt="" width="1240" height="827">
 		</picture>
 	
 	</div>

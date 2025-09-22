@@ -40,6 +40,8 @@
 .realisations-intro {
 	grid-column-end:  -1;
 	grid-row-start: 2;
+	text-align: justify;
+	hyphens:auto;
 
 	@media (min-width:1240px) {
     align-self: start;

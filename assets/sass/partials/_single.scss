@@ -20,34 +20,74 @@
 	}
 }
 
-.atelier-wrapper {
-	max-width: 1266px;
-}
-
 .atelier-photos {
 	display: grid;
-	gap:$su/2;
+	gap:$su*2;
 	margin-top:$su*1.5;
+	grid-template-areas: 
+	"photo-1"
+	"photo-2"
+	"txt-1"
+	"photo-3"
+	"photo-4"
+	"txt-2";
 
 	@media (min-width:900px) {
 		grid-template-columns: 1fr 1fr;
-		
+		gap:$su*2;
+		grid-template-areas: 
+		"photo-1 photo-2"
+		"txt-1 ."
+		"photo-3 photo-4"
+		"txt-2 .";
+
 		p:first-child {
 			margin-top:0
 		}
 	}
+
+	@media (min-width:1600px) {
+		gap:$su*4;
+	}
 		
+	picture {
+		margin-inline: -30px;
+
+		@media (min-width:480px) {
+			margin-inline: 0;
+		}
+	}
 }
+
+.atelier-photos--1 {
+	grid-area: photo-1;
+}
+.atelier-photos--2 {
+	grid-area: photo-2;
+}
+.atelier-photos--3 {
+	grid-area: photo-3;
+}
+.atelier-photos--4 {
+	grid-area: photo-4;
+}
+.atelier-photos-txt--1 {
+	grid-area: txt-1;
+}
+.atelier-photos-txt--2 {
+	grid-area: txt-2;
+}
+
 
 .atelier-photos-txt {
   align-self: center;
-  margin-block: $su;
+	max-width: 53ch;
 
 	> * {
 		margin:0;
 	}
 	> * + * {
-		margin-top:$su/2;
+		margin-top:$su;
 	}
 }
 
@@ -116,7 +156,7 @@
 	display:grid;
 	gap:$su*2;
 
-	@media (min-width:1600px) {
+	@media (min-width:900px) {
 		gap:$su*4;
 		display:flex;
 	}
@@ -131,14 +171,13 @@
 .contact__content {
 	display: grid;
 	grid-auto-rows: max-content;
-	gap:$su*2;
+	gap:0 $su*2;
 
 	@media (min-width:768px) {
-		gap:0 $su*2;
 		grid-template-columns: auto 1fr;
 	}
 
-	@media (min-width:1600px) {
+	@media (min-width:900px) {
 		width:36%;
 		gap:$su*2;
 		grid-template-columns: 1fr;
@@ -146,9 +185,15 @@
 }
 
 .contact__txt {
+	max-width: 44ch;
+	text-wrap: pretty;
 
-	> * {
-		margin-block:$su 0;
+	div {
+		margin-block: $su*2;
+
+		> *:first-child {
+			margin-top:0;
+		}
 	}
 }
 
@@ -178,7 +223,7 @@ img.social-logo {
 		margin-top:$su*2;
 	}
 
-	@media (min-width: 1600px) {
+	@media (min-width: 900px) {
 		margin-top:0;
 		max-width: 100%;
 	}
@@ -192,7 +237,7 @@ img.social-logo {
 			max-height: 340px;
 		}
 
-		@media (min-width:1600px) {
+		@media (min-width:900px) {
 			max-height: 100%;
 		}
 	}
@@ -201,10 +246,9 @@ img.social-logo {
 .contact__img {
 	width: 100%;
 	
-	@media (min-width: 1600px) {
+	@media (min-width: 900px) {
 		width:64%;
-		margin-top:auto;
-		padding-top:$su*2;
+		padding-top:$su*6;
 	}
 
 	img {

@@ -9,7 +9,6 @@ gallery:
   - /v1603221940/LG19-04_o2rqli.jpg
   - /v1603221940/LG19-05_mphrhu.jpg
   - /v1603221940/LG19-06_d4fkoq.jpg
-  - https://res.cloudinary.com/naos/image/upload/v1757598226/NAO_250610_atelier_466D.jpg
 ---
 **_Bastogne_**
 

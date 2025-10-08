@@ -46,6 +46,8 @@
     padding: 0.5em 0;
     background: rgba(255,255,255,0.75);
     backdrop-filter: blur(2px);
+    text-align: justify;
+    hyphens: auto;
     
     @media (min-width:1080px) {
         position: absolute;
@@ -54,20 +56,25 @@
         padding-inline: 1em;
         background: rgba(255,255,255,0.82);
     }
-
     @media (min-width:1240px) {
         right:$su*2;
         bottom:$su*2;
     }
-
     @media (min-width:1400px) {
         right:$su*4;
         bottom:$su*4;
     }
-
     @media (min-width:1600px) {
         right:8%;
         bottom:14%;
+    }
+    @media (min-width:1800px) {
+        right:8%;
+        bottom:25%;
+    }
+    @media (min-width: 2096px) {
+        right: 12.8%;
+        bottom: 26%;
     }
 }
 

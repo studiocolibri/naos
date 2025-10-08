@@ -43,6 +43,7 @@ body * {
     margin:130px auto $su*9 auto;
     padding-right:$su*1.5;
     padding-left:$su*1.5;
+    max-width: 2000px;
     
     @media (min-width:768px) {
         margin-top:160px;
@@ -51,6 +52,11 @@ body * {
     @media (min-width:1240px) {
         padding-right:$su*4;
         padding-left:$su*4;
+    }
+
+    @media (min-width:1600px) {
+        padding-right:$su*6;
+        padding-left:$su*6;
     }
 
     body.open & {

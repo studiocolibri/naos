@@ -75,7 +75,7 @@
 
 .atelier-photos-txt {
   align-self: center;
-	max-width: 53ch;
+	max-width: 50ch;
 	margin:$su*2 auto;
 	text-align: justify;
 	hyphens: auto;
@@ -97,7 +97,7 @@
 	margin-top:$su*4;
 	display:grid;
 	gap:$su*2 $su/2;
-	max-width: 960px;
+	max-width: 880px;
 
 	@media (min-width:480px) {
 		grid-template-columns: 1fr 1fr;

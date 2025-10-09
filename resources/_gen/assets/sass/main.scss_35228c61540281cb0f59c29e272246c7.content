@@ -376,8 +376,8 @@ body * {
       margin-top: 160px; } }
   @media (min-width: 1240px) {
     #site-main {
-      padding-right: 80px;
-      padding-left: 80px; } }
+      padding-right: 120px;
+      padding-left: 120px; } }
   @media (min-width: 1600px) {
     #site-main {
       padding-right: 120px;
@@ -514,7 +514,7 @@ strong {
   margin-top: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 30px;
+  padding-left: 20px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -525,8 +525,8 @@ strong {
       padding: 20px; } }
   @media (min-width: 1240px) {
     .site-header {
-      padding-right: 80px;
-      padding-left: 80px; } }
+      padding-right: 40px;
+      padding-left: 40px; } }
 .site-header__container {
   display: flex;
   align-items: center;
@@ -835,7 +835,9 @@ strong {
       max-width: 24em;
       margin-top: 0.5em;
       line-height: 1.25;
-      font-size: 1.1rem; }
+      font-size: 1.1rem;
+      text-align: left;
+      hyphens: none; }
   .home-intro p:last-of-type {
     margin-bottom: 5px; }
 
@@ -847,39 +849,23 @@ strong {
     .home-intro__img {
       margin-inline: 0; } }
 .home-intro__text {
-  max-width: 60ch;
-  padding: 0.5em 0;
+  max-width: 51ch;
+  margin-block: 40px;
   background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(2px);
   text-align: justify;
   hyphens: auto; }
-  @media (min-width: 1080px) {
-    .home-intro__text {
-      position: absolute;
-      right: 20px;
-      bottom: 40px;
-      padding-inline: 1em;
-      background: rgba(255, 255, 255, 0.82); } }
   @media (min-width: 1240px) {
     .home-intro__text {
-      right: 40px;
-      bottom: 40px; } }
-  @media (min-width: 1400px) {
-    .home-intro__text {
-      right: 80px;
-      bottom: 80px; } }
-  @media (min-width: 1600px) {
-    .home-intro__text {
-      right: 8%;
-      bottom: 14%; } }
-  @media (min-width: 1800px) {
-    .home-intro__text {
-      right: 8%;
-      bottom: 25%; } }
-  @media (min-width: 2096px) {
-    .home-intro__text {
-      right: 12.8%;
-      bottom: 26%; } }
+      max-width: 860px;
+      margin-block: 60px 0;
+      column-count: 2;
+      column-gap: 40px; } }
+  @media (min-width: 1240px) {
+    .home-intro__text h1 {
+      column-span: all; } }
+  .home-intro__text > * {
+    margin-block: 0 1em; }
+
 .last-projects {
   margin-top: 120px; }
   .last-projects h2 {
@@ -978,7 +964,7 @@ strong {
   margin-top: 80px;
   display: grid;
   gap: 40px 10px;
-  max-width: 960px; }
+  max-width: 880px; }
   @media (min-width: 480px) {
     .team {
       grid-template-columns: 1fr 1fr; } }
@@ -1167,10 +1153,64 @@ picture {
 
 @media (min-width: 1240px) {
   .realisations.realisations-home #site-main {
-    grid-template-columns: 1fr 1fr 1fr; } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 .realisations.realisations-home .list-projects.list-categories {
-  grid-column: 1 / span 2; }
+  grid-column: 1 / -1;
+  display: grid; }
+  @media (min-width: 768px) {
+    .realisations.realisations-home .list-projects.list-categories {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1240px) {
+    .realisations.realisations-home .list-projects.list-categories {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 1600px) {
+    .realisations.realisations-home .list-projects.list-categories {
+      grid-template-columns: repeat(4, 1fr); } }
+.realisations.realisations-home .list-projects__item--txt {
+  align-self: center;
+  display: grid;
+  place-content: center; }
+  @media (min-width: 768px) {
+    .realisations.realisations-home .list-projects__item--txt {
+      padding-inline: 20px; } }
+.list-projects.list-categories > *:nth-child(1) {
+  order: 1; }
+
+.list-projects.list-categories > *:nth-child(2) {
+  order: 2; }
+
+.list-projects.list-categories > *:nth-child(3) {
+  order: 3; }
+
+.list-projects.list-categories > *:nth-child(4) {
+  order: 4; }
+
+.list-projects.list-categories > *:nth-child(5) {
+  order: 5; }
+
+.list-projects.list-categories > *:nth-child(6) {
+  order: 6; }
+
+.list-projects.list-categories > *:nth-child(7) {
+  order: 7; }
+
+.list-projects.list-categories > *:nth-child(8) {
+  order: 8; }
+
+.list-projects.list-categories > *:nth-child(9) {
+  order: 9; }
+
+.list-projects.list-categories > *:nth-child(10) {
+  order: 10; }
+
+@media (min-width: 1240px) and (max-width: 1599px) {
+  .list-projects.list-categories .list-projects__item--txt:nth-of-type(1) {
+    order: 0; }
+  .list-projects.list-categories .list-projects__item--txt:nth-of-type(2) {
+    order: 1; }
+  .list-projects.list-categories .list-projects__item--txt:nth-of-type(3) {
+    order: 2; } }
 
 .realisations-intro {
   grid-column-end: -1;
@@ -1184,14 +1224,6 @@ picture {
       position: sticky;
       top: 160px;
       max-width: 48ch; } }
-/* .realisations-intro__txt {
-	grid-column: 1 / -1;
-	grid-row-start: 2;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 1.15rem;
-	margin-block:0 $su *2;
-} */
 .list-projects {
   grid-column: 1 / span 2;
   grid-row-start: 2;
@@ -1204,28 +1236,28 @@ picture {
   @media (min-width: 1240px) {
     .list-projects {
       margin: 0; } }
-.list-projects.list-categories {
+.home .list-projects.list-categories {
   grid-template-columns: 1fr;
   align-content: baseline;
   align-items: flex-start; }
   @media (min-width: 480px) {
-    .list-projects.list-categories {
+    .home .list-projects.list-categories {
       grid-template-columns: 1fr 1fr; } }
   @media (min-width: 900px) {
-    .list-projects.list-categories {
+    .home .list-projects.list-categories {
       grid-column: 1 / span 3;
       grid-template-columns: 1fr 1fr 1fr; } }
-  .list-projects.list-categories > div {
+  .home .list-projects.list-categories > div {
     align-self: flex-start;
     padding-inline: 10px;
     grid-column: 1/-1; }
     @media (min-width: 900px) {
-      .list-projects.list-categories > div {
+      .home .list-projects.list-categories > div {
         grid-column: span 1; } }
     @media (min-width: 900px) {
-      .list-projects.list-categories > div p {
+      .home .list-projects.list-categories > div p {
         padding-inline: 10px; } }
-    .list-projects.list-categories > div p:first-child {
+    .home .list-projects.list-categories > div p:first-child {
       margin-top: 10px; }
 
 .list-projects__item {

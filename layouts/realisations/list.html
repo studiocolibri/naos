@@ -8,7 +8,7 @@
 </h1>
 
 {{ if eq .Page $sectionPage }}
-    <div class="realisations-intro tw">
+    <!-- <div class="realisations-intro tw">
         <p style="margin-top:0">NAOS Atelier ne possède pas de limites dans la réalisation de ses projets. Nos artisans confectionnent des meubles sur mesure pour toutes les pièces de votre maison.</p>
         <p>Que vous soyez architecte, entrepreneur ou particulier, nous sommes à l&#39;écoute de votre demande et mettons tout en œuvre pour la réaliser. Nous désirons <strong>donner vie à chaque projet</strong> que vous nous confiez.</p>
         <p>Nous sommes donc présents dans <strong>toutes les pièces de votre maison</strong>, que ce soit pour la conception d&#39;un petit meuble de séjour ou pour l&#39;aménagement complet de votre cuisine.</p>
@@ -26,6 +26,70 @@
                 <h2 class="list-projects__item-txt">{{ .Title }}</h2>
             </a>
         {{ end }}
+    </div> -->
+    <div class="list-categories list-projects" aria-label="Catégories">
+        <a class="list-projects__item observed" href="/realisations/cuisines/">
+            <picture>
+                <source srcset="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_400,c_fill/v1757596294/Cuisine.jpg" media="(max-width: 400px)">
+                <img loading="lazy" src="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_620/v1757596294/Cuisine.jpg" alt="" width="470" height="470">
+            </picture>
+            <h2 class="list-projects__item-txt">Cuisines</h2>
+        </a>    
+        <a class="list-projects__item observed" href="/realisations/sejours/">
+            <picture>
+                <source srcset="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_400,c_fill/v1757596293/S%C3%A9jour.jpg" media="(max-width: 400px)">
+                <img loading="lazy" src="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_620/v1757596293/S%C3%A9jour.jpg" alt="" width="470" height="470">
+            </picture>
+            <h2 class="list-projects__item-txt">Séjours</h2>
+        </a>
+        <div class="list-projects__item--txt">
+            <p>NAOS Atelier ne possède pas de limites dans la réalisation de ses projets. Nos artisans confectionnent des meubles sur mesure pour toutes les pièces de votre maison.</p>
+            <p>Que vous soyez architecte, entrepreneur ou particulier, nous sommes à l&#39;écoute de votre demande et mettons tout en œuvre pour la réaliser. Nous désirons <strong>donner vie à chaque projet</strong> que vous nous confiez.</p>
+        </div>
+        <a class="list-projects__item observed" href="/realisations/commerces/">
+            <picture>
+                <source srcset="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_400,c_fill/v1757596300/Commerces.jpg" media="(max-width: 400px)">
+                <img loading="lazy" src="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_620/v1757596300/Commerces.jpg" alt="" width="470" height="470">
+            </picture>
+            <h2 class="list-projects__item-txt">Commerces</h2>
+        </a>    
+        <a class="list-projects__item observed" href="/realisations/salles-de-bain/">
+            <picture>
+                <source srcset="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_400,c_fill/v1757596293/SDB.jpg" media="(max-width: 400px)">
+                <img loading="lazy" src="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_620/v1757596293/SDB.jpg" alt="" width="470" height="470">
+            </picture>
+            <h2 class="list-projects__item-txt">Salles de bain</h2>
+        </a>
+        <div class="list-projects__item--txt">
+            <p>Nous sommes donc présents dans <strong>toutes les pièces de votre maison</strong>, que ce soit pour la conception d&#39;un petit meuble de séjour ou pour l&#39;aménagement complet de votre cuisine.</p>
+            <p>La particularité de Naos Atelier est l’intégration de l’objet dans son contexte et son adéquation avec la demande du client et/ou de l’architecte.</p>
+        </div>
+        <a class="list-projects__item observed" href="/realisations/espaces-professionnels/">
+            <picture>
+                <source srcset="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_400,c_fill/v1757596294/Espaces_pros.jpg" media="(max-width: 400px)">
+                <img loading="lazy" src="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_620/v1757596294/Espaces_pros.jpg" alt="" width="470" height="470">
+            </picture>
+            <h2 class="list-projects__item-txt">Espaces professionnels</h2>
+        </a>    
+        <a class="list-projects__item observed" href="/realisations/publics/">
+            <picture>
+                <source srcset="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_400,c_fill/Cameo_21.jpg" media="(max-width: 400px)">
+                <img loading="lazy" src="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_620/Cameo_21.jpg" alt="" width="470" height="470">
+            </picture>
+            <h2 class="list-projects__item-txt">Espaces Publics</h2>
+        </a>
+        <div class="list-projects__item--txt">
+            <p>La clé de réussite d’un projet est sans conteste le dialogue avec le client dans une approche sur mesure.  C’est également la dimension humaine et artisanale de l’entreprise qui va maintenir un niveau élevé de qualité du produit fini.</p>
+            <p>Nous portons un soin tout particulier au choix des matériaux durables et « restaurables » ainsi qu’à la recherche permanente d’innovations renforçant le côté unique de vos projets.</p> 
+        </div>  
+        <a class="list-projects__item observed" href="/realisations/tables/">
+            <picture>
+                <source srcset="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_400,c_fill/VE15-02.jpg" media="(max-width: 400px)">
+                <img loading="lazy" src="https://res.cloudinary.com/naos/image/upload/f_auto,q_80,w_620/VE15-02.jpg" alt="" width="470" height="470">
+            </picture>
+            <h2 class="list-projects__item-txt">Tables</h2>
+        </a>
+        
     </div>
 {{ else }}
     {{ with .Content }}

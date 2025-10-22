@@ -67,11 +67,11 @@
 }
 
 @media (min-width:1240px) and (max-width:1599px) {
-
-	@for $i from 1 through 3 {
-		.list-projects.list-categories .list-projects__item--txt:nth-of-type(#{$i}) {
-			order: $i - 1;
-		}
+	.list-projects.list-categories .list-projects__item--txt:nth-of-type(1) {
+		order: 1;
+	}
+	.list-projects.list-categories .list-projects__item--txt:nth-of-type(3) {
+		order: 7;
 	}
 }
 
